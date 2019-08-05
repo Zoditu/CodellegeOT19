@@ -1,0 +1,26 @@
+Segunda clase
+
++ Etiquetas para imagenes + 
+                             <img src = "" >
+
+- Ruta absoluta (esta en manera local, lap independiente) 
+	Es la ruta completa, desde la raíz hasta el archivo.
+Ejemplos 
+	 <img src = "https://cdn.pixabay.com/photo/2012/04/16/12/56/watermelon-35881__340.png" width="100%" height="100%"/> <!-- ruta absoluta-->
+    <img src = "C:\Users\karla\Downloads\Codellege\Codigos\sandia2.jpg"/> <!-- ruta absoluta-->
+
+- Ruta relativo 
+	Comienza desde el archivo/proceso que la invocó
+Ejemplos
+	 <img src = "hola/sandia.jpg"/> <!-- ruta relativa-->
+ 	 <img src = "/holis/sandia3.jpg"/> <!-- ruta relativa de raíz-->
+         <img src = "sandia2.jpg"/> <!-- ruta relativa-->
+
+			
+   	
+			<a href = "">
+
+
+
+
+// html special charecter 
