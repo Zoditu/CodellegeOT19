@@ -1,0 +1,14 @@
+JSON (JavaScript Object Notation)
+
+key : value ( key value pair)
+
+"codellege" : 
+{
+    "maestros": 
+    [
+        {
+            "nombre": "kevin",
+            "apellidos": "M
+        }
+    ]
+}
