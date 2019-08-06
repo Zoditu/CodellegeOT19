@@ -1,0 +1,2 @@
+https://cssicon.space/#/icon/arrow-down
+https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
