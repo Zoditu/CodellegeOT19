@@ -1,0 +1,10 @@
+*Seleccionar branch
+	-hacer los cambios
+
+*Commit
+	- Pull
+	- Merge a master
+
+*Revisar que no haya conflictos
+
+*Push
