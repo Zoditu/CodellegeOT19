@@ -80,9 +80,14 @@ html, body
     color: white;
 }
 
+.row
+{
+   display: block; 
+}
+
 .chess
 {
-    width: 5vw;
+    width:  5vw;
     height: 5vw;
     display: inline-block;
     margin: 0;
@@ -92,28 +97,37 @@ html, body
 .chess-white
 {
     background-color: #f5f5dc;
-    transition: transform 0.7s ease;
+    transition: transform 0.3s ease;
+    transition: border-radius 0.4s ease; 
 }
 
 .chess-white:hover
 {
     background-color: #c7c7b2;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    border-radius: 20%;
 }
 
 .chess-black
 {
     background-color: #6d3a26;
-    transition: transform 0.7s ease;
+    transition: transform 0.3s ease;
+    transition: border-radius 0.4s ease; 
 }
 
 .chess-black:hover
 {
     background-color: #442418;
-    transform: scale(1.2); 
+    transform: scale(1.1); 
+    border-radius: 20%;
 }
 
 #chess
 {
     overflow: hidden;
+}
+
+.clear
+{
+    clear: both;
 }
