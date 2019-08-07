@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        p{
+            padding: 2vw;
+        }
+
+        .cuadro {
+            border: 1px solid black;
+            width: 20vw;
+            height: 20vw;
+            float: left;
+            background: #fff
+        }
+
+        .negro {
+            background: #000
+        }
+
+        .redondeado {
+            border-radius: 100px;
+            background: #65af77;
+        }
+
+        * {
+            box-sizing: border-box;
+            /*No se incrementen los bordes*/
+            /*border-box, no se re-ajuste el tamano del componentes */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            /* para que sea negrita*/
+            /* text-decoration: underline;  para el subrayado*/
+        }
+
+        .h1-Kevin {
+            color: dimgray;
+            font-size: 16px;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .table {
+            margin-top: 0;
+            background-image: url("img/madera.jpg");
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <!-- explicacion de la clase y ejemplo
+        <article>
+            <section>
+                <header>
+                    <div style="color: green">
+                        <h1 style="color:inherit">Codellege</h1>
+                    </div>
+                </header>
+                <main>
+                    <div class="cuadro">a</div>
+                    <div class="cuadro redondeado">b</div>
+                </main>
+            </section>
+        </article> -->
+
+        <!-- ejercicio de la clase -->
+        <article>
+            <section>
+                <header>
+                    <h1 class="h1-Kevin">Tabla de Ajedrez</h1>
+                </header>
+                <main class="tabla">
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <!-- <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div> -->
+                    <!-- <div class="cuadro negro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro negro"></div>
+                    <div class="cuadro"></div> -->
+                </main>
+            </section>
+        </article>
+
+    </main>
+
+
+    <p style="color: black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quam, labore, asperiores tempore dolorum incidunt amet esse sequi corrupti modi quis. Accusamus iusto nostrum iste adipisci quia, consequatur odio. Culpa.</p>
+
+    <!-- <br><br><br><br><br><br>
+<hr>
+    <footer>
+        <article>
+            <section>
+                <header>
+                    <h4>Notas de la clase:</h4>
+                </header>
+                <main>
+                    <p>
+                        selectores, comdin,border-box, reglita del comodin, 3 tipos de display: inline block, inline
+                        block
+                        <ul>
+                            <li>box-sizing: border-box; /*border-box, no se re-ajuste el tamano del componenteS */</li>
+                            <li>hidden -> corta</li>
+                            <li>auto -> te agrega el scrollbar</li>
+                            <li>scroll -> te agrega por definido el scrollbar vertical y horizontal</li>
+                            <li>inherit agarra el color del elemento padre</li>
+                        </ul>
+
+                        Unidades de medida:
+                        <ul>
+                            <li>em, agarranda la herencia de arriba y se multiplica (posible uso en bordes)</li>
+                            <li>rem,  no va relacionado a la fuente padre</li>
+                            <li>vw VIEWPORT, usarlo para lo responsivo</li>
+                            <li>vh VIEWPORT</li>
+                        </ul>
+                    </p>
+                </main>
+            </section>
+        </article>
+    </footer> -->
+</body>
+
+</html>
