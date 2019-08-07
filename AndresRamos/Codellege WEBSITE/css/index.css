@@ -1,4 +1,3 @@
-
 html, body
 {
     width: 100%;
@@ -6,14 +5,24 @@ html, body
     padding: 0;
     margin: 0;
 }
+
+*
+{
+    box-sizing: border-box;
+    background-color: #353535;    
+}
+
 #landing
 {
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
     transition: background-color 4s ease;
     background-color: #cdfdbc;
+
 }
+
 #landing
 {
     background-color: #3C4A37;
@@ -27,19 +36,21 @@ html, body
     font-family: Grenze, serif;
     font-size: 70px;
     transition: color 2s ease;
+    background-color: transparent;
 }
+
 #landing h1
 {
     color: #ffffff;
 }
+
 #landing a 
 {
     text-decoration: none;
     font-family: 'Lacquer';
     text-align: center;
     color: #e0e0e0c0;
-    padding-bottom: 1%;
-    
+    padding-bottom: 1%; 
 }
 
 .title
@@ -48,10 +59,30 @@ html, body
     margin: 0; 
     width: 100%;
 }
+
 .title h1
 {
     padding-top: 5%;
     padding-bottom: 5%;
     margin: 0;
     text-align: center
+}
+.student ul 
+{
+    margin: 0; 
+    padding: 0;
+}
+.student ul li
+{
+    margin: 0;
+    padding: 0% 10%;
+    display: inline-block;
+    color: white;
+}
+
+.square
+{
+    margin-top: 10px;
+    border: 1px solid black;
+    min-height: 20px;
 }
