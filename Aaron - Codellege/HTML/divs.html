@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .Cuadro{
+        border: 3px solid black;
+        width: 20vw;
+        height: 20vw;
+        background: rgb(94, 255, 0);
+        padding-top: 35px;
+        text-align: center;
+        float: left;
+    }
+
+    .Redondeado {
+        border-radius: 100px;
+        background: rgb(255, 238, 0);
+
+    }
+
+    h1 {
+        color: grey;
+        font-size: 16px;
+        font-style: italic;
+        text-decoration: underline;
+        font-weight: bold;
+
+    }
+
+    h2 {
+        color: black;
+        font-size: 16px;
+    }
+
+    .Sonrisa {
+
+    }
+
+
+    /* Regla de oro */ 
+    /* Con esto no crece con el contenido, sólo se limita a las medidas del borde */
+    *{
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        color: dimgray;
+        font-size: 18px;
+
+    }
+
+</style>
+
+<!-- Tipos de display:
+
+Block:
+    -100% width
+    -Hace saltos de línea, rompe la línea
+inLine:
+    -En línea, junto a otros elementos/textos
+    -No permite cambiar el tamaño ni márgenes
+inLine-block:
+    -Es un bloque pequeño, que se puede cambiar de tamaño
+    - Tiene por default un espaciado que no se puede quitar fácilmente
+table:
+    -table-row
+    -table-cell
+Flex:
+
+-->
+
+<body>
+
+    <header>
+        <h1>Alumnos</h1>
+    </header>
+
+    <main>
+        <h2>Hombres</h2>
+        <hr>
+
+        <div class="Cuadro">Andy</div>
+        <div class="Cuadro">Andrew</div>
+        <div class="Cuadro">Aaron</div>
+        <div class="Cuadro">Javier</div>
+        <div class="Cuadro">Ricardo</div>
+        <div class="Cuadro">Carlos</div>
+        <div class="Cuadro">Celestino</div>
+        <div class="Cuadro">Aldo</div>
+
+        <hr>
+
+        <h2>Mujeres</h2>
+        <hr>
+
+        <div class="Cuadro Redondeado">Natalia</div>
+        <div class="Cuadro Redondeado">Karla</div>
+        <div class="Cuadro Redondeado">Miriam</div>
+        <div class="Cuadro Redondeado">Itzel</div>
+        <div class="Cuadro Redondeado">Liliana</div>
+
+    </main>
+
+    
+</body>
+</html>
