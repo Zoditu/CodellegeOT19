@@ -1,78 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-    
-    html,body{
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        background: burlywood;
-    }
-    .centrado{
-        text-align: center;
-    }
-    *{
-        box-sizing: border-box;
-    }
-  .Tarjeta{
-      width: 25rem;
-      height: 15rem;
-      border: 2px solid black;
-      border-radius: 0.5em;
-      display: inline-block;
-  }
-  img{
-      width: 100%;
-      height: 100%;
-      border-radius: 0.5rem 0rem 0rem 0.5rem;
-  }
-  .imagen{
-      width: 40%;
-      height: 100%;
-      float: left;  
-      }
-.Perfil{
- float: left;
- width: 60%;
- height: 100%;
- padding-left: 1rem;
- padding-right: 1rem;
-}
-/** aqui unjamos dos selecectores haciendo que solo afecte el elemente h4 que este en la clase perfil modifcacndo sus margentes o el espacio entre titulos **/
-.Perfil h4,h5{
-    margin-top: 0.10rem;
-    margin-bottom: 0.10rem;
-}
-.perfil header{
- height: 25%;
- overflow: auto;
-}
-.perfil main{
-    height: 10%;
-    overflow:hidden;
-}
-.perfil footer{
-    height: 65%;
-    overflow:auto;
-}
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: burlywood;
+        }
 
-  .clear{
-      clear: both;
-  }
-  .derecha{
-      text-align: right;
-  }
+        .centrado {
+            text-align: center;
+        }
 
+        * {
+            box-sizing: border-box;
+        }
 
+        .Tarjeta {
+            width: 25rem;
+            height: 15rem;
+            border: 2px solid black;
+            border-radius: 0.5em;
+            display: inline-block;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 0.5rem 0rem 0rem 0.5rem;
+        }
+
+        .imagen {
+            width: 40%;
+            height: 100%;
+            float: left;
+        }
+
+        .Perfil {
+            float: left;
+            width: 60%;
+            height: 100%;
+            padding-left: 1rem;
+           padding-right: 0.3rem;
+        }
+
+        /** aqui unjamos dos selecectores haciendo que solo afecte el elemente h4 que este en la clase perfil modifcacndo sus margentes o el espacio entre titulos **/
+        .Perfil h4,
+        .Perfil h5 {
+            color: black;
+            margin-top: 0.3rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .Perfil header {
+            height: 25%;
+            overflow: auto;
+        }
+
+        .Perfil main {
+            height: 10%;
+            overflow: hidden;
+        }
+
+        .Perfil footer {
+            height: 65%;
+            overflow: auto;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .derecha {
+            text-align: right;
+        }
     </style>
 </head>
+
 <body>
     <header>
-     <h1 class="centrado">Cumpleaños</h1>
+        <h1 class="centrado">Cumpleaños</h1>
     </header>
     <hr>
     <main>
@@ -80,22 +93,133 @@
             <h1> Cumpleaños de los maestros</h1>
             <hr>
             <div class="Tarjeta">
-              <section class="imagen">
-               <img src="Imagenes/Usuario.png"/>
-              </section>
-              <section class="Perfil">
-               <header> <h4 class="centrado"> Martin del Campo</h4></header>
-               <main> <h5 class="derecha">14 de abril 1995</h5></main>
-               <footer >
-                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusantium amet omnis, id quae esse doloribus distinctio nam voluptate numquam mollitia quia quam eius dolore consequatur nesciunt alias temporibus est!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsam excepturi nisi consectetur libero quidem explicabo accusamus cum debitis sunt voluptates facilis asperiores laboriosam officiis repudiandae ducimus vel, non officia.
-                </p>
-                
-               </footer>
-              </section>
-              <div class="clear"></div>
+                <section class="imagen">
+                    <img src="Imagenes/Usuario.png" />
+                </section>
+                <section class="Perfil">
+                    <header>
+                        <h4 class="centrado"> Martin del Campo</h4>
+                    </header>
+                    <main>
+                        <h5 class="derecha">14 de abril 1995</h5>
+                    </main>
+                    <footer>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusantium amet omnis, id quae
+                            esse doloribus distinctio nam voluptate numquam mollitia quia quam eius dolore consequatur
+                            nesciunt alias temporibus est!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsam excepturi nisi
+                            consectetur libero quidem explicabo accusamus cum debitis sunt voluptates facilis asperiores
+                            laboriosam officiis repudiandae ducimus vel, non officia.
+                        </p>
+
+                    </footer>
+                </section>
+                <div class="clear"></div>
             </div>
+            <div class="Tarjeta">
+                <section class="imagen">
+                    <img src="Imagenes/Usuario.png" />
+                </section>
+                <section class="Perfil">
+                    <header>
+                        <h4 class="centrado"> Saul capibara</h4>
+                    </header>
+                    <main>
+                        <h5 class="derecha">10 de Octubre 1995</h5>
+                    </main>
+                    <footer>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusantium amet omnis, id quae
+                            esse doloribus distinctio nam voluptate numquam mollitia quia quam eius dolore consequatur
+                            nesciunt alias temporibus est!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsam excepturi nisi
+                            consectetur libero quidem explicabo accusamus cum debitis sunt voluptates facilis asperiores
+                            laboriosam officiis repudiandae ducimus vel, non officia.
+                        </p>
+
+                    </footer>
+                </section>
+                <div class="clear"></div>
+            </div>
+            <div class="Tarjeta">
+                <section class="imagen">
+                    <img src="Imagenes/Usuario.png" />
+                </section>
+                <section class="Perfil">
+                    <header>
+                        <h4 class="centrado"> Luis robledo</h4>
+                    </header>
+                    <main>
+                        <h5 class="derecha">2 de septiembre del 1994</h5>
+                    </main>
+                    <footer>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusantium amet omnis, id quae
+                            esse doloribus distinctio nam voluptate numquam mollitia quia quam eius dolore consequatur
+                            nesciunt alias temporibus est!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsam excepturi nisi
+                            consectetur libero quidem explicabo accusamus cum debitis sunt voluptates facilis asperiores
+                            laboriosam officiis repudiandae ducimus vel, non officia.
+                        </p>
+
+                    </footer>
+                </section>
+                <div class="clear"></div>
+            </div>
+            <div class="Tarjeta">
+                <section class="imagen">
+                    <img src="Imagenes/Usuario.png" />
+                </section>
+                <section class="Perfil">
+                    <header>
+                        <h4 class="centrado"> Emanuel</h4>
+                    </header>
+                    <main>
+                        <h5 class="derecha">29 de octubre 19993</h5>
+                    </main>
+                    <footer>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusantium amet omnis, id quae
+                            esse doloribus distinctio nam voluptate numquam mollitia quia quam eius dolore consequatur
+                            nesciunt alias temporibus est!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsam excepturi nisi
+                            consectetur libero quidem explicabo accusamus cum debitis sunt voluptates facilis asperiores
+                            laboriosam officiis repudiandae ducimus vel, non officia.
+                        </p>
+
+                    </footer>
+                </section>
+                <div class="clear"></div>
+            </div>
+            <div class="Tarjeta">
+                <section class="imagen">
+                    <img src="Imagenes/Usuario.png" />
+                </section>
+                <section class="Perfil">
+                    <header>
+                        <h4 class="centrado"> julio coronado</h4>
+                    </header>
+                    <main>
+                        <h5 class="derecha">14 de abril 1995</h5>
+                    </main>
+                    <footer>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusantium amet omnis, id quae
+                            esse doloribus distinctio nam voluptate numquam mollitia quia quam eius dolore consequatur
+                            nesciunt alias temporibus est!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsam excepturi nisi
+                            consectetur libero quidem explicabo accusamus cum debitis sunt voluptates facilis asperiores
+                            laboriosam officiis repudiandae ducimus vel, non officia.
+                        </p>
+
+                    </footer>
+                </section>
+                <div class="clear"></div>
+            </div>
+            </div>
+          
+
         </article>
 
     </main>
@@ -103,4 +227,5 @@
 
     </footer>
 </body>
+
 </html>
