@@ -80,6 +80,11 @@ html, body
     color: white;
 }
 
+.chess-board
+{
+    margin: 0% 30%;
+}
+
 .row
 {
    display: block; 
@@ -89,7 +94,6 @@ html, body
 {
     width:  5vw;
     height: 5vw;
-    display: inline-block;
     margin: 0;
     float: left;
 }
