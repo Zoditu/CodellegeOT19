@@ -80,9 +80,40 @@ html, body
     color: white;
 }
 
-.square
+.chess
 {
-    margin-top: 10px;
-    border: 1px solid black;
-    min-height: 20px;
+    width: 5vw;
+    height: 5vw;
+    display: inline-block;
+    margin: 0;
+    float: left;
+}
+
+.chess-white
+{
+    background-color: #f5f5dc;
+    transition: transform 0.7s ease;
+}
+
+.chess-white:hover
+{
+    background-color: #c7c7b2;
+    transform: scale(1.2);
+}
+
+.chess-black
+{
+    background-color: #6d3a26;
+    transition: transform 0.7s ease;
+}
+
+.chess-black:hover
+{
+    background-color: #442418;
+    transform: scale(1.2); 
+}
+
+#chess
+{
+    overflow: hidden;
 }
