@@ -1,68 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        html, body
+        *
+        {
+            box-sizing: border-box;
+        }
+
+        .centrado
+        {
+            text-align: center;
+        }
+
+        .tarjeta
+        {
+            width: 30rem;
+            height: 15rem;
+            border: 0.2rem solid dimgray;
+            border-radius: 1rem;
+
+            display: inline-block;
+        }
+
+        .profile-picture
+        {
+            width: 40%;
+            height: 100%;
+            float: left;
+        }
+
+        .profile-info
+        {
+            width: 60%;
+            height: 100%;
+            float: left;
+
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+
+        .Clear
+        {
+            clear: both;
+        }
+
+        img
         {
             width: 100%;
             height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        
-        h1.title
-        {
-            color: yellow; 
-            background: green;
+            border-radius: 0.5rem 0rem 0rem 0.5rem;
         }
 
-        .title
+        .profile-info h4, .profile-info h5
         {
-            color: purple;
-            text-decoration: underline;
+            color: dimgray;
+            margin-top: 0.3rem;
+            margin-bottom: 0.3rem;
         }
 
-        h2, h3
+        .derecha
         {
-            color: blue;
+            text-align: right;
         }
 
-        h4
+        .profile-info header
         {
-            color: green;
+            height: 25%;
+            overflow: auto;
         }
 
-        #codellege
+        .profile-info main
         {
-            background: red;
+            height: 10%;
+            overflow: hidden;
         }
 
-        h1.titulo
+        .profile-info footer
         {
-            color: rgb(80, 80, 80);
-            border-bottom: 1px solid dimgray;
-            font-size: 18px;
-            padding-left: 3px;
-        }
-
-        .tituloAndrew
-        {
-            color: darksalmon !important;
+            height: 65%;
+            overflow: auto;
         }
 
     </style>
 </head>
 <body>
-    <h1 class="titulo tituloAndrew">Kevin</h1>
-    <h2>Martin</h2>
-    <h3 class="title">Del Campo</h3>
-    <h4>Fernández</h4>
-    <h4 id="codellege">Codellege</h4>
-    <h1 class="titulo">Hola!</h1>
+    <header>
+        <h1 class="centrado">CUMPLEAÑOS</h1>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h1>Cumpleaños Maestros:</h1>
+            <article>
+                <div class="tarjeta">
+                    <section class="profile-picture">
+                        <img src="dog.jpg" />
+                    </section>
+                    <section class="profile-info">
+                        <header>
+                            <h4 class="centrado">Kevin Martin del Campo</h4>
+                        </header>
+                        <main>
+                            <h5 class="derecha">14 Abril 1995</h5>
+                        </main>
+                        <footer>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusantium amet omnis, id quae esse doloribus distinctio nam voluptate numquam mollitia quia quam eius dolore consequatur nesciunt alias temporibus est!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsam excepturi nisi consectetur libero quidem explicabo accusamus cum debitis sunt voluptates facilis asperiores laboriosam officiis repudiandae ducimus vel, non officia.
+                            </p>
+                        </footer>
+                    </section>
+                    <div class="Clear"></div>
+                </div>
+
+                <div class="tarjeta">
+                    <section class="profile-picture">
+                        <img src="dog.jpg" />
+                    </section>
+                    <section class="profile-info">
+                        <header>
+                            <h4 class="centrado">Kevin Martin del Campo</h4>
+                        </header>
+                        <main>
+                            <h5 class="derecha">14 Abril 1995</h5>
+                        </main>
+                        <footer>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusantium amet omnis, id quae esse doloribus distinctio nam voluptate numquam mollitia quia quam eius dolore consequatur nesciunt alias temporibus est!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsam excepturi nisi consectetur libero quidem explicabo accusamus cum debitis sunt voluptates facilis asperiores laboriosam officiis repudiandae ducimus vel, non officia.
+                            </p>
+                        </footer>
+                    </section>
+                    <div class="Clear"></div>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <h1>Cumpleaños Alumnos:</h1>
+            <article>
+                <div class="tarjeta">
+                    <section class="profile-picture">
+                        <img src="dog.jpg" />
+                    </section>
+                    <section class="profile-info">
+                        <header>
+                            <h4 class="centrado">Kevin Martin del Campo</h4>
+                        </header>
+                        <main>
+                            <h5 class="derecha">14 Abril 1995</h5>
+                        </main>
+                        <footer>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusantium amet omnis, id quae esse doloribus distinctio nam voluptate numquam mollitia quia quam eius dolore consequatur nesciunt alias temporibus est!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsam excepturi nisi consectetur libero quidem explicabo accusamus cum debitis sunt voluptates facilis asperiores laboriosam officiis repudiandae ducimus vel, non officia.
+                            </p>
+                        </footer>
+                    </section>
+                    <div class="Clear"></div>
+                </div>
+
+                <div class="tarjeta">
+                    <section class="profile-picture">
+                        <img src="dog.jpg" />
+                    </section>
+                    <section class="profile-info">
+                        <header>
+                            <h4 class="centrado">Kevin Martin del Campo</h4>
+                        </header>
+                        <main>
+                            <h5 class="derecha">14 Abril 1995</h5>
+                        </main>
+                        <footer>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusantium amet omnis, id quae esse doloribus distinctio nam voluptate numquam mollitia quia quam eius dolore consequatur nesciunt alias temporibus est!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsam excepturi nisi consectetur libero quidem explicabo accusamus cum debitis sunt voluptates facilis asperiores laboriosam officiis repudiandae ducimus vel, non officia.
+                            </p>
+                        </footer>
+                    </section>
+                    <div class="Clear"></div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer></footer>
 </body>
 </html>
