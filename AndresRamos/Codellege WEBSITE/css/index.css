@@ -58,26 +58,20 @@ html, body
     padding: 0; 
     margin: 0; 
     width: 100%;
+    text-align: center;
 }
 
-.title h1
+
+.student-list
 {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin: 0;
-    text-align: center
+    overflow: hidden;
+    width: 100%;
+
 }
-.student ul 
+
+.student-img
 {
-    margin: 0; 
-    padding: 0;
-}
-.student ul li
-{
-    margin: 0;
-    padding: 0% 10%;
-    display: inline-block;
-    color: white;
+    float: left;
 }
 
 .chess-board
