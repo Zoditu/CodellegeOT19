@@ -7,106 +7,538 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            padding: 0;
-            margin: 0;
-            overflow: hidden;
-        }
-
         * {
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-            /* para que sea negrita*/
-            /* text-decoration: underline;  para el subrayado*/
+        p {
+            text-align: justify;
+        }
+
+        .header-principal {
+            height: 4rem;
+            background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
         }
 
         /*Styles de los elementos*/
-        .header-principal {
-            background: gray;
-            height: 4em;
+
+        .centrado {
             text-align: center;
         }
 
+        .derecha {
+            text-align: right;
+        }
+
         .card-b {
-            width: 30vw;
-            height: 10vw;
-            float: left;
+            margin: 0.2%;
+            width: 27rem;
+            height: 15rem;
+
             border: 1px solid black;
+            border-radius: 1rem;
+            display: inline-block;
+        }
+
+        .info-prof h4,
+        .info-prof h6 {
+            color: #000;
+            margin-top: 0.3rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .info-pic {
+            width: 35%;
+            height: 100%;
+            background: #696969;
+            border-radius: 1rem 0rem 0rem 1rem;
+
+            float: left;
+        }
+
+        .info-prof {
+            width: 65%;
+            height: 100%;
+            background: #5D92E8;
+            border-radius: 0rem 1rem 1rem 0rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            float: left;
+        }
+
+        .info-prof-teach {
+            background: #66FFFE;
+        }
+
+        img {
+            width: 90%;
+            height: 90%;
+            display: block;
+            margin: auto;
+        }
+
+        /*Estilos especificos*/
+        .info-prof header {
+            height: 25%;
+            overflow: auto;
+        }
+
+        .info-prof main {
+            height: 10%;
             overflow: hidden;
+
         }
 
-        .redondeo {
-            border-radius: 100px;
+        .info-prof footer {
+            height: 65%;
+            overflow: auto;
         }
 
-        .left {
-            width: 25%;
-            height: 100%;
-            float: left;
-            border: 1px solid black;
-        }
-
-        .right {
-            width: 75%;
-            height: 100%;
-                
-            border: 1px solid black;
+        .clear {
+            clear: both;
         }
     </style>
 </head>
 
 <body>
-    <!-- header -->
-    <header class="header-principal">
-        <h1>
-            Cumpleaños
-        </h1>
+    <!-- < !-- header -->
+    <header class="header-principal centrado">
+        <h1>Cumpleaños </h1>
     </header>
-
-    <!-- main -->
+    <!-- < !-- main -->
     <main>
-
-        <!-- seccion1 -->
         <section>
-            <article>
-                <header></header>
-                <main>
 
-                    <!-- primer tarjeta -->
-                    <div class="card-b" id="tarjeta">
-                        <div  style="border: 1px solid black;" class="left">
-                        </div>
+            <header>
+                <h2>Student's birthday</h2>
+            </header>
 
-                        <div  style="border: 1px solid black;" class="rigth">
-                            <header>
-                                <h1 style="text-align: center"> Javier Anguiano de Lara </h1>
-                            </header>
+            <!-- Itzel -->
+            <div class="card-b">
+                <section class="info-pic"></section>
+                <section class="info-prof">
+                    <header class="centrado">
+                        <h4>Itzel Anahi Alonso Garcia </h4>
+                    </header>
+                    <main class="derecha">7 Febrero 1997 </main>
+                    <footer>
+                        <h6>Hobbies:
+                            <hr>
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Rem quae a quo neque perferendis,
+                            reiciendis qui,
+                            officia aut numquam,
+                            alias modi soluta earum voluptatum expedita est doloribus consequuntur quibusdam
+                            odit !</p>
+                    </footer>
+                </section>
+                <div class="clear"></div>
+            </div>
+            <!-- Lily -->
+            <div class="card-b">
+                <section class="info-pic"></section>
+                <section class="info-prof">
+                    <header class="centrado">
+                        <h4>Liliana Sarahi Hernandez Gzz </h4>
+                    </header>
+                    <main class="derecha">16 Septiembre 1999 </main>
+                    <footer>
+                        <h6>Hobbies:
+                            <hr>
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Rem quae a quo neque perferendis,
+                            reiciendis qui,
+                            officia aut numquam,
+                            alias modi soluta earum voluptatum expedita est doloribus consequuntur quibusdam
+                            odit !</p>
+                    </footer>
+                </section>
+                <div class="clear"></div>
+            </div>
+            <!-- Aldo -->
+            <div class="card-b">
+                <section class="info-pic"></section>
+                <section class="info-prof">
+                    <header class="centrado">
+                        <h4> Aldo "Veracru" </h4>
+                    </header>
+                    <main class="derecha">19 Octubr YYYY </main>
+                    <footer>
+                        <h6>Hobbies:
+                            <hr>
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Rem quae a quo neque perferendis,
+                            reiciendis qui,
+                            officia aut numquam,
+                            alias modi soluta earum voluptatum expedita est doloribus consequuntur quibusdam
+                            odit !</p>
+                    </footer>
+                </section>
+                <div class="clear"></div>
+            </div>
+            <!-- Aaron -->
+            <div class="card-b">
+                <section class="info-pic"></section>
+                <section class="info-prof">
+                    <header class="centrado">
+                        <h4> Aaron Nadal </h4>
+                    </header>
+                    <main class="derecha">23 enero 1999 </main>
+                    <footer>
+                        <h6>Hobbies:
+                            <hr>
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Rem quae a quo neque perferendis,
+                            reiciendis qui,
+                            officia aut numquam,
+                            alias modi soluta earum voluptatum expedita est doloribus consequuntur quibusdam
+                            odit !</p>
+                    </footer>
+                </section>
+                <div class="clear"></div>
+            </div>
+            <!-- Karla -->
+            <div class="card-b">
+                <section class="info-pic"></section>
+                <section class="info-prof">
+                    <header class="centrado">
+                        <h4> Karla Josefina Gzz Hernandez </h4>
+                    </header>
+                    <main class="derecha">3 noviembre 1998 </main>
+                    <footer>
+                        <h6>Hobbies:
+                            <hr>
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Rem quae a quo neque perferendis,
+                            reiciendis qui,
+                            officia aut numquam,
+                            alias modi soluta earum voluptatum expedita est doloribus consequuntur quibusdam
+                            odit !</p>
+                    </footer>
+                </section>
+                <div class="clear"></div>
+            </div>
+            <!-- Natali -->
+            <div class="card-b">
+                <section class="info-pic"></section>
+                <section class="info-prof">
+                    <header class="centrado">
+                        <h4> Natali Van Gogh </h4>
+                    </header>
+                    <main class="derecha">7 junio 1996 </main>
+                    <footer>
+                        <h6>Hobbies:
+                            <hr>
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Rem quae a quo neque perferendis,
+                            reiciendis qui,
+                            officia aut numquam,
+                            alias modi soluta earum voluptatum expedita est doloribus consequuntur quibusdam
+                            odit !</p>
+                    </footer>
+                </section>
+                <div class="clear"></div>
+            </div>
+            <!-- Colombia -->
+            <div class="card-b">
+                <section class="info-pic"></section>
+                <section class="info-prof">
+                    <header class="centrado">
+                        <h4>Andy Colombia </h4>
+                    </header>
+                    <main class="derecha">desconocida </main>
+                    <footer>
+                        <h6>Hobbies:
+                            <hr>
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Rem quae a quo neque perferendis,
+                            reiciendis qui,
+                            officia aut numquam,
+                            alias modi soluta earum voluptatum expedita est doloribus consequuntur quibusdam
+                            odit !</p>
+                    </footer>
+                </section>
+                <div class="clear"></div>
+            </div>
+            <!-- Ricardo -->
+            <div class="card-b">
+                <section class="info-pic"></section>
+                <section class="info-prof">
+                    <header class="centrado">
+                        <h4> Ricardo Parker </h4>
+                    </header>
+                    <main class="derecha"> 17 octubre YYYY </main>
+                    <footer>
+                        <h6>Hobbies:
+                            <hr>
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Rem quae a quo neque perferendis,
+                            reiciendis qui,
+                            officia aut numquam,
+                            alias modi soluta earum voluptatum expedita est doloribus consequuntur quibusdam
+                            odit !</p>
+                    </footer>
+                </section>
+                <div class="clear"></div>
+            </div>
+            <!-- Sho -->
+            <div class="card-b">
+                <section class="info-pic">
+                    <img src="img/heroes/spiderman.svg" alt="">
+                </section>
+                <section class="info-prof">
+                    <header class="centrado">
+                        <h4>Javier Anguiano de Lara </h4>
+                        <h6>Spidey</h6>
+                    </header>
+                    <main class="derecha">22 mayo 1998 </main>
+                    <footer>
+                        <h6>Hobbies:
+                            <hr>
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Rem quae a quo neque perferendis,
+                            reiciendis qui,
+                            officia aut numquam,
+                            alias modi soluta earum voluptatum expedita est doloribus consequuntur quibusdam
+                            odit !</p>
+                    </footer>
+                </section>
+                <div class="clear"></div>
+            </div>
+            <!-- Charle -->
+            <div class="card-b">
+                <section class="info-pic"></section>
+                <section class="info-prof">
+                    <header class="centrado">
+                        <h4> Charles "Piernas Locas" </h4>
+                    </header>
+                    <main class="derecha">25 abril 1997 </main>
+                    <footer>
+                        <h6>Hobbies:
+                            <hr>
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Rem quae a quo neque perferendis,
+                            reiciendis qui,
+                            officia aut numquam,
+                            alias modi soluta earum voluptatum expedita est doloribus consequuntur quibusdam
+                            odit !</p>
+                    </footer>
+                </section>
+                <div class="clear"></div>
+            </div>
+            <!-- Andrew -->
+            <div class="card-b">
+                <section class="info-pic"></section>
+                <section class="info-prof">
+                    <header class="centrado">
+                        <h4>Andrew Romeo </h4>
+                    </header>
+                    <main class="derecha">18 noviembre 1999 </main>
+                    <footer>
+                        <h6>Hobbies:
+                            <hr>
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Rem quae a quo neque perferendis,
+                            reiciendis qui,
+                            officia aut numquam,
+                            alias modi soluta earum voluptatum expedita est doloribus consequuntur quibusdam
+                            odit !</p>
+                    </footer>
+                </section>
+                <div class="clear"></div>
+            </div>
+            <!-- Miriam -->
+            <div class="card-b">
+                <section class="info-pic"></section>
+                <section class="info-prof">
+                    <header class="centrado">
+                        <h4> Miriam </h4>
+                    </header>
+                    <main class="derecha"> desconocida </main>
+                    <footer>
+                        <h6>Hobbies:
+                            <hr>
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Rem quae a quo neque perferendis,
+                            reiciendis qui,
+                            officia aut numquam,
+                            alias modi soluta earum voluptatum expedita est doloribus consequuntur quibusdam
+                            odit !</p>
+                    </footer>
+                </section>
+                <div class="clear"></div>
+            </div>
 
-                            <main>
-                                <h4 style="text-align: rigth"> 22 mayo 1998</h4>
-                                <h4 style="text-align: left"> Hobbies</h4>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas neque voluptate dicta animi rem aut ad optio tempora tempore. Dolorum perspiciatis incidunt ducimus quia! Neque possimus aliquid fuga voluptatem illo.</p>
-                            </main>
-                        </div>
-                    </div>
-
-
-
-
-                </main>
-            </article>
         </section>
-
-        <!-- seccion2 -->
         <section>
-            <article>
-                <header></header>
-                <main></main>
-            </article>
+            <header>
+                <h2>Teacher's birthday</h2>
+            </header>
+            <!-- tarjetas -->
+            <main>
+                <!-- Emmanuel -->
+                <div class="card-b">
+                    <section class="info-pic">
+                        <img src="img/heroes/batman.svg" alt="batman">
+                    </section>
+                    <section class="info-prof info-prof-teach">
+                        <header class="centrado">
+                            <h4>Emmanuel Wayne </h4>
+                            <h6>Batman</h6>
+
+                        </header>
+                        <main class="derecha">29 octubre 1993</main>
+                        <footer>
+                            <h6>Hobbies:
+                                <hr>
+                            </h6>
+                            <p>Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Rem quae a quo neque perferendis,
+                                reiciendis qui,
+                                officia aut numquam,
+                                alias modi soluta earum voluptatum expedita est doloribus consequuntur quibusdam
+                                odit !</p>
+                        </footer>
+                    </section>
+                    <div class="clear"></div>
+                </div>
+                <!-- Kevin -->
+                <div class="card-b">
+                    <section class="info-pic">
+                        <img src="img/heroes/fox.svg" alt="">
+                    </section>
+                    <section class="info-prof info-prof-teach">
+                        <header class="centrado">
+                            <h4> Kevin </h4>
+                            <h6>Zorritu Zorritu Zorritu</h6>
+                        </header>
+                        <main class="derecha">14 abril 1995 </main>
+                        <footer>
+                            <h6>Hobbies:
+                                <hr>
+                            </h6>
+                            <p>Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Rem quae a quo neque perferendis,
+                                reiciendis qui,
+                                officia aut numquam,
+                                alias modi soluta earum voluptatum expedita est doloribus consequuntur quibusdam
+                                odit !</p>
+                        </footer>
+                    </section>
+                    <div class="clear"></div>
+                </div>
+                <!-- Capibara -->
+                <div class="card-b">
+                    <section class="info-pic">
+                        <img src="img/heroes/capybara.svg" alt="">
+                    </section>
+                    <section class="info-prof info-prof-teach">
+                        <header class="centrado">
+                            <h4> Capibara </h4>
+                        </header>
+                        <main class="derecha">18 octubre 1995 </main>
+                        <footer>
+                            <h6>Hobbies:
+                                <hr>
+                            </h6>
+                            <p>Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Rem quae a quo neque perferendis,
+                                reiciendis qui,
+                                officia aut numquam,
+                                alias modi soluta earum voluptatum expedita est doloribus consequuntur quibusdam
+                                odit !</p>
+                        </footer>
+                    </section>
+                    <div class="clear"></div>
+                </div>
+                <!-- Yulis -->
+                <div class="card-b">
+                    <section class="info-pic"> 
+                        <img src="img/heroes/dawn.svg" alt="">
+                    </section>
+                    <section class="info-prof info-prof-teach">
+                        <header class="centrado">
+                            <h4>Julio Coronado </h4>
+                            <h6>Good Moorning</h6>
+                        </header>
+                        <main class="derecha"> Todos los años </main>
+                        <footer>
+                            <h6>Hobbies:
+                                <hr>
+                            </h6>
+                            <p>Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Rem quae a quo neque perferendis,
+                                reiciendis qui,
+                                officia aut numquam,
+                                alias modi soluta earum voluptatum expedita est doloribus consequuntur quibusdam
+                                odit !</p>
+                        </footer>
+                    </section>
+                    <div class="clear"></div>
+                </div>
+                <!-- Luis -->
+                <div class="card-b">
+                    <section class="info-pic">
+                        <img src="img/heroes/unknown.svg" alt="">
+                    </section>
+                    <section class="info-prof info-prof-teach">
+                        <header class="centrado">
+                            <h4> Luis Robledo </h4>
+                        </header>
+                        <main class="derecha"> 2 septiembre 1994 </main>
+                        <footer>
+                            <h6>Hobbies:
+                                <hr>
+                            </h6>
+                            <p>Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Rem quae a quo neque perferendis,
+                                reiciendis qui,
+                                officia aut numquam,
+                                alias modi soluta earum voluptatum expedita est doloribus consequuntur quibusdam
+                                odit !</p>
+                        </footer>
+                    </section>
+                    <div class="clear"></div>
+                </div>
+                <!-- Pato -->
+                <div class="card-b">
+                        <section class="info-pic">
+                            <img src="img/heroes/duck.svg" alt="">
+                        </section>
+                        <section class="info-prof info-prof-teach">
+                            <header class="centrado">
+                                <h4> Patrizzio </h4>
+                            </header>
+                            <main class="derecha">desconocida</main>
+                            <footer>
+                                <h6>Hobbies:
+                                    <hr>
+                                </h6>
+                                <p>Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Rem quae a quo neque perferendis,
+                                    reiciendis qui,
+                                    officia aut numquam,
+                                    alias modi soluta earum voluptatum expedita est doloribus consequuntur quibusdam
+                                    odit !</p>
+                            </footer>
+                        </section>
+                        <div class="clear"></div>
+                    </div>
+            </main>
         </section>
     </main>
 </body>
