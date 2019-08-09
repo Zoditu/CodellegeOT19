@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarjeta de Presentacion</title>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .card-b {
+            margin: 0.2%;
+            width: 40rem;
+            height: 25rem;
+
+            border: 1px solid black;
+            border-radius: 1rem;
+            display: block;
+            margin: auto;
+        }
+
+        .p-img {
+            height: 85%;
+            width: 35%;
+            background: #696969;
+            float: left;
+
+            border-radius: 1rem 0rem 0rem 0rem;
+        }
+
+        .p-info {
+            height: 85%;
+            width: 65%;
+            background: #5D92E8;
+            float: left;
+
+            border-radius: 0rem 1rem 0rem 0rem;
+        }
+
+        .p-redes {
+            padding-top: 1%;
+            height: 15%;
+            width: 100%;
+            background: #66FFFE;
+            float: left;
+
+            border-radius: 0rem 0rem 1rem 1rem;
+        }
+
+        img {
+            width: 90%;
+            height: 90%;
+            display: block;
+            margin: auto;
+        }
+
+        .p-redes img {
+            display: inline-block;
+            margin-left: 3rem; 
+               
+            width: 2.5em;
+            height: 2.5rem;
+        }
+
+        .p-info header{
+            width: 100%;
+            height: 15%;
+            text-align: center;
+        }
+        .p-info main{
+            width: 100%;
+            height: 15%;
+
+            padding-left: 1rem;
+        }
+        .p-info footer{
+            width: 100%;
+            height: 70;
+            padding: 1rem;
+            text-align: justify;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+
+        <article class="card-b">
+            <section class="p-img">
+                <img src="img/heroes/spiderman.svg" alt="">
+            </section>
+            <section class="p-info">
+                <header id="nombre">
+                    <h2>Javier Anguiano de Lara</h2>
+                </header>
+                <main>
+                    <p>
+                        <strong>Edad:</strong> 21 años <br>
+                        <strong>Ciudad:</strong> Guadalupe, NL.
+                    </p>
+                </main>
+                <hr>
+                <footer>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sed dolorem illum praesentium. Ad, sint nemo! Nisi porro debitis iure ipsam veritatis nihil accusamus tempora alias, eum natus repellendus pariatur!</p>
+                </footer>
+            </section>
+            <section class="p-redes" style="text-align: center;">
+                <main>
+                    <a href="https://www.instagram.com/javo_anguiano/" target="_blank"><img src="img/r-sociales/facebook.svg"></a>
+
+                    <a href="https://www.instagram.com/javo_anguiano/" target="_blank"><img src="img/r-sociales/instagram.svg"></a> 
+
+                    <a href="https://twitter.com/iniciarsesion?lang=es" target="_blank"><img src="img/r-sociales/twitter.svg">
+                </main>
+            </section>
+        </article>
+
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>
