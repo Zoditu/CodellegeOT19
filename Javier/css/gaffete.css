@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace
+}
+
+main h3, #gaffete{
+    text-align: center;
+    margin: auto;
+    margin-top: 1%;
+}
+
+#gaffete{
+    height: 30rem;
+    width: 20rem;
+    border: 1px solid black;
+    border-radius: 25px; 
+    display: inline-block;
+
+}
+
+.softtek{
+    padding-top: 1rem; 
+    height: 20%;
+    background: #000;
+    border-radius: 25px 25px 0px 0px; 
+}
+
+#logo-sof{
+    margin-top: 3rem; 
+    height: 60%;
+    width: 50%;
+}
+
+.info-p img{
+    padding-top: 10%;
+    width: 50%;
+    height: 85%;
+}
+
+.info-p .nombre{
+    height: auto;
+    background: green;
+}
+
+#entrada{
+    
+    margin: auto;
+    border-radius: 1.5rem;
+    
+    width: 45%;
+    height: 10%;
+    background: #fff;
+}
+
+.info-p{
+    height: 65%;
+    background: #000;   
+}
+
+.code{
+    height: 15%;
+    background: #000;
+    border-radius: 0px 0px 25px 25px;
+}
+
+#logo-codellege{
+    margin-top: 0.5rem;
+    height: 65%;
+}
