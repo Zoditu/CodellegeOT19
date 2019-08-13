@@ -1,0 +1,51 @@
+html,body
+{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.square
+{
+    width: 10rem;
+    height: 10rem;
+    position: fixed;
+    transition: 2s top ease;
+    transition: 2s bottom ease;
+    transition: 2s left ease;
+    transition: 2s right ease;
+}
+.square:hover
+{
+
+}
+.small
+{
+    width: 2rem;
+    height: 2rem;
+}
+.top-left
+{
+    background: turquoise;
+    top: 0;
+    left: 0;
+}
+.top-right
+{
+    background: greenyellow;
+    top: 0; 
+    right: 0;
+}
+.bottom-left
+{
+    background: indianred;
+    bottom: 0; 
+    left: 0;
+}
+.bottom-right
+{
+    background: seagreen;
+    bottom: 0;
+    right: 0;
+}
+

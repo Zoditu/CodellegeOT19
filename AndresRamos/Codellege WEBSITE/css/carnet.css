@@ -32,7 +32,7 @@ html, body
 }
 #carnet article header img
 {
-    height:50%;
+    height:60%;
     width: 40%;
 }
 #carnet article main
@@ -42,8 +42,8 @@ html, body
 #carnet article main img
 {
     margin-top: 10%;
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
 }  
 #carnet article footer
 {
@@ -52,8 +52,8 @@ html, body
 #carnet article footer img 
 {
     margin-top: 5%;
-    height: 75%;
-    width: 50%;
+    height: 95%;
+    width: 70%;
 }
 .carnet-hole img
 {
@@ -76,6 +76,14 @@ html, body
 .name
 {
     font-family: 'Segoe UI';
-    font-size: 25px;
+    font-size: 1rem;
+    padding: 0; 
+    margin:0;
+}
+.name-field
+{
+    margin-top: 2%;
+    overflow: hidden;
+    height: 10%;
     background-color: #30f551;
 }
