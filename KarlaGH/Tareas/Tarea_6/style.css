@@ -1,0 +1,89 @@
+html 
+{
+    background: rgba(214, 184, 214, 0.801);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+.contorno
+{
+    width: 15rem;
+    height: 25rem;
+    background:black;
+    border: 0.5rem solid black;
+    border-radius: 1rem;
+    display: inline-block;
+    text-align: center;
+    margin-left: 5rem;
+    margin-top: 1rem;  
+    position: relative;
+    left: 30rem;
+    margin-top: 5rem; 
+}
+
+.redondeado
+{
+    width: 5rem;
+    height: 1rem;
+    display: inline-block; 
+    border: 1px solid black;
+    border-radius: 4rem;
+    background: white;
+}
+
+img
+{
+    margin-top: 0;
+    height: 70%;
+    width: 45%;
+    display: inline-block;
+    padding-top: 1rem;
+}
+
+.logo
+{
+    height: 25%;
+    border-radius: 1rem 1rem 0rem 0rem;
+    text-align: center !important;
+    padding-top: 0.9rem;
+}
+
+.informacion
+{
+height: 55%;
+background: black;  
+}
+
+
+.pie{
+    height: 20%;
+    background:black;
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+p
+{
+    background: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.pie1
+{
+    width: 10rem;
+    height: 2rem;
+}
+
+h1
+         {
+             font-family: 'Courier New', Courier, monospace;
+             color:black;
+             text-align: center;
+         }
