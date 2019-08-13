@@ -1,0 +1,90 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.cuadro {
+    border: 1px solid black;
+    width: 10rem;
+    height: 10rem;
+    display: inline-block;
+}
+
+.red {
+    background-color: red;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.naranja {
+    background-color: orange;
+    left: 2rem;
+    top: 2rem;
+    position: absolute;
+}
+
+.yellow {
+    background-color: rgb(184, 221, 20);
+    left: 4rem;
+    top: 4rem;
+    position: absolute;
+}
+
+.green {
+    background-color: rgb(57, 219, 52);
+    left: 6rem;
+    top: 6rem;
+    position: absolute;
+}
+
+.sky {
+    background-color: rgb(20, 174, 221);
+    left: 8rem;
+    top: 8rem;
+    position: absolute;
+}
+
+.blue {
+    background-color: rgb(7, 36, 163);
+    left: 10rem;
+    top: 10rem;
+    position: absolute;
+}
+
+.purple {
+    background-color: rgb(114, 20, 221);
+    left: 12rem;
+    top: 12rem;
+    position: absolute;
+}
+
+.lavanda
+ {
+    border: 2px solid rgb(156, 91, 231);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: rgb(156, 91, 231);
+    }
+
+.radio
+{
+    left: 1.5rem;
+    top: 2rem;
+    position: absolute;
+}
+
+.circulo2
+{
+    left: 6rem;
+    top: 5.6rem;
+    position: absolute;
+}
+}
+.relativo {
+        position: relative;
+    }
