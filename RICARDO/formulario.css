@@ -1,0 +1,90 @@
+html,body
+{
+width:100%;
+height:100%;
+margin:0;
+padding:0;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+.recuadro
+{
+    display: inline-block;
+    width:25rem;
+    height:30rem;
+    margin-left: 25rem;
+    margin-top:5rem;
+    background-color:rgba(0, 0, 0, 0.089);
+    box-shadow: 5px 5px 0px 2px indianred;
+    
+}
+.P1
+{
+    width:100%;
+    height:15%;
+    display:inline-block;
+}
+.P2
+{
+    width:100%;
+    height:65%;
+    display:inline-block;
+}
+.P3
+{
+    width:100%;
+    height:20%;
+    display:inline-block;
+}
+.Nombre
+{
+    width:60%;
+    height:10%;
+}
+.Contraseña
+{
+    width:60%;
+    height:10%;
+}
+
+.boton
+{
+    width: 45%;
+    height:10%;
+    border-radius:1rem;
+    background-color: rgb(21, 228, 228);
+}
+
+a{
+    text-decoration: none;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.fondo
+{
+    width:100%;
+    height:100%;
+    filter: blur(15px);
+    background-image: url("windows.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.abso
+{
+    position: absolute;
+}
+
+
+
+
+
+
+
