@@ -4,12 +4,12 @@ html, body
     height: 100%;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 *
 {
     box-sizing: border-box;
-    background-color: #353535;    
 }
 
 #landing
@@ -18,15 +18,10 @@ html, body
     padding: 0;
     width: 100%;
     height: 100%;
-    transition: background-color 4s ease;
-    background-color: #cdfdbc;
-
-}
-
-#landing
-{
     background-color: #3C4A37;
+    
 }
+
 #landing h1
 {
     margin: 0;
@@ -35,12 +30,7 @@ html, body
     text-align: center;
     font-family: Grenze, serif;
     font-size: 70px;
-    transition: color 2s ease;
     background-color: transparent;
-}
-
-#landing h1
-{
     color: #ffffff;
 }
 
@@ -53,6 +43,13 @@ html, body
     padding-bottom: 1%; 
 }
 
+.list-content
+{
+    margin:0;
+    padding: 0;
+    width: 100vw; 
+}
+
 .title
 {
     padding: 0; 
@@ -61,17 +58,36 @@ html, body
     text-align: center;
 }
 
-
-.student-list
-{
-    overflow: hidden;
-    width: 100%;
-
-}
-
-.student-img
+.list
 {
     float: left;
+    overflow: hidden;
+    width: 25vw;
+    height: 15vw;
+}
+
+.profile-pic
+{
+    float: left;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.profile-img
+{
+    margin: 0; 
+    padding: 0;
+    width: 100%;
+}
+
+.profile-content
+{
+    float: right;
+    width: 50%;
+    height: 100%;
+    margin: 0; 
+    padding: 0;
 }
 
 .chess-board

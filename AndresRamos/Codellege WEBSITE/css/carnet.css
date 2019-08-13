@@ -1,0 +1,81 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+*
+{
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+}
+#carnet
+{
+    width: 25vw;
+    height: 40vw;
+    margin: 5% 35%;
+
+    background: black;
+    border-radius: 10%;
+}
+#carnet article
+{
+    height: 100%;
+}
+.carnet-hole
+{
+    padding-top: 2%;
+    height: 20%;
+
+}
+#carnet article header img
+{
+    height:50%;
+    width: 50%;
+}
+#carnet article main
+{
+    height: 60%;
+}
+#carnet article main img
+{
+    margin-top: 10%;
+    width: 50%;
+    height: 50%;
+}  
+#carnet article footer
+{
+    height: 10%;
+}
+#carnet article footer img 
+{
+    margin-top: 5%;
+    height: 75%;
+    width: 50%;
+}
+.carnet-hole img
+{
+    margin-top: 5%;
+}
+.hole
+{
+    width: 25%;
+    height: 20%;
+    margin-left: 38%;
+}
+.hole-shape
+{
+    width: 100%;
+    height: 50%;
+    background: #ffffff;
+    margin-top: 20%;
+    border-radius: 20%;
+}
+.name
+{
+    font-family: 'Segoe UI';
+    font-size: 25px;
+    background-color: #30f551;
+}
