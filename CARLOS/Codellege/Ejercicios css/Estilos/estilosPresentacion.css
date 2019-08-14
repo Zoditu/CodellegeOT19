@@ -1,0 +1,90 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+main{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.tarjeta1{
+    width: 30rem;
+    height: 20rem;
+    border: 1px solid black;
+    display: inline-block;
+    background-image: url("../Imagenes/AbstractFondo.jpg");
+    background-size: 100% 100%;
+    padding: 1rem;
+    
+}
+.transparente_contener{
+    background: rgba(150, 136, 136, 0.274);
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem ;
+    position: relative;
+}
+.tarjeta2{
+    margin-top: 1rem;
+    width: 30rem;
+    height: 20rem;
+    border: 1px solid black;
+    display: inline-block; 
+    background-image: url("../Imagenes/AbstractFondo.jpg");
+    background-size: 100% 100%;
+}
+.nombre{
+    font-family:"Lobster";
+    color:whitesmoke;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 1rem;
+}
+.nombre h1, .nombre h4{
+    margin: 0;
+}
+.mapa{
+    font-family:"Lobster";
+    color: whitesmoke;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+ p{
+    margin: 0;
+}
+.correo{
+    font-family:"Lobster";
+    color: whitesmoke;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+.telefono{
+    font-family:"Lobster";
+    color: whitesmoke;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 10rem;
+}
+.name_front{
+    width: 110%;
+    height: 35%;
+    background: rgba(150, 136, 136, 0.274);
+}
+.clear{
+    clear: both;
+}
