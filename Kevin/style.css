@@ -1,0 +1,89 @@
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+#tarjeta
+{
+    width: 50rem;
+    height: 25rem;
+
+    border: 1px solid black;
+}
+
+.profile-picture
+{
+    width: 40%;
+    height: 75%;
+
+    background: url('img/dog.jpg');
+    background-size: 100% 100%;
+    float: left;
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background: url('ruta/imagen'); */
+}
+
+.description
+{
+    width: 60%;
+    height: 75%;
+
+    background: orangered;
+    float: left;
+}
+
+.contact
+{
+    height: 25%;
+    background: brown;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.description h1
+{
+    text-align: center;
+    margin: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.description h5, .description p
+{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.description header
+{
+    height: 15%;
+}
+
+.description main
+{
+    height: 85%;
+    overflow: auto;
+}
+
+.contact
+{
+    text-align: center;
+    margin: auto;
+}
+
+.contact *
+{
+    display: inline-block;
+}
