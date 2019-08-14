@@ -1,0 +1,167 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.tarjeta {
+    border: 2px solid black;
+    width: 25rem;
+    height: 15rem;
+    display: inline-block;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    background-image: url(fondo.jpg);
+    background-size: cover;
+}
+
+.info {
+    box-shadow: 2px 5px 5px;
+    width: 22rem;
+    height: 12.5rem;
+    display: inline-block;
+    margin: 1rem;
+    border-radius: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgba(194, 224, 214, 0.431);
+}
+
+.centrar {
+    text-align: center;
+}
+
+.info header {
+    width: 100%;
+    height: 30%;
+    float: left;
+    overflow: hidden;
+}
+
+.info main {
+    width: 100%;
+    height: 40%;
+    float: left;
+    overflow: hidden;
+}
+
+.info footer {
+    width: 100%;
+    height: 30%;
+    float: left;
+    overflow: hidden;
+
+}
+
+.adress {
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    float: left;
+    font-size: .6rem;
+    margin-top: .1rem;
+}
+
+.email {
+    width: 50%;
+    height: 100%;
+    text-align: right;
+    float: right;
+    font-size: .7rem;
+    margin-top: .2rem;
+    
+}
+
+.blanco
+{
+    color: black;
+}
+.correo {
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+}
+.advice
+{
+    font-size: 3rem;
+}
+.numero {
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.numero {
+    text-align: right;
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+.tarjeta2 {
+    border: 2px solid black;
+    width: 25rem;
+    height: 15rem;
+    display: inline-block;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding-top: 3.3rem;
+    background-image: url(fondo.jpg);
+    background-size: cover;
+
+}
+.relativo
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.absoluto
+{
+    position: absolute;
+}
+.nombre 
+{
+    width: 30rem;
+    height: 8rem;
+    border-radius: 2px;
+    float: left;
+    background-color: rgba(194, 224, 214, 0.431);
+    box-shadow: 2px 5px 5px;
+    right: -40px;
+}
+
+.nombreCompleto {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: .6rem;
+    margin-bottom: 0.5rem;
+}
+
+.carrera {
+    font-size: .9rem;
+    text-align: left;
+    margin-top: .2rem;
+    margin-bottom: 0.3rem;
+}
+
+.nombreComp {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.carrera2 {
+    font-size: .9rem;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+}
