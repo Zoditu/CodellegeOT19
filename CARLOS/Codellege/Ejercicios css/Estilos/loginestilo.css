@@ -1,0 +1,79 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+ main{ 
+ text-align: center; 
+
+}
+
+.Padre{
+    width: 20rem;
+    height: 30rem;
+    border: 1px solid black;
+    display: inline-block;
+    background: rgba(135, 207, 235, 0.295);
+    
+    margin-top: 3%;
+}
+.encabezado{
+    height: 11%;
+}
+.encabezado h1{
+margin: 0;
+font-style: italic;
+font-size: 3rem;
+color: skyblue;
+}
+.login{
+    height: 70%;
+    padding: 3rem;
+}
+.usuario{
+    height: 3rem;
+}
+.contra{
+    height: 3rem;
+    margin-top: 2rem;
+}
+.botonlogin{
+    height: 3rem;
+}
+.fondodepantalla{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-image:  url('../Imagenes/fondo.jpg');
+    background-repeat: no-repeat;
+    filter: blur(5px);
+}
+.login-container{
+    position: relative;
+
+}
+.botonlogin{
+    border-radius: 1rem 1rem 1rem 1rem;
+    background: skyblue;
+    margin-top: 2rem;
+}
+.regresar{
+    height: 19%;
+    display: inline-block;
+    
+}
+.clear{
+    clear: both;
+}
+.regresar a {
+border: 1px solid dimgrey;
+background: dimgrey;
+margin-top: 5rem;
+}
