@@ -1,0 +1,118 @@
+html,body
+{
+width:100%;
+height:100%;
+margin:0;
+padding:0;
+background-color:peru;
+font-family: 'Nanum Myeongjo', serif;
+}
+*
+{
+    box-sizing: border-box;
+}
+.tarjeta
+{
+    width:30rem;
+    height:15rem;
+    display: inline-block;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPa8QjDazD66Lv9Tf0zYbVchRakUceCti01MMNwn7DMBcEXJVR");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 0.1rem solid black;
+}
+.info
+{
+    padding: 1rem;
+    width:28rem;
+    height:13rem;
+    display: inline-block;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(233, 8, 8, 0.781);
+}
+
+.info2
+{ margin-left: -4rem;
+    margin-top:4rem ;
+    width:38rem;
+    height:5rem;
+    display: inline-block;
+    background-color: rgba(233, 8, 8, 0.781);
+    box-shadow: 0px 0px 5px 3px rgb(0, 0, 0); 
+}
+.p1
+{
+    display: inline-block;
+width:100%;
+height:30%;
+}
+.p2
+{
+    display: inline-block;
+    width:100%;
+    height:30%;
+}
+.cel
+{
+    margin-top: 0;
+}
+.p3
+{
+    display: inline-block;
+    width:100%;
+    height:40%;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.izq
+{
+    text-align: left;
+}
+.right
+{
+    text-align:right;
+}
+.dir
+{
+    float: left;
+    height: 100%;
+    width:50%;
+}
+.cont
+{
+    float:left;
+    height: 100%;
+    width:50%;
+}
+
+.name
+{
+margin:0;
+}
+
+.crea
+{
+margin: 0;
+}
+
+.direc
+{
+    margin: 0;  
+}
+.corr
+{
+    margin: 0;
+}
+.wd1
+{
+    margin-bottom: 0;
+}
+.wd
+{
+    margin:0;
+}
