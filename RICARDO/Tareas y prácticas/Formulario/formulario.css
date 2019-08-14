@@ -16,11 +16,10 @@ padding:0;
     display: inline-block;
     width:25rem;
     height:30rem;
-    margin-left: 25rem;
+    margin-left: 30rem;
     margin-top:5rem;
     background-color:rgba(0, 0, 0, 0.089);
-    box-shadow: 5px 5px 0px 2px indianred;
-    
+    box-shadow: 5px 5px 0px 2px indianred;   
 }
 .P1
 {
@@ -61,6 +60,7 @@ padding:0;
 
 a{
     text-decoration: none;
+    color: greenyellow;
 }
 
 .center
@@ -81,7 +81,10 @@ a{
 {
     position: absolute;
 }
-
+h1
+{
+    color: rgb(255, 238, 0);
+}
 
 
 
