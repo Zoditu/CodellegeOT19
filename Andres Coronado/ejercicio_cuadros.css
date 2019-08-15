@@ -1,0 +1,56 @@
+html,body{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.btnrectangular
+{
+    display: inline-block;
+    margin: 20px;
+    width: 15rem;
+    font-size: 2rem;
+    border: 1px solid transparent;
+}
+.btnredondo
+{
+    display: inline-block;
+    margin: 20px;
+    width: 20rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    
+
+}
+
+.btnrectangulargde
+{
+    display: inline-block;
+    margin: 20px;
+    width: 25rem;
+    font-size: 2rem;
+    border: 1px solid transparent;
+}
+
+
+
+.azul
+{
+    background: rgb(0, 98, 255);
+}
+
+.naranja
+{
+    background: rgb(255, 102, 0);
+}
+.gris
+{
+    background: dimgray;
+}

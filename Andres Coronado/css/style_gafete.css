@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+#gafete{
+    width: 20rem;
+    height: 25rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+
+    
+}   
+
+.softtek{
+    height: 25%;
+    background: black;
+    border-radius: 1rem 1rem 0rem 0rem;
+    text-align: center !important; /*usar text-align en nodo padre*/
+
+    padding-top: 0.5rem;
+}
+
+#ranura{
+    width: 5rem;
+    height: 1rem;
+
+    display: inline-block; /*para mantener el centrado*/
+    border: 1px solid black;
+
+    border-radius: 4rem;
+    background: white;
+    
+}
+
+#img-softtek{
+    margin-top: 0;
+    height: 70%;
+    width: 45%;
+    display: inline-block;
+}
+
+.info{
+    height: 60%;
+    background: blue;
+}
+
+.code{
+    height: 15%;
+    background: red;
+    border-radius: 0rem 0rem 1rem 1rem;
+}

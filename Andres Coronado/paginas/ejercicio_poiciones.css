@@ -1,0 +1,102 @@
+html.body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+.cuadro
+{
+    height:10rem ;
+    width: 10rem;
+    display: inline-block;
+}
+
+.top-left1
+{
+    background: red;
+    position: absolute;
+    left: 2rem;
+    top:2rem;
+}
+
+.top-left2
+{
+    background: orange;
+    position: absolute;
+    left: 4rem;
+    top:4rem;
+}
+
+.top-left3
+{
+    background: pink;
+    position: absolute;
+    left: 6rem;
+    top:6rem;
+}
+
+.top-left4
+{
+    background: yellow;
+    position: absolute;
+    left: 8rem;
+    top:8rem;
+}
+
+.top-left5
+{
+    background: lime;
+    position: absolute;
+    left: 10rem;
+    top:10rem;
+}
+
+.top-left6
+{
+    background: skyblue;
+    position: absolute;
+    left: 12rem;
+    top:12rem;
+}
+
+.top-left7
+{
+    background: blue;
+    position: absolute;
+    left: 14rem;
+    top:14rem;
+}
+.top-left8
+{
+    background: purple;
+    position: absolute;
+    left: 16rem;
+    top:16rem;
+}
+
+.balls
+{
+    border: 2rem solid blue;
+    border-radius: 100%;
+}
+
+.top-leftc
+{
+    position: absolute;
+    left: 1rem;
+    top:1rem;
+}
+.top-leftc2
+{
+    position: absolute;
+    right: 1rem;
+    bottom:1rem;
+}
