@@ -1,0 +1,27 @@
+html,body{
+    widows: 100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+*
+{
+    box-sizing: border-box;
+}
+
+.cuadro
+{
+    margin:2rem;
+    width:10rem;
+    height:10rem;
+    float:left;
+    background-color: chartreuse;
+}
+.red
+{
+    background-color: red;
+}
+.blue
+{
+    background-color: blue;
+}
