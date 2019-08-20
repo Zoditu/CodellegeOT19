@@ -1,0 +1,95 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.fondo{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('../img/heroes/batman.svg');
+    filter: blur(20px);
+}
+
+.container-login {
+    width: 20rem;
+    height: 30rem;
+    border: 1px solid black;
+    margin: 0 auto;
+    background: #CFE8DF;
+    border-radius: 1rem;
+}
+
+.titulo {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    /* background: yellow; */
+}
+
+#titulo-cod {}
+
+.form {
+    text-align: center;
+    padding-top: 0.5rem;
+    height: 60%;
+    width: 100%;
+    /* background: skyblue; */
+}
+
+.info-user {
+    font-weight: 400;
+    font-style: italic;
+    padding-left: .5rem;
+    border-radius: 1.5rem;
+    border: 0.5rem solid transparent;
+    opacity: 0.8;
+}
+
+#remember {
+    font-size: 1rem;
+}
+
+.btn-login {
+    margin-top: 1rem;
+    font-size: 24px;
+    background-color: white;
+    border-radius: 1rem;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+.btn-login:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+.interaccion {
+    height: 20%;
+    width: 100%;
+    padding-left: 1rem;
+    padding-left: 1rem;
+    /* background: pink; */
+}
+
+a {
+    font-size: 14px;
+    margin: 10px;
+}

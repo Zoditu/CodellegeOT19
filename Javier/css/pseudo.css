@@ -1,0 +1,59 @@
+button{
+    margin: 1rem;
+    color: white;
+    background: darkblue;
+    border: 0.05rem solid black;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    /* box-shadow: 0 0 1rem 0.1rem black; */
+
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+button:hover{ /*pseudo-clase para cuando se posiciona el cursos sobre el elemento*/
+    background: green;
+    /* width: 100px; */
+    transition: background 0.5s;
+}
+
+button:active{ /*pseudo-clase usada cuando se clickea el elemento*/
+    width: 200px;
+}
+
+input[type=checkbox]:active{ /*Aplica de misma forma con el radio, solo cambias el type a "radio"*/
+    width: 35px;
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+/* a:visited */
+/* *:focus cuando estas enfocado en un elemento o usando el tab */
+
+ul li:first-child{
+    color: greenyellow;
+}
+
+ul li:last-child{
+    color: goldenrod;
+    text-decoration: line-through;
+}
+
+ul li:nth-child(1){
+    color: goldenrod;
+}
+ul li:nth-child(2){
+    color: silver;
+}
+ul li:nth-child(3){
+    color: brown;
+}
+
+p::first-letter{ /*Pseudo elementos*/
+    font-size: 2rem;
+    color: darkred;
+    text-align: justify;
+}

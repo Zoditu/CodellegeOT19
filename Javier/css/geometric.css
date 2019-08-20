@@ -1,0 +1,155 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #212121;
+    font-family: 'Roboto';
+}
+
+*{
+    box-sizing: border-box;
+}
+
+main{
+    text-align: center;
+    padding: 0.5%;
+}
+
+.clear{
+    clear: both;
+}
+
+.card{
+    display: inline-block;
+
+    width: 30rem;
+    height: 18rem;
+    background: url('../img/card/geometric.jpg');
+    background-size: 100% 100%; 
+    padding: 0.5rem;
+
+    margin: 1%;
+    border: 1px solid black;
+    /* z-index: 1; */
+}
+
+/* .division{
+    padding: 1rem;
+} */
+
+.clear{
+    clear: both;
+}
+
+.card-info{
+    border-radius: 0.5rem;
+    height: 100%;
+    width: 100%;
+    background: rgba(114, 114, 114, 0.657);
+}
+
+.card-info header{
+    height: 25%;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    transition: 1.5s color;
+    /* background: pink; */
+}
+
+.card-info main{
+    height: 50%;
+    /* background: skyblue; */
+}
+
+.device{
+    color: white;
+    font-size: 3rem;
+    transition: 1.5s color;
+}
+
+.card-info:hover header{
+    color:darkcyan;
+    transition: 1.5s color;
+}
+.card-info:hover header::first-letter{
+    color:darkred;
+    font-size: 4rem;
+    transition: 1.5s color;
+}
+
+.card-info:hover .i1{
+    color:black;
+    transition: 1.5s color;
+}
+
+.card-info:hover .i2{
+    color:red;
+    transition: 1.5s color;
+}
+
+.card-info:hover .i3{
+    color:skyblue;
+    transition: 1.5s color;
+}
+
+.card-info footer{
+    height: 25%;
+    /* background: rgb(0, 0, 0); */
+}
+
+.izq{
+    height: 100%;
+    width: 50%;
+    float: left;
+    text-align: left;
+    color: white;
+    /* background: green; */
+}
+
+.der{
+    height: 100%;
+    width: 50%;
+    float: left;
+    text-align: right;
+    /* background: yellow; */
+}
+
+/* Second card */
+
+.card-sho{
+    display: inline-block;
+
+    width: 30rem;
+    height: 18rem;
+    background: url('../img/card/geometric.jpg');
+    background-size: 100% 100%; 
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    margin: 1%;
+    border: 1px solid black;
+    z-index: 1;
+    /* transition:  background 1.5s, color 1.5s; */
+}
+
+.sho{
+    border-radius: 0.5rem;
+    height: 100%;
+    width: 100%;
+
+    padding-top: 1.5rem;
+    background: rgba(114, 114, 114, 0.657);
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    transition:  background 1.5s, color 1.5s;
+}
+
+.card-sho:hover .sho{
+    background: rgba(132, 130, 255,0.657);
+    color: #6FE885;
+    font-weight: bold;
+    transition:  background 1.5s, color 1.5s;
+}
