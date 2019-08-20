@@ -108,6 +108,23 @@ main{
     position: absolute;
     filter: blur(30px);
 }
+
+.transparente_contener:hover .icon_direccion{
+    color: red;
+}
+.transparente_contener:hover .i2{
+    color: blue;
+}
+.transparente_contener:hover .i3{
+    color: black;
+}
+.transparente_contener:hover .nombre h1::first-letter{
+    font-size: 2rem;
+    color: goldenrod;
+}
+.transparente_contener:hover .nombre{
+    color: aquamarine;
+}
 .clear{
     clear: both;
 }

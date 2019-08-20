@@ -1,0 +1,73 @@
+button{
+    margin: 1rem;
+    color: white;
+    background: skyblue;
+    border: 0.05rem solid white;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 1rem 0.1rem black;
+    cursor: pointer;
+    transition:background 0.5s, width 0.1s;
+    width: 130px;
+}
+button:hover{
+    background: darkgreen;
+    /* width: 200px; */
+    transition:background 0.5s, width 0.1s;
+}
+
+button:active{
+    width: 250px;
+}
+input[type=checkbox]:checked, input[type=radio]:checked
+{
+    width: 35px;
+   
+}
+a:link{ 
+    color: dimgray;
+    text-decoration: none;
+}
+a:visited{
+    color:gold;
+    text-decoration: line-through;
+}
+
+*:focus{
+    border: 3px solid limegreen;
+}
+
+
+ ul li{ 
+    color:turquoise;
+}
+
+ul li:first-child{
+    color: gold;
+
+}
+ul li:last-child{
+    color: red;
+    text-decoration: line-through;
+}
+
+ul li:nth-child(1){
+    color: goldenrod;
+}
+ul li:nth-child(2){
+    color: silver;
+}
+ul li:nth-child(3){
+    color: brown;
+}
+p::first-letter{
+    font-size: 2rem;
+    color: darkred;
+}
+
+.tabla{
+    height: 25rem;
+    width: 100%;
+    background: green;
+    display: table;
+}
