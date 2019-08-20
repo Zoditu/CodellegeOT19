@@ -1,0 +1,20 @@
+
+nav{
+    background: black;
+}
+
+.introduccion{
+    padding-left: 3rem;
+}
+.introduccion p::first-letter{
+    font-size: 2rem;
+    font-style: italic;
+    color: red;
+}
+
+.card{
+    display: inline-block;
+}
+.clear{
+    clear: both;
+}
