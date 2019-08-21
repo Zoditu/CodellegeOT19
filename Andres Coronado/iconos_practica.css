@@ -104,3 +104,17 @@ font-family: 'Lexend Tera', sans-serif;
 {
     padding-top: 5rem;
 }
+
+
+.conteiner:hover .numeroTel
+{
+    color: skyblue;
+}
+.separador2:hover 
+{
+    color: red;
+}
+.separador2:hover 
+{
+    color:whitesmoke;
+}

@@ -1,0 +1,84 @@
+button
+{
+    margin: 1rem;
+    color: white;
+    background: darkblue;
+    border: 0;
+    padding: 0.3rem;
+    box-shadow:  0 0 1rem 0.1rem black;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background  2s;
+}
+button:hover      /* esto pasara si esta el cursor encima del boton*/
+
+{
+    background: darkcyan;
+    transition: background  2s;
+
+}
+
+
+button:active
+{
+    width: 200px;
+}
+
+label:active
+{
+    color: red;
+}
+
+input[type=checked]:active
+{
+    width: 35px;;
+}
+
+input[type=checkbox]:checked,input[type=radio]:checked
+{
+    width: 35px;
+
+}
+
+
+a:link
+{
+    color:dimgray;
+    text-decoration: none;
+
+}
+
+a:visited
+{
+    color:gold;
+}
+
+*:focus{
+    border: 3px solid lawngreen;
+}
+
+
+ul li
+{
+    color:turquoise;
+}
+
+ul li:first-child
+{
+    color:red;
+}
+
+ul li:last-child
+{
+    color:black;
+    font-style: italic;
+}
+
+
+ul li:nth-child(3)
+{
+
+    color: red;
+
+}
+

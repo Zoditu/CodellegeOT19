@@ -1,0 +1,15 @@
+
+
+.menu ul
+{
+    list-style-type: none;
+}
+.menu ul li
+{
+    display: inline-block;
+}
+
+.menu ul li::before
+{
+
+}
