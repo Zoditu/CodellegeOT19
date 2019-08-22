@@ -1,0 +1,45 @@
+body > header
+{
+    height: 3rem;
+    background: lightgrey;
+    border-bottom: 0.2rem solid gray;
+    padding: 0.1rem;
+
+    font-size: 1.1rem;
+}
+
+nav .logo
+{
+    background: url('logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42px;
+}
+
+.menu
+{
+    color: dimgray;
+}
+
+.menu ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu ul li
+{
+    display: inline-block;
+}
+
+.menu ul li::before
+{
+    content: "\00a0\00a0|\00a0\00a0";
+}
+
+.menu ul li:first-child::before
+{
+    content: "";
+}
