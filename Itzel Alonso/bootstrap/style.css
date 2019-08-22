@@ -1,0 +1,200 @@
+#TOP,
+footer {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 3rem;
+    font-family: 'Indie Flower', cursive;
+    margin-bottom: 2rem;
+}
+
+.display {
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+}
+
+.margin-bottom {
+    margin-bottom: 2rem;
+}
+
+.margin-left {
+    margin-left: 2rem;
+}
+
+.margin-right {
+    margin-left: 1rem;
+}
+
+.margin-top {
+    margin-top: 2rem;
+}
+
+img:hover {
+    opacity: .6;
+}
+
+.size-image {
+    width: 200px;
+    height: 200px;
+}
+
+#biography:hover,
+#introduction:hover,
+#sociales:hover,
+#hobbies:hover,
+#scolar:hover {
+    color: rgb(52, 122, 163);
+    text-decoration: underline;
+}
+
+.padding-all {
+    padding: 1.4rem;
+}
+
+.icono {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.hobi {
+    font-size: 2rem;
+    display: block;
+
+}
+
+#dance {
+    font-family: 'Beth Ellen', cursive;
+}
+
+#draw {
+    font-family: 'Special Elite', cursive;
+}
+
+#music {
+    font-family: 'Monoton', cursive;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.fondo {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.582);
+}
+
+.border {
+    border-bottom: 6px solid rgba(207, 57, 19, 0.767);
+}
+
+.gray {
+    background-color: gray;
+}
+
+.yellow {
+    background-color: gold;
+}
+
+.datos {
+    width: 100%;
+    height: 30%;
+}
+
+.escolar {
+    width: 100%;
+    height: 70%;
+}
+
+.datos-escolares {
+    height: 100%;
+    width: 60%;
+    float: left;
+}
+
+.grupo {
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+
+.foto {
+    width: 7rem;
+    height: 100%;
+    float: left;
+}
+
+.nomEscu {
+
+    padding-top: .5rem;
+    width: 8rem;
+    height: 100%;
+    float: left;
+}
+
+.nomGrup {
+    padding-top: 2.5rem;
+    width: 6rem;
+    height: 100%;
+    float: right;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.padding-sides {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.clear {
+    clear: both;
+}
+
+.texto-descrip {
+
+    width: 100%;
+    height: 100%;
+}
+
+.altura {
+    height: 14rem;
+}
+
+.escuela {
+    font-size: 1.1rem;
+}
+
+.year {
+    padding-top: .6rem;
+    font-size: .6rem;
+}
+
+.adress {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.ciudad {
+    padding-top: 3rem;
+    font-size: .7rem;
+}
