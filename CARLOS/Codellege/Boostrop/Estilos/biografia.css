@@ -1,4 +1,4 @@
-
+/*  
 nav{
     background: black;
 }
@@ -18,3 +18,15 @@ nav{
 .clear{
     clear: both;
 }
+*/
+
+body > header{
+    background: cadetblue;
+    height: 3rem;
+}
+
+ ul li{
+     text-decoration-style: none;
+     display: inline-block;
+ }
+
