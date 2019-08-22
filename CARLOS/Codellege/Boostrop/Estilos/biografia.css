@@ -22,11 +22,51 @@ nav{
 
 body > header{
     background: cadetblue;
-    height: 3rem;
+    height: 4rem;
 }
 
- ul li{
+ .menu ul li{
      text-decoration-style: none;
      display: inline-block;
+
+ }
+ .menu ul li ::after{
+     content: "\00a0\00a0|\00a0\00a0";
  }
 
+.clear{
+    clear: both;
+}
+.intr{
+    font-family: "Playfair";
+    font-size: 1rem;
+}
+
+.intr h1{
+    margin: 0;
+    text-align: center;
+}
+ .logro{ 
+    height: 20rem;
+    width: 20rem;
+    border: 1px solid black;
+}
+
+.logros{
+    text-align: center;
+}
+.bio{
+    max-width: 100%;
+}
+.bio img{
+    max-width: 10rem;
+}
+
+.max-height{
+    max-height: 8rem;
+    overflow: auto;
+    margin-right: -20px;
+}
+.bio{
+    padding: 0;
+}
