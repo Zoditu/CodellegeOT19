@@ -1,0 +1,57 @@
+html, body
+{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.button
+{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 14vw;
+    height: 3vw; 
+    display: inline-block;
+    text-align: center;
+}
+a
+{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    width:100%;
+    height:100%;
+    padding-top: 1%;
+    
+}
+.home
+{
+    background: rgb(14, 95, 95);
+}
+.warning
+{
+    background:  rgb(212, 78, 25);
+}
+.code
+{
+    background:  rgb(34, 45, 59);
+}
+.clear
+{
+    clear: both;
+}
+.medium
+{
+    width: 19vw;
+}
+.large
+{
+    width: 25vw;
+}
+.rounded
+{
+    border-radius: 40%;
+}
+
+
