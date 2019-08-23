@@ -1,0 +1,90 @@
+button {
+    margin: 1rem;
+    color: white;
+    background: darkred;
+    border: 0.05rem solid darkred;
+    padding: 0.3rem;
+    box-shadow:  0 0 1rem 0.1rem rgb(255, 0, 0);
+    border-radius: 0.5rem;
+
+    cursor: pointer;
+
+    transition: background 1s, width 0.5s, box-shadow 0.3s;
+    width: 200px;
+}
+
+
+button:hover{
+    background: darkgreen;
+    width: 250px;
+    box-shadow: 0 0 1rem 0.1rem lightgreen;
+    border: 0.05rem solid darkgreen;
+
+    transition: background 1s, width 0.5s, box-shadow 0.3s;
+
+
+}
+
+button:active {
+    width: 150px;
+}
+
+input[type=checkbox]:active {
+    width: 35px;
+}
+input[type=checkbox]:checked, input[type=radio]:checked {
+    width: 35px;
+}
+
+label:active {
+    color: blue;
+}
+
+a:link {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+a:visited {
+    color: brown;
+}
+
+*:focus {
+    border: 3px solid cyan;
+}
+
+
+ul li {
+    color: blue;
+    font-size: 24px;
+}
+
+ul li:first-child {
+    color: aqua;
+}
+
+ul li:last-child {
+    color: black;
+    text-decoration: line-through;
+}
+
+ul li:nth-child(1) {
+    color: goldenrod;
+}
+
+ul li:nth-child(2) {
+    color: silver;
+}
+
+ul li:nth-child(3) {
+    color: rgb(156, 76, 0);
+}
+
+p {
+    font-size: 24px;
+}
+
+p::first-letter {
+    font-size: 2rem;
+    color: darkred;
+}

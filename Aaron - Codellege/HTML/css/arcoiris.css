@@ -1,0 +1,115 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.cuadro {
+    border: 0.1rem solid red;
+    width: 10rem;
+    height: 10rem;
+    background: red;
+}
+
+.bg-1 {
+    background: red;
+}
+
+.bg-2 {
+    background: orange;
+    border: 0.1rem solid orange;
+}
+
+.bg-3 {
+    background: yellow;
+    border: 0.1rem solid yellow;
+}
+
+.bg-4 {
+    background: greenyellow;
+    border: 0.1rem solid greenyellow;
+
+}
+
+.bg-5 {
+    background: skyblue;
+    border: 0.1rem solid skyblue;
+
+}
+
+.bg-6 {
+    background: blue;
+    border: 0.1rem solid blue;
+
+}
+
+.bg-7 {
+    background: purple;
+    border: 0.1rem solid purple;
+
+}
+
+
+
+.top-left {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.top-left1 {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+.top-left2 {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+.top-left3 {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+}
+.top-left4 {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+}
+.top-left5 {
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.circulo {
+    border: 0.1rem solid lavender;
+    width: 2rem;
+    height: 2rem;
+    background: lavender;
+    border-radius: 1rem;
+}
+
+.top-left6 {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}

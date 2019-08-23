@@ -1,0 +1,105 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+.tarjeta {
+    width: 35rem;
+    height: 20rem;
+    display: inline-block;
+    margin: 1rem;
+    transition: width 0.5s, height 0.5s;
+
+}
+
+.tarjeta:hover {
+    width: 38rem;
+    height: 23rem;
+    transition: width 0.5s, height 0.5s;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px 20px 0px black;
+    position: relative;
+    transition: box-shadow 0.5s;
+
+}
+
+.contenedor:hover {
+    box-shadow: 1px 1px 10px 0px black;
+    transition: box-shadow 0.5s;
+}
+
+
+#imagen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.datos {
+    width: 100;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.739);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: box-shadow 1s;
+}
+
+.datos:hover {
+    box-shadow: 0 0 20px 3px rgba(255, 255, 255, 0.739);
+    transition: box-shadow 1s;
+}
+
+
+.datos header {
+    width: 100%;
+    height: 30%;
+    text-align: left;
+    font-size: 22px;
+}
+
+.datos main {
+    width: 100%;
+    height: 70%;
+
+}
+
+.half1 {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.half2 {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+

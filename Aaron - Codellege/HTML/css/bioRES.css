@@ -1,0 +1,26 @@
+.content {
+}
+
+.introduction {
+    padding: 1rem;
+}
+
+.bio {
+    padding: 1rem;
+}
+
+.hobbies {
+    padding: 1rem;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+.social {
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
