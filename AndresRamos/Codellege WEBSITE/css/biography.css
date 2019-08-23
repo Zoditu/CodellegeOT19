@@ -1,0 +1,46 @@
+html, body 
+{
+    margin: 0; 
+    padding: 0; 
+}
+body > header
+{
+    height: 4em;
+}
+
+.nav-bar
+{
+    background-color: #101a1a;
+    color: #ffffff;
+}
+
+.menu ul 
+{
+    padding: 0; 
+    margin: 0;
+    list-style-type: none;
+    height: 100%;
+}
+.menu ul li
+{
+    height: 100%;
+    display: inline-block;  
+    padding-left: 1rem;
+    padding-right: 1rem;  
+    transition: background-color .2s ease;
+}
+.menu ul li:hover
+{
+    color: #293030; 
+    background-color: #88a0a0;
+}
+.menu ul li a
+{
+    color: #ffffff;
+    text-decoration: none;
+    transition: text-decoration 2s ease;
+}
+.menu ul li:hover a
+{
+    text-decoration: underline;
+}
