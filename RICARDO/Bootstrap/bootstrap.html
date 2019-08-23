@@ -1,25 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Document</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="row">
-          <div class="col-4">
-            One of three columns
+  <!--BARRA DE NAVEGACIÓN (MENU)-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light colorbar">
+      <a class="navbar-brand" href="#">
+        <img src="FOTO PERFIL.JPG" width="30" height="30" class="d-inline-block align-top" alt="">
+        RICARDO TENEYUQUE HUERTA
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#biografía">Biografía |</a>
+          <a class="nav-item nav-link" href="#hobbies">Hobbies |</a>
+          <a class="nav-item nav-link" href="#">Escolaridad |</a>
+          <a class="nav-item nav-link" href="#">Experiencia Laboral |</a>
+          <a class="nav-item nav-link" href="#">Preferencias</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!--CONTENIDO-->
+    <main>
+
+      <!--PARTE 1-->
+
+      <h6>Introducción</h6>
+      <p>Mi nombre es Ricardo Teneyuque Huerta, tengo 20 años, vivo en Santa Catarina, N.L y estudié una carrera
+        técnica en mecatrónica, actualmente soy alumno del curso Codellege.</p>
+      <div class="center">
+        <div class="card tarjeta margin" style="width: 18rem">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaNX8YLnt7pscu9YQvmJ-omjgDUtqhAfDJzyzPoeBkk-uQCsC9"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">El primer acontecimiento importante fue cuando fui seleccionado para el grupo
+              progresivo en la prepa y me tocó estudiar francés.</p>
           </div>
-          <div class="col-4">
-            One of three columns
-          </div>
-          <div class="col-4">
-            One of three columns
+        </div>
+        <div class="card tarjeta margin" style="width: 18rem;">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK_Fv4JktaqqYYwbKC-o2tLk7JwI0GPswidgwr0AQRT7eLLnCOvw"
+            class="card-img-top hcard" alt="...">
+          <div class="card-body">
+            <p class="card-text">Un segundo acontecimiento importante fue el entrar a este curso de codellege.</p>
           </div>
         </div>
       </div>
+
+      <!--PARTE 2-->
+
+      <h6 id="biografía">Biografía</h6>
+      <hr>
+      <div class="row">
+        <div class="col-4 alt">
+          <img class="pb" src="FOTO PERFIL.JPG" />
+          <p class="name center overflow-hidden">RICARDO TENEYUQUE HUERTA</p>
+        </div>
+        <div class="col-8 alt">
+          <p>&nbsp &nbsp Mi nombre es Ricardo Teneyuque Huerta, tengo 20 años, vivo en Santa Catarina, N.L y estudié
+            la preparatoria en la prepa #23 y luego estudié una carrera técnica en mecatrónica, actualmente soy alumno
+            del curso Codellege.</p>
+        </div>
+      </div>
+
+      <h6 class="center">Follow me!!</h6>
+      <div class="center">
+        <a class="redes" href="https://www.facebook.com/" target="_blank">
+          <img class="contact" src="facebook.png" />
+        </a>
+        <a class="redes" href="https://twitter.com/?lang=es" target="_blank">
+          <img class="contact" src="twitter.png" />
+        </a>
+        <a class="redes" href="https://www.whatsapp.com/" target="_blank">
+          <img class="contact" src="whatsapp.png" />
+        </a>
+      </div>
+
+      <!--PARTE 3-->
+
+      <h6 id="hobbies">Hobbies</h6>
+      <hr>
+      <div class="row pr">
+        <div class="col-4 alt2 overflow-hidden">
+          <p class="center">Escuchar música</p>
+          <p>Uno de los hobbies que tengo yo es el de escuchar música, en sí no tengo un género favorito, me gusta
+            escuchar casi de todo.</p>
+        </div>
+        <div class="col-2 alt2">
+          <img class="hobbiesp h-100"
+            src="https://i.pinimg.com/originals/97/c1/6d/97c16d195994553453f3c72098b0ccb4.jpg" />
+        </div>
+        <div class="col-6 alt2">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/09R8_2nJtjg" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="row pr">
+        <div class="col-6 alt2">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/aMlhoCHy-0I" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-2 alt2">
+          <img class="hobbiesp"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdccXOPt4tLFWLgCaOAHrERSlPfAi1JrQHhSBDVE9dlOZuqC6y" />
+        </div>
+        <div class="col-4 alt2 overflow-hidden">
+          <p class="center">Ver programas de autos</p>
+          <p>Otro de mis hobbies es ver programas de TV donde modifican autos para que luzcan mejor.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 alt2  overflow-hidden">
+          <p class="center">Ver películas</p>
+          <p>Mi último hobbie es ver películas, tampoco tengo un género en específico, si me llama la atención la veo.
+          </p>
+        </div>
+        <div class="col-2 alt2">
+          <img class="hobbiesp"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpsJkhN6RsQKjEGqXqD-0emdfb52hGEOMf2t05SFb-_6QH6v7i" />
+        </div>
+        <div class="col-6 alt2">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mRbjAXjOcKg" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <br>
+      <!--PARTE 4-->
+      <h6>Escolaridad</h6>
+      <hr>
+      <div class="row">
+        <!-- COLUMNA 1 ESCUELA-->
+        <div class="col">
+          <div class="row alt2">
+            <!--PARTE 1 ESCUELA-->
+            <div class="col-6 altdiv">
+              <img class="fesc float-left" />
+              <div class="px-1 float-left">
+                <h6>prepa 23</h6>
+                <p class="my-0">2014-2016</p>
+              </div>
+            </div>
+            <!--PARTE 2 ESCUELA-->
+            <div class="col-6 altdiv">
+              <div class="row altdiv">
+                <div class="col align-self-end right">PREPA</div>
+              </div>
+            </div>
+            <div class="col altsobr">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quidem repellat exercitationem possimus
+                adipisci consequuntur ex et ipsam, aliquid unde, hic aliquam voluptatum deserunt corrupti ipsa tempora
+                quam, modi nostrum?</p>
+            </div>
+          </div>
+          <br>
+          <div class="row alt2">
+            <!--PARTE 1 ESCUELA-->
+            <div class="col-6 altdiv">
+              <img class="fesc float-left" />
+              <div class="px-1 float-left">
+                <h6>prepa 23</h6>
+                <p class="my-0">2014-2016</p>
+              </div>
+            </div>
+            <!--PARTE 2 ESCUELA-->
+            <div class="col-6 altdiv">
+              <div class="row altdiv">
+                <div class="col align-self-end right">PREPA</div>
+              </div>
+            </div>
+            <div class="col altsobr">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quidem repellat exercitationem possimus
+                adipisci consequuntur ex et ipsam, aliquid unde, hic aliquam voluptatum deserunt corrupti ipsa tempora
+                quam, modi nostrum?</p>
+            </div>
+          </div>
+          <br>
+          <div class="row alt2">
+            <!--PARTE 1 ESCUELA-->
+            <div class="col-6 altdiv">
+              <img class="fesc float-left" />
+              <div class="px-1 float-left">
+                <h6>prepa 23</h6>
+                <p class="my-0">2014-2016</p>
+              </div>
+            </div>
+            <!--PARTE 2 ESCUELA-->
+            <div class="col-6 altdiv">
+              <div class="row altdiv">
+                <div class="col align-self-end right">PREPA</div>
+              </div>
+            </div>
+            <div class="col altsobr">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quidem repellat exercitationem possimus
+                adipisci consequuntur ex et ipsam, aliquid unde, hic aliquam voluptatum deserunt corrupti ipsa tempora
+                quam, modi nostrum?</p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- COLUMNA 2 MAPA-->
+        <div class="col">
+          <div class="row">
+            <div class="col alt2"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.8417712329806!2d-100.4521704849808!3d25.676539383675454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662980f8c40657b%3A0xeb9458c0b2b5f03f!2sPaseo+Santa+Catarina!5e0!3m2!1ses!2smx!4v1566493062373!5m2!1ses!2smx"
+                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            <div class="col alt2">
+              <div class="row alt2">
+                <div class="col align-self-end">
+                  Calle Tal Calle<br>
+                  #1234<br>
+                  Colonia sjhdi ashi sajhi<br><br>
+                  Santa Catarina,NL
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col alt2"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.8417712329806!2d-100.4521704849808!3d25.676539383675454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662980f8c40657b%3A0xeb9458c0b2b5f03f!2sPaseo+Santa+Catarina!5e0!3m2!1ses!2smx!4v1566493062373!5m2!1ses!2smx"
+                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            <div class="col alt2">
+              <div class="row alt2">
+                <div class="col align-self-end">
+                  Calle Tal Calle<br>
+                  #1234<br>
+                  Colonia sjhdi ashi sajhi<br><br>
+                  Santa Catarina,NL
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col alt2"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.8417712329806!2d-100.4521704849808!3d25.676539383675454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662980f8c40657b%3A0xeb9458c0b2b5f03f!2sPaseo+Santa+Catarina!5e0!3m2!1ses!2smx!4v1566493062373!5m2!1ses!2smx"
+                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            <div class="col alt2">
+              <div class="row alt2">
+                <div class="col align-self-end">
+                  Calle Tal Calle<br>
+                  #1234<br>
+                  Colonia sjhdi ashi sajhi<br><br>
+                  Santa Catarina,NL
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </div>
 </body>
+
 </html>

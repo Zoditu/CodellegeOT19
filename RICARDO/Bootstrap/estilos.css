@@ -1,0 +1,101 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+*
+{
+    box-sizing: border-box;
+}
+.center
+{
+    text-align: center;
+}
+.colorbar
+{
+background-color: yellowgreen;
+}
+.tarjeta
+{
+    display: inline-block;
+}
+.margin
+{
+    margin: 1rem;
+}
+hr
+{
+border: solid black 2px;
+margin-top: 0.5rem;
+margin-bottom: 0.5rem;
+}
+.alt
+{
+height: 20rem;
+}
+.pb
+{
+    width: 100%;
+    height: 85%;
+}
+.name
+{
+    font-weight: bold;
+    height: 15%;
+    margin-top: 0.2rem;
+    margin-bottom: 0;
+}
+.redes
+{
+    margin-right: 1.5rem;
+    width:3rem;
+    height: 3rem;
+    display: inline-block;
+}
+.contact
+{
+    width:100%;
+    height: 100%; 
+}
+.alt2
+{
+    height: 12rem;
+}
+.hobbiesp
+{
+    width: 100%;
+    height: 100%;
+}
+.pr
+{
+    margin-bottom: 1rem;
+}
+.h
+{
+    height: 10rem;
+}
+.altdiv
+{
+    height: 3rem;
+}
+.altsobr
+{
+    height: 9rem;
+}
+
+.fesc
+{
+    height: 100%;
+    width: 25%;
+    background-color: brown;
+}
+.right
+{
+    text-align: right;
+}
+.hcard
+{
+    height: 19rem;
+}
