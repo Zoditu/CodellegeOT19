@@ -70,3 +70,38 @@ body > header{
 .bio{
     padding: 0;
 }
+
+.redes{
+    text-align: center;
+    height: 3rem;
+}
+.redes img{
+    height: 100%;
+}
+.hobbies img{
+    height: 20rem;
+    width: 100%;
+}
+.hobbie1{
+    height: 25rem;
+    border-bottom: 1px solid black;
+}
+.hobbie2{
+     border-bottom: 1px solid black;
+}
+.gradeSH{
+    height: 100%;
+    border-bottom: 1px solid black;
+}
+.escolaridad img{
+height: 5rem;
+width: 5rem;
+}
+.dir{
+    position: relative;
+}
+.dir p{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
