@@ -15,7 +15,9 @@
 <body>
 
     <!-- header -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- simple navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <!-- solo se cambio al anchor por el otro ejemplo para agregar la imagen y mi nombre -->
         <a class="navbar-brand" href="#">
             <img src="../img/heroes/spiderman.svg" width="30" height="30" class="d-inline-block align-top" alt="">
             Javier Anguiano de Lara
@@ -45,7 +47,8 @@
         </div>
     </nav>
 
-    <article class="info container">
+    <!-- container sencillo con mi introduccion -->
+    <article class="info-intro container">
         <h1>Introduccion</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia, esse incidunt autem aliquid fugiat
             unde sequi quis tenetur consequuntur non odio distinctio doloribus natus. Illo iusto quam facere tempore.
@@ -54,28 +57,30 @@
             dignissimos perferendis?</p>
     </article>
 
+    <!-- article de mis "logros", solo se sobrescribio card para quitar bordos y centrar las 2 tarjetas -->
     <article class="card">
-            <div class="card" style="width: 18rem;">
-                <img src="../img/guanajuato.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sit corrupti
-                        dolorem magnam facere beatae. Repellendus quidem molestiae illum necessitatibus officia, quis
-                        ab. </p>
-                </div>
+        <div class="card" style="width: 18rem;">
+            <img src="../img/guanajuato.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sit corrupti
+                    dolorem magnam facere beatae. Repellendus quidem molestiae illum necessitatibus officia, quis
+                    ab. </p>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="../img/guanajuato.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sit corrupti
-                        dolorem magnam facere beatae. Repellendus quidem molestiae illum necessitatibus officia, quis
-                        ab. </p>
-                </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="../img/guanajuato.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sit corrupti
+                    dolorem magnam facere beatae. Repellendus quidem molestiae illum necessitatibus officia, quis
+                    ab. </p>
             </div>
+        </div>
     </article>
 
+    <!-- container con mi biografia, se uso el componente card para este estilo -->
     <div class="biografia container">
         <div class="row">
-            <div class="col-4 h15rem">
+            <div class="col-4 h15rem align-self-center">
                 <img src="../img/heroes/spiderman.svg" alt="">
             </div>
             <div class="col-8">
@@ -89,6 +94,8 @@
     </div>
     <br>
     <div class="clear"></div>
+
+    <!-- article que muestra mis redes sociales -->
     <article class="center">
         <h4><strong>Redes Sociales</strong></h4>
         <a href="https://www.facebook.com/javier.Anguiano.deLara" target="_blank"><img
@@ -100,54 +107,249 @@
     </article>
 
     <!-- section donde mustro mis hobbies -->
-    <div class="container">
-        <h3>Hobbies</h3>
+
+    <div class="container m-bottom-1">
+        <h2><strong>Hobbies</strong></h2>
+        <hr>
+        <!-- primer hobbie -->
         <div class="row">
-            <div class="col-2 align-items-center">
+            <div class="col-md-4 h12rem align-self-center bg-blue">
                 <h4>Carnita Asada</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptatem, temporibus labore libero
-                    odit excepturi veritatis saepe dicta quae autem atque placeat unde!</p>
+                <p style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
+                    cupiditate dicta eaque fuga, earum voluptates dolore enim, ipsa voluptatem, numquam eius.
+                    Perferendis, velit! Perferendis saepe, eius corrupti obcaecati facilis et.</p>
             </div>
-            <div class="col-4 align-items-center">
-                <img src="../img/carnita.jpg" alt="..." class="img-hobbies">
+            <div class="col-md-2 h12rem align-self-center bg-green h-100 w-100">
+                <img src="../img/carnita.jpg" alt="..." class="h-100 w-100">
             </div>
-            <div class="col-6 align-items-center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/7lO2cqe0oUg" frameborder="0"
+            <div class="col-md-6 h12rem align-self-center bg-pink">
+                <iframe src="https://www.youtube.com/embed/7lO2cqe0oUg" frameborder="0" class="w-100 h-100"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
         </div>
+        <!-- segundo hobbie -->
         <div class="row">
-            <div class="co-6 align-items-center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NgZSuciO6x0" frameborder="0"
+            <div class="col-md-6 h12rem align-self-center bg-blue">
+                <iframe src="https://www.youtube.com/embed/7lO2cqe0oUg" frameborder="0" class="w-100 h-100"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
-            <div class="col-4 align-items-center">
-                <img src="../img/r6_v2.jpg" alt="..." class="  img-hobbies">
+            <div class="col-md-2 h12rem align-self-center bg-green h-100 w-100">
+                <img src="../img/r6_v2.jpg" alt="..." class="h-100 w-100">
             </div>
-            <div class="col-2 align-items-center">
-                <h4>Video-juegos</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptatem, temporibus labore libero
-                    odit excepturi veritatis saepe dicta quae autem atque placeat unde! </p>
+            <div class="col-md-4 h12rem align-self-center bg-pink">
+                <h4>Videojuegos</h4>
+                <p style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
+                    cupiditate dicta eaque fuga, earum voluptates dolore enim, ipsa voluptatem, numquam eius.
+                    Perferendis, velit! Perferendis saepe, eius corrupti obcaecati facilis et.</p>
             </div>
         </div>
+        <!-- tercer hobbie -->
         <div class="row">
-            <div class="col-2 align-items-center">
+            <div class="col-md-4 h12rem align-self-center bg-blue">
                 <h4>Baloncesto</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptatem, temporibus labore libero
-                    odit excepturi veritatis saepe dicta quae autem atque placeat unde! </p>
+                <p style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
+                    cupiditate dicta eaque fuga, earum voluptates dolore enim, ipsa voluptatem, numquam eius.
+                    Perferendis, velit! Perferendis saepe, eius corrupti obcaecati facilis et.</p>
             </div>
-            <div class="col-4 align-items-center">
-                <img src="../img/baloncesto.jpg" alt="..." class=" img-hobbies">
+            <div class="col-md-2 h12rem align-self-center bg-green h-100 w-100">
+                <img src="../img/baloncesto.jpg" alt="..." class="h-100 w-100">
             </div>
-            <div class="col-6 align-items-center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9CuMePT5fjQ" frameborder="0"
+            <div class="col-md-6 h12rem align-self-center bg-pink">
+                <iframe src="https://www.youtube.com/embed/7lO2cqe0oUg" frameborder="0" class="w-100 h-100"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
         </div>
     </div>
+
+    <!-- Escolaridad -->
+
+    <!-- para proximas practicar usar clases de bootrstrap para alinear abajo a la derecha
+    align-self-center y text-rigth para acomodar abajo a la derecha -->
+    <article class="container m-bottom-1">
+        <h3><strong>Escolaridad</strong></h3><hr>
+        <!-- estructura -->
+            <!-- primaria -->
+        <div class="row h15rem align-items-center m-bottom-1">
+            <div class="col-12 col-lg-6 center student">
+                <section class="desc">
+                    <article class="left">
+                        <div class="izq-img">
+                            <img src="../img/heroes/spiderman.svg" width="100%" height="100%" alt="">
+                        </div>
+                        <div class="der-esc">                            
+                            <p>
+                                Josefa de la Garza Gzz 2005-2011
+
+                            </p>
+                        </div>
+                    </article>
+                    <article class="rigth text-right">
+                        <div class="college">
+                            <h5>Primaria</h5>
+
+                        </div>
+                    </article>
+                </section>
+                <section class="info">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus aspernatur ratione veniam unde
+                    quidem iure ipsa earum omnis illo magni provident, eum ipsum eveniet maiores, asperiores non, at
+                    alias. Modi?
+                </section>
+            </div>
+            <div class="col-12 col-lg-6 center student">
+                <section class="izq">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d899.0840800283733!2d-100.26535560604076!3d25.66014371040077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd0ebcdc73f83178c!2sESCUELA+PRIMARIA+PROFRA+JOSEFA+DE+LA+GARZA+GZZ!5e0!3m2!1ses!2smx!4v1566484863249!5m2!1ses!2smx" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </section>
+                <section class="der text-left">
+                    <div class="relative">
+                        <div class="address">
+                            <p>
+                                Esquina El Realito, Río La Silla, La Herradura, 67140 <br><br> Monterrey, N.L.
+                            </p>
+                        </div>                    
+                    </div>                        
+                </section>
+            </div>
+        </div>
+            <!-- secundaria -->
+        <div class="row h15rem align-items-center m-bottom-1">  
+            <div class="col-12 col-lg-6 center student">
+                        <section class="desc">
+                            <article class="left">
+                                <div class="izq-img">
+                                    <img src="../img/heroes/spiderman.svg" width="100%" height="100%" alt="">
+                                </div>
+                                <div class="der-esc">                            
+                                    <p>
+                                        Secundaria Num. 57 Profr. Roger Pompa Perez 2011-2014        
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="rigth text-right">
+                                <div class="college">
+                                    <h5>Secundaria</h5>
+        
+                                </div>
+                            </article>
+                        </section>
+                        <section class="info">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus aspernatur ratione veniam unde
+                            quidem iure ipsa earum omnis illo magni provident, eum ipsum eveniet maiores, asperiores non, at
+                            alias. Modi?
+                        </section>
+            </div>
+            <div class="col-12 col-lg-6 center student">
+                        <section class="izq">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14385.028452436063!2d-100.2806373!3d25.6627703!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x75e77eafa22fe845!2sSecundaria+%2357+Roger+Pompa+P%C3%A9rez!5e0!3m2!1ses!2smx!4v1566485463989!5m2!1ses!2smx" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </section>
+                        <section class="der text-left">
+                            <div class="relative">
+                                <div class="address">
+                                    <p>
+                                            Francisco de Quevedo 1746, Jardín Español, 64820 <br><br> Monterrey, N.L.
+                                    </p>
+                                </div>                    
+                            </div>                        
+                        </section>
+            </div>
+        </div>
+            <!-- preparatoria -->
+        <div class="row h15rem align-items-center m-bottom-1    ">
+                <div class="col-12 col-lg-6 center student">
+                            <section class="desc">
+                                <article class="left">
+                                    <div class="izq-img">
+                                        <img src="../img/heroes/spiderman.svg" width="100%" height="100%" alt="">
+                                    </div>
+                                    <div class="der-esc">                            
+                                        <p>
+                                            Preparatoria #15 Unidad Florida 2015-2017         
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="rigth text-right">
+                                    <div class="college">
+                                        <h5>Media Superior</h5>
+            
+                                    </div>
+                                </article>
+                            </section>
+                            <section class="info">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus aspernatur ratione veniam unde
+                                quidem iure ipsa earum omnis illo magni provident, eum ipsum eveniet maiores, asperiores non, at
+                                alias. Modi?
+                            </section>
+                </div>
+                <div class="col-12 col-lg-6 center student">
+                            <section class="izq">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.421315783469!2d-100.2921789495516!3d25.65732488360418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bfc6ee0a5533%3A0x5b4a6d8cfdaba212!2sPreparatoria+%2315+UANL+Unidad+Florida!5e0!3m2!1ses!2smx!4v1566485367196!5m2!1ses!2smx" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </section>
+                            <section class="der text-left">
+                                <div class="relative">
+                                    <div class="address">
+                                        <p>
+                                            Alamos 2315, Villa Florida, 64810 <br><br> Monterrey, N.L.
+                                        </p>
+                                    </div>                    
+                                </div>                        
+                            </section>
+                </div>
+        </div>
+            <!-- universidad -->
+        <div class="row h15rem align-items-center m-bottom-1    ">
+                    <div class="col-12 col-lg-6 center student">
+                                <section class="desc">
+                                    <article class="left">
+                                        <div class="izq-img">
+                                            <img src="../img/heroes/spiderman.svg" width="100%" height="100%" alt="">
+                                        </div>
+                                        <div class="der-esc">                            
+                                            <p>
+                                                Facultad de Ingenieria Mecanica y Electrica 2017-:'c'         
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article class="rigth text-right">
+                                        <div class="college">
+                                            <h5>Universidad</h5>
+                
+                                        </div>
+                                    </article>
+                                </section>
+                                <section class="info">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus aspernatur ratione veniam unde
+                                    quidem iure ipsa earum omnis illo magni provident, eum ipsum eveniet maiores, asperiores non, at
+                                    alias. Modi?
+                                </section>
+                    </div>
+                    <div class="col-12 col-lg-6 center student">
+                                <section class="izq">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.37833584435!2d-100.31561004955013!3d25.72499928357323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629452551ea79f%3A0x66e03550ec5730cb!2sFacultad+de+Ingenier%C3%ADa+Mec%C3%A1nica+y+El%C3%A9ctrica!5e0!3m2!1ses!2smx!4v1566485691616!5m2!1ses!2smx" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </section>
+                                <section class="der text-left">
+                                    <div class="relative">
+                                        <div class="address">
+                                            <p>
+                                                Pedro de Alba SN, Niños Héroes, Ciudad Universitaria, <br><br> San Nicolás de los Garza, N.L.
+                                            </p>
+                                        </div>                    
+                                    </div>                        
+                                </section>
+                    </div>
+        </div>
+
+    </article>
+
+    <div class="container center margin m-bottom-1">
+        <div class="heart-shape margin d-inline-block"></div>
+        <div class="heart-shape margin d-inline-block"></div>
+        <div class="heart-shape margin d-inline-block"></div>
+    </div>
+
+                        
 
     <!-- main -->
 

@@ -1,0 +1,60 @@
+/* clases margin, padding, generales etc */
+.m-b-1{
+    margin-top: 1%;
+}
+/* .border{
+    border: 50px solid black;
+    border-radius: 1rem;
+} */
+.p1{
+    padding: 1%;
+}
+.clear{
+    clear: both;
+}
+.izq{width: 65%;
+    height: 100%;
+    /* background: skyblue; */
+    float: left;
+}
+.der{
+    width: 35%;
+    height: 100%;
+    /* background: darkgreen; */
+    float: left;
+}
+
+/* clases escolaridad */
+.picAndInfo{
+    height: 40%;
+    /* background: darkred; */
+}
+.pic{
+    width: 50%;
+    height: 100%;
+    /* background: skyblue; */
+    float: left;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+}
+.info{
+    width: 50%;
+    height: 100%;
+    /* background: darkgreen; */
+    float: left;
+}
+
+.desSchool{
+    height: 60%;
+    /* background: darkgreen; */
+}
+
+/* clases dimensiones */
+
+.h15{
+    height: 14rem;
+    /* background: blue;
+    border: 1px solid black; */
+}

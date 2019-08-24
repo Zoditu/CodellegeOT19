@@ -17,10 +17,6 @@
     vertical-align: middle;
 }
 
-.margin{
-    margin: 7%;
-}
-
 .center{
     text-align: center;
 }
@@ -112,7 +108,7 @@
     /* background: darkorange; */
 }
 .der-esc p{
-    font-size:0.7rem;
+    font-size:14px;
 }
 .izq{
     width: 50%;
@@ -157,37 +153,4 @@
     height: 65%;
     text-align: justify;
     /* background: darkcyan;    */
-}
-
-/* coranzoncito */
-.heart-shape{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    background-color: rgb(114, 0, 0);
-}
-.heart-shape:before,
-.heart-shape:after{
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    content: '';
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    background-color: rgb(114, 0, 0);
-}
-.heart-shape:before{
-    bottom: 0px;
-    left: -100px;
-}
-.heart-shape:after{
-    top: -100px;
-    right: 0px;
 }

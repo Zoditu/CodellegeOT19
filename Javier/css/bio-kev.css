@@ -1,0 +1,5 @@
+body > header{ /*nada mas a agarrar el que este en esa estrcutura de seguimiento*/
+    height: 3rem;
+    background: darkolivegreen;
+    padding: 0.3rem;   
+} 
