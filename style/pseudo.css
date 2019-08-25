@@ -1,0 +1,129 @@
+button
+{
+    margin: 1rem;
+    color: white;
+    background: darkred;
+    border: 0.05rem solid white;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 1rem 0.1rem black;
+
+    cursor: pointer;
+    width: 65px;
+    transition: background 0.3s;
+}
+
+button:hover
+{
+    background: darkgreen;
+    /* width: 200px; */
+
+    transition: background 0.3s;
+}
+
+button:active
+{
+    width: 200px;
+}
+
+label:active
+{
+    color: red;
+}
+
+input[type=checkbox]:active
+{
+    width: 35px;
+}
+
+input[type=checkbox]:checked, input[type=radio]:checked
+{
+    width: 35px;
+}
+
+a:link
+{
+    color: dimgrey;
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: gold;
+}
+
+*:focus
+{
+    border: 3px solid lawngreen;
+}
+
+ul li
+{
+    color: turquoise;
+}
+
+ul li:first-child
+{
+    color: greenyellow;
+}
+
+ul li:last-child
+{
+    color: black;
+    text-decoration: line-through;
+}
+
+ul li:nth-child(1)
+{
+    color: goldenrod;
+}
+
+ul li:nth-child(2)
+{
+    color: silver;
+}
+
+ul li:nth-child(3)
+{
+    color: brown;
+}
+
+p::first-letter
+{
+    font-size: 2rem;
+    color: darkred;
+}
+
+.tarjeta:hover .material-icons:nth-child(1)
+{
+    color: red;
+}
+
+.tabla
+{
+    height: 20rem;
+    width: 100%;
+    background: green;
+
+    display: table;
+}
+
+.table-row
+{
+    display: table-row;
+}
+
+.table-cell
+{
+    display: table-cell;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.vertical-middle
+{
+    vertical-align: middle;
+}
