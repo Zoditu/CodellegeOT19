@@ -1,0 +1,74 @@
+html,body{
+    width: 200%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.cuadro{
+    border: 0.1rem solid dimgray;
+    width: 12rem;
+    height: 12rem;
+    display: inline-block;
+    
+}
+
+.left-top{
+    position: absolute;
+    left: 0;
+    top: 0; 
+}
+.right-top{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+.left-bottom{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.right-bottom{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.ama{
+    background: yellow;
+}
+.roj{
+    background: red;
+}
+.gris{
+    background: grey;
+}
+.blue{
+    background: blue;
+}
+.small{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+}
+.fixed{
+    position: fixed;
+}
+
+/*
+FIXED: me sigue. para los navs no se mueven 
+STICKY: me sigue como facebook
+
+
+posicion
+absoluta: siempre especifico, exactamente la posicion
+relativa: busca desde donde empieza
+
+
+mover elemento dentro de otro
+relativo padre
+hijo absoluto
+
+por default la unica etiqueta relativa es el body
+*/

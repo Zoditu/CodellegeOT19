@@ -1,0 +1,94 @@
+
+/*PSEUDO CLASES**********************************/
+button{
+    margin: 1rem;
+    color: white;
+    background: darkblue;
+    border: 0.5 rem solid white;
+    padding: 0.3rem;
+    box-shadow: 0 0 1rem 0.1rem black;
+    border-radius: 0.3rem;
+    width: 130px;
+    /*para que se ponga la manita*/
+    cursor: pointer;
+    /*para que quitar la transicion de abajo el cambio no sea brusco se hace en los dos lados*/
+    transition:  background 2s, width 2s;
+    
+}
+
+button:hover{
+    width: 200px;
+    background: skyblue;
+    /*transition solo lo que tenga unidades de medida*/
+    transition:  background 2s, width 2s;  
+}
+button:active{
+    width:400px;
+}
+label:active{
+    color: red;
+}
+input[type=checkbox]:active{
+    width: 35px;
+}
+input[type=checkbox],input[type=radio]:checked{
+    width: 35px;
+}
+a:link{
+    color: dimgrey;
+    text-decoration: none;
+}
+a:visited{
+    color: gold;
+   
+}
+
+/*cuando le doy tap*/
+*:focus{
+    border: 3px solid lawngreen;
+}
+
+ul li{
+    color: turquoise;
+}
+ul li:first-child{
+    color: greenyellow;
+}
+ul li:last-child{
+    color: black;
+    text-decoration: line-through;
+}
+ul li:nth-child(1){
+    color: goldenrod;
+}
+ul li:nth-child(2){
+    color: silver;
+}
+ul li:nth-child(3){
+    color: brown;
+}
+
+/*PSEUDO ELEMENTOS*****************************/
+
+p::first-letter{
+    font-size: 2rem;
+    color: darkred;
+}
+.tabla{
+    height: 20rem;
+    width: 100;
+    background: green;
+    display: table;
+}
+.table-cell{
+    display: table-cell;
+}
+.table-row{
+    display: table-row;
+}
+.centrar{
+    text-align: center
+}
+.vertical-middle{
+    vertical-align: middle;
+}

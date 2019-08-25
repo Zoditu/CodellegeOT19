@@ -1,0 +1,116 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Beth Ellen', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-bottom: 80px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.tarjeta {
+    width: 30rem;
+    height: 20rem;
+    border: 1px solid black;
+    display: block;
+    background-image: url("https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/5883504/600/400/m2/fpnw/wm1/gdgss76rio2jhmeax53bzupgaqzcpppluaxhggq7nuuxtoxzcg9geybbetikamvv-.jpg?1550074312&s=6cce547fa9a14481a76d8c74abb4d5f3");
+    margin: auto;
+
+}
+
+.adentro {
+
+    margin: 15px;
+    margin-bottom: 0px;
+    background-color: rgba(255, 240, 253, 0.5);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.adentro2 {
+
+    width: 30rem;
+    height: 10rem;
+    background-color: rgba(255, 240, 253, 0.5);
+    margin-top: 90px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+}
+
+.tel {
+    margin-left: 280px;
+}
+
+.mapcorreo {
+    margin-left: 10px;
+}
+
+.centrar {
+    text-align: center;
+}
+.adentro h1,h4{
+    margin-left: 15px;
+
+}
+.inline{
+    display: inline;
+}
+
+/*aqui empiezan las pseudoclases*/
+.adentro2:hover{
+    background: rgb(212, 209, 209);
+    color:turquoise;
+}
+
+
+
+
+.adentro:hover h1{
+    color:turquoise;
+}
+.adentro:hover h4{
+    color:turquoise;
+}
+
+
+
+.adentro .i1:hover {
+    color: silver;
+    border: 1px;
+}
+.i2:hover {
+    color:red;
+    border: 1px;
+}
+.i3:hover {
+    color: gold;
+    border: 1px;
+}
+
+
+
+
+
+/*
+
+
+.tel:hover i{
+    color: silver;
+}
+.mapcorreo:hover i:nth-child(1){
+    color: red;
+}
+.adentro:hover i:nth-child(2){
+    color: white;
+}
+*/

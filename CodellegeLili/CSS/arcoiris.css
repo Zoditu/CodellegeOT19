@@ -1,0 +1,74 @@
+.cuadro{
+    border: 0.1rem solid dimgray;
+    width: 12rem;
+    height: 12rem;
+    display: inline-block;
+}
+.red{background: red;}
+.orange{background-color: orange;}
+.yellow{background: yellow;}
+.green{background-color: lime;}
+.sky{background: skyblue;}
+.blue{background: blue;}
+.purple{background: purple;}
+
+.left-top{
+    position: absolute;
+    left: 0;
+    top: 0; 
+}
+.mas0{
+    position: absolute;
+    left: 4rem;
+    top: 4rem;
+}
+.mas1{
+    position: absolute;
+    left: 9rem;
+    top: 9rem;
+}
+.mas2{
+    position: pxolute;
+    left: 14rem;
+    top: 14rem;
+}
+.mas3{
+    position: absolute;
+    left: 19rem;
+    top: 19rem;
+}
+.mas4{
+    position: absolute;
+    left: 24rem;
+    top: 24rem;
+}
+.mas5{
+    position: absolute;
+    left: 29rem;
+    top: 29rem;
+}
+.mas6{
+    position: absolute;
+    left: 34rem;
+    top: 34rem;
+}
+.circulo{
+    border: 1px solid plum;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    background: plum;
+}
+.relativo{
+    position: relative;
+}
+.maspuntouno{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.maspuntodos{
+    position: absolute;
+    left: 110px;
+    top: 110px;
+}

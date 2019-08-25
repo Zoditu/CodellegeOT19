@@ -1,0 +1,139 @@
+
+
+body{
+    background: rgba(252, 249, 99, 0.726);
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.clear{
+    clear: both;
+}
+.cuadrito{
+    width: 100%;
+    height: 40%;
+    padding: 1px;
+    text-align: center;
+}
+.flotaputo{
+    float: left;
+    margin: 10px;
+    margin-left: 110px;
+}
+.foto{
+    width: 30%;
+    height: 40%;
+    float: left;
+    margin-left: 45px;
+}
+.foto img{
+    width: 286px;
+    height: 300px;
+}
+
+img{
+    width: 200px;
+    height: 300px;
+    
+}
+.texto{
+    width: 70%;
+    height: 40%;
+    padding-right: 0px;
+    float: left;
+}
+.iconos img{
+    width: 40px;
+    height: 40px;
+    margin: 40px;
+}
+.texto2{
+    height: 40%;
+    width: 30%;
+    float: left;
+}
+.imagen2{
+    height: 40%;
+    width: 30%;
+    float: left;
+}
+.imagen2 img{
+    width: 395px;
+    height: 340px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.video2{
+    height: 40%;
+    width: 40%;
+    float: left;
+} .video2 iframe{
+    width: 300px;
+    height: 250px;
+    padding-top: 70px;
+    margin-left: 70px;
+}
+/*clear fix para despues d elos 
+flotantes*/
+.texto3{
+    width: 40%;
+    height: 40%;
+    float: left;
+    padding-left: 2px;
+}
+.imagenchiquita{
+    width: 15%;
+    height: 25%;
+    float: left;
+}
+.imagenchiquita img{
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+.datoschiquitos{
+    width: 40%;
+    height: 25%;
+    float: left;
+}
+.nombrechiquito{
+    width: 45%;
+    height: 25%;
+    float: left;
+}
+.nombrechiquito > h5,h6{
+    text-align: right;
+    
+}
+.oraleputo{
+    bottom: 50px;
+}
+.texto3 main{
+    width: 100%;
+    height: 75%;
+    padding: 3px;
+}
+.mapa{
+    text-align: center;
+    width: 60%;
+    height: 40%;
+    float: left;
+}
+.mapa iframe{
+    margin-left: 25px;
+    width: 658px;
+}
+main>p{
+    padding: 16px;
+}
+h4{
+    margin-left: 20px;
+}
+.texto3 header, main{
+    margin-left: 15px;
+}
+.forma{
+    padding-left:180px;
+    padding-right: 180px;
+    text-align: justify;
+    line-height: 200%;
+}
