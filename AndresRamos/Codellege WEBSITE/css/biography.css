@@ -2,10 +2,20 @@ html, body
 {
     margin: 0; 
     padding: 0; 
+    font-size: 1.05rem;
+}
+body
+{
+    overflow-x: hidden;
 }
 body > header
 {
     height: 4em;
+}
+section.landing
+{
+    height: 100vh;
+    background-color: #1e3030;
 }
 
 .nav-bar
@@ -43,4 +53,26 @@ body > header
 .menu ul li:hover a
 {
     text-decoration: underline;
+}
+.clear
+{
+    clear: both;
+}
+.title
+{
+    padding-top: 2em;
+    font-size: 2.5em;
+}
+.center
+{
+    text-align: center;
+}
+.intersection
+{
+    border-top: .3em solid #88a0a0;
+    width: 80%;
+}
+.text
+{    
+    font-size: .8em;
 }

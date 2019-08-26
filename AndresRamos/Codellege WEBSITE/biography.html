@@ -20,7 +20,7 @@
                             <div class="menu col align-self-center h-100">
                                 <ul>
                                     <li class="px-0">
-                                        <a href="biography.html">
+                                        <a href="#introduction">
                                             <div class="row h-100">
                                                 <div class="col align-self-center">
                                                     <div class="row h-100">
@@ -29,7 +29,8 @@
                                                                 width="50px" height="50px" alt="">
                                                         </div>
                                                         <div class="col pl-4 align-self-center">
-                                                            <p class="p-0 m-0">Andres Felipe Ramos Rodriguez</p>
+                                                            <p class="p-0 m-0" id="name">Andres Felipe Ramos Rodriguez
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -42,40 +43,40 @@
                     </section>
                 </li>
                 <li style="float:right; height: 100%; ">
-                    <section class="menu d-inline-block h-100 ml-5">
+                    <section class="menu d-inline-block h-100">
                         <div class="row h-100">
                             <div class="menu col align-self-center h-100">
                                 <ul>
                                     <li>
-                                        <a href="">
+                                        <a href="#biography">
                                             <div class="row h-100">
                                                 <div class="col align-self-center">Biography</div>
                                             </div>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="">
+                                        <a href="#hobbies">
                                             <div class="row h-100">
                                                 <div class="col align-self-center">Hobbies</div>
                                             </div>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="">
+                                        <a href="#education">
                                             <div class="row h-100">
                                                 <div class="col align-self-center">Education</div>
                                             </div>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="">
+                                        <a href="#professional-experience">
                                             <div class="row h-100">
                                                 <div class="col align-self-center">Professional Experience</div>
                                             </div>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="">
+                                        <a href="#preferences">
                                             <div class="row h-100">
                                                 <div class="col align-self-center">Preferences</div>
                                             </div>
@@ -87,38 +88,80 @@
                     </section>
                 </li>
             </ul>
+            <div class="clear"></div>
         </nav>
     </header>
     <main>
-        <section class="introduction">
+        <section class="landing" id="landing">
+
+        </section>
+        <section class="introduction" id="introduction">
             <article>
                 <header>
-                    <h1>Introduction</h1>
+                    <h1 class="title center">Introduction</h1>
+                    <hr class="intersection">
                 </header>
                 <main>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, aperiam saepe error maxime totam
-                        nihil quaerat odit, nobis porro repudiandae iste tenetur. Nulla doloribus eos, quas laboriosam
-                        nostrum alias asperiores.</p>
-                    <div class="profile-image">
-                        <div class="left"></div>
-                        <div class="right"></div>
+                    <p class="text">Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure
+                        partie d'entre elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne
+                        ressemblent pas une seconde à du texte standard. Si vous voulez utiliser un passage du Lorem
+                        Ipsum, vous devez être sûr qu'il n'y a rien d'embarrassant caché dans le texte. Tous les
+                        générateurs de Lorem Ipsum sur Internet tendent à reproduire le même extrait sans fin, ce qui
+                        fait de lipsum.com le seul vrai générateur de Lorem Ipsum. Iil utilise un dictionnaire de plus
+                        de 200 mots latins, en combinaison de plusieurs structures de phrases, pour générer un Lorem
+                        Ipsum irréprochable. Le Lorem Ipsum ainsi obtenu ne contient aucune répétition, ni ne contient
+                        des mots farfelus, ou des touches d'humour.</p>
+                    <div class="mx-5">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <img src="https://fakeimg.pl/250x100/" class="card-img" alt="">
+                                        </div>
+                                        <div class="card-text w-100 text-center">
+                                            <sub>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</sub>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <img src="https://fakeimg.pl/250x100/" class="card-img" alt="">
+                                        </div>
+                                        <div class="card-text w-100 text-center">
+                                            <sub>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</sub>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
                     </div>
                 </main>
             </article>
         </section>
-        <section class="biography">
+        <section class="biography" id="biography">
             <article>
                 <header>
-                    <h1>Biography</h1>
+                    <h1 class="title center">Biography</h1>
+                    <hr class="intersection">
                 </header>
-                <main>
-                    <div class="left">
-
-                    </div>
-                    <div class="right">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis hic magnam qui voluptas
-                            voluptatibus necessitatibus quasi magni, blanditiis illo asperiores quae perspiciatis. Quo,
-                            a maxime neque et placeat sint labore!</p>
+                <main class="mx-5 card">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <img src="https://fakeimg.pl/200x200/" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">Andres Ramos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <p class="text pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor massa ornare sem tincidunt imperdiet et non tellus. Donec suscipit sit amet orci quis sodales. Mauris dictum leo id nibh lacinia ornare. Nulla facilisi. Curabitur est felis, tincidunt a fringilla volutpat, dictum ut augue. Vestibulum vitae facilisis felis. Sed porta erat vel pharetra mattis. Donec porta, neque id lobortis gravida, erat nulla tempor neque, sed dictum purus augue eget dolor. Fusce neque ante, fermentum in vulputate sed, fringilla sit amet erat. In cursus non velit consequat consectetur. Nulla dolor turpis, suscipit nec nunc eu, interdum condimentum tortor. Cras gravida nulla lorem, in porta odio tincidunt quis. Nunc feugiat leo et tempor tempus. Aenean id lacinia nibh, eget consequat dui. Aliquam accumsan hendrerit sem, ac accumsan erat lobortis id.</p>
+                        </div>
                     </div>
                 </main>
                 <footer>
@@ -126,7 +169,7 @@
                 </footer>
             </article>
         </section>
-        <section class="hobbies">
+        <section class="hobbies" id="hobbies">
             <header>
                 <h1>Hobbies</h1>
             </header>
@@ -148,7 +191,7 @@
                 </article>
             </main>
         </section>
-        <section class="education">
+        <section class="education" id="education">
             <header>
                 <h1>Education</h1>
             </header>
