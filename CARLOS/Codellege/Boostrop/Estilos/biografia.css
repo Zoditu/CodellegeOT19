@@ -24,6 +24,9 @@ body > header{
     background: cadetblue;
     height: 4rem;
 }
+.yo img{
+height: 4rem;
+}
 
  .menu ul li{
      text-decoration-style: none;

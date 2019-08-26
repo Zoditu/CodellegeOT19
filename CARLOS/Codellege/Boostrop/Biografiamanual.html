@@ -9,39 +9,39 @@
 </head>
 <body>
     <header>
-        <nav class=" h-100 d-inline-block   ">
-            <img src="Imagenes/Yo.jpeg" class="h-100 "/>
-            <section class="navbar-band d-inline-block h-100">
-                <div class="row h-100">
-                <div class="col align-self-center">
-                Carlos Mendoza Andrade 
-                </div>
-                </div>
-            </section>
-            <section class="menu d-inline-block h-100">
-        <!-- Aqui va unn ul con el menu  -->
-                <div class="row h-100">
-                    <div class="col align-self-center ">
-                        <ul>
-                            <li> Biografia</li>
-                            <li>Hobbis</li>
-                            <li>Escolaridad</li>
-                            <li>Experiencia laboral</li>
-                            <li>Referencias</li>
-                        </ul>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Carlos Mendoza Andrade</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#info">Introduccion <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#biogra">Biografia</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#hobb">Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="#school" tabindex="-1" aria-disabled="true">Escolaridad</a>
+                        </li>
+                      </ul>
                     </div>
-                </div>
-            </section> 
+                  </nav>
+         
         </nav>
         <div class="clear"></div>
     </header>
     <main class="container">
-        <articule class="intr text-justify">
-            <section class="info">
+        <articule class="intr text-justify" >
+            <section id="info">
                 <h1>Introduccion</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt fugiat maxime perferendis quaerat nobis vel sapiente molestias omnis, neque accusamus nulla a similique doloremque nisi dignissimos eum tempore unde magni! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde rerum cum possimus ipsam accusantium nemo reiciendis in voluptas nobis nihil. Eaque repellat fuga amet consequuntur necessitatibus nobis repellendus et fugit?</p>
             </section>
-            <section class="logros">
+            <section class="logros" id="Logro">
                 <div class="row">
                     <div class="col">
                      <div class="logro card d-inline-block ">
@@ -70,7 +70,7 @@
         </articule>
         <div class="clear"></div>
         <hr> 
-        <section><H4>Biografia</H4></section>
+        <section id="biogra"><H4>Biografia</H4></section>
         <articule class="bio card mb-3 px-0;">
             <section class="imgbio row no-glutters">
                 <div class="col-2">
@@ -98,7 +98,7 @@
         </articule>
         
         <hr>
-        <article class="hobbies  pt-3">
+        <article class="hobbies  pt-3" id="hobb">
             <section class="hobbie1 h-100 pt-3">
                 <div class="row h-100">
                     <div class="col-sm-3 col-md-3">
@@ -151,7 +151,7 @@
         </article>
         Escolaridad
         <hr>
-        <article class="escolaridad">
+        <article class="escolaridad" id="school">
             <!-- Prescolar -->
             <section class=" gradeSH ">
                 <div class="row ">
