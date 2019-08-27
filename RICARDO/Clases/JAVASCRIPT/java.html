@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script>
+        var harina = "harina";
+        var manchego = "manchego";
+       function PrepararQuesadillas( tortillas, queso )
+       {
+           console.log( 'Poner queso del tipo: ' + queso + " en las tortillas del tipo: " + tortillas );
+           console.log( 'Ponerlas en el comal' );
+           console.log( 'LISTO' );
+       }
+    //    PrepararQuesadillas( harina,manchego );
+
+    var InvocarQuesadillas = function ( tortillas, queso )
+                                      {
+                                     console.log( 'Poner queso del tipo: ' + queso + " en las tortillas del tipo: " + tortillas );
+                                     console.log( 'Ponerlas en el comal' );
+                                     console.log( 'LISTO' );
+                                      }
+    InvocarQuesadillas ( harina, manchego );
+
+    //Tipos de datos "complejos"
+    var arreglo = [ 1, 2, 3, 4, 5 ];
+    //              0  1  2  3  4
+    console.log( arreglo[1] );
+
+
+    //Objetos (A diferencia del arreglo aquí si se pueden poner diferentes tipos de datos)
+    var Persona = {
+        nombre: "Ricardo",
+        "Estado Civil": "Soltero",
+        apellidoPaterno: "Teneyuque",
+        apellidoMaterno: "Huerta",
+        sexo: "H",
+        edad: 24,
+        CURP: "BXJHFKD",
+        altura: 1.7,
+        peso: 90,
+        nacionalidad: "Mexicano"
+    };
+
+    //Persona["Estado Civil"] = 'Algo';
+
+    // console.log( Persona );
+
+    var Alumnos = [
+        { //Celestino
+        nombre: "Celestino",
+        apellidoPaterno: "González",
+        apellidoMaterno: "Márquez",
+        sexo: "M",
+        edad: 23,
+        altura: "...",
+        nacionalidad: "Mexicano",
+        mostrar: function()
+        {
+            console.log( this.nombre + " " + this.apellidoPaterno );
+            console.log( "Edad: " + this.edad );
+        }
+        },
+        { //Itzel
+        nombre: "Itzel",
+        apellidoPaterno: "Alonso",
+        apellidoMaterno: "García",
+        sexo: "F",
+        edad: 22,
+        altura: 1.72,
+        nacionalidad: "Mexicana",
+        mostrar: function()
+        {
+            console.log( this.nombre + " " + this.apellidoPaterno );
+            console.log( "Edad: " + this.edad );
+        }
+        },
+        { //Lili
+        nombre: "Liliana",
+        apellidoPaterno: "Hernández",
+        apellidoMaterno: "Gonzalez",
+        sexo: "F",
+        edad: 19,
+        altura: 1.7,
+        nacionalidad: "Mexicana",
+        mostrar: function()
+        {
+            console.log( this.nombre + " " + this.apellidoPaterno );
+            console.log( "Edad: " + this.edad );
+        }
+        },
+        { //Aldo
+        nombre: "Aldo",
+        apellidoPaterno: "Matías",
+        apellidoMaterno: "Galindo",
+        sexo: "M",
+        edad: 23,
+        altura: 1.77,
+        nacionalidad: "Mexicano",
+        mostrar: function()
+        {
+            console.log( this.nombre + " " + this.apellidoPaterno );
+            console.log( "Edad: " + this.edad );
+        }
+        },
+        { //Aarón
+        nombre: "Aarón",
+        apellidoPaterno: "Arredondo",
+        apellidoMaterno: "Aruguz",
+        sexo: "M",
+        edad: 20,
+        altura: 1.74,
+        nacionalidad: "Mexicano",
+        mostrar: function()
+        {
+            console.log( this.nombre + " " + this.apellidoPaterno );
+            console.log( "Edad: " + this.edad );
+        }
+        },
+        { //Karla
+        nombre: "Karla",
+        apellidoPaterno: "González",
+        apellidoMaterno: "Hernández",
+        sexo: "F",
+        edad: 20,
+        altura: 1.48,
+        nacionalidad: "Mexicana",
+        mostrar: function()
+        {
+            console.log( this.nombre + " " + this.apellidoPaterno );
+            console.log( "Edad: " + this.edad );
+        }
+        },
+        { //Natalia
+        nombre: "Natalia",
+        apellidoPaterno: "Rodriguez",
+        apellidoMaterno: "Capitán",
+        sexo: "F",
+        edad: 22,
+        altura: 1.56,
+        nacionalidad: "Mexicana",
+        mostrar: function()
+        {
+            console.log( this.nombre + " " + this.apellidoPaterno );
+            console.log( "Edad: " + this.edad );
+        }
+        },
+        { //Andrés Colombia 
+        nombre: "Andrés",
+        apellidoPaterno: "Ramos",
+        apellidoMaterno: "Rodriguez",
+        sexo: "M",
+        edad: 19,
+        altura: 1.6,
+        nacionalidad: "Mexicano",
+        mostrar: function()
+        {
+            console.log( this.nombre + " " + this.apellidoPaterno );
+            console.log( "Edad: " + this.edad );
+        }
+        },
+        { //Ricardo
+        nombre: "Ricardo",
+        apellidoPaterno: "Teneyuque",
+        apellidoMaterno: "Huerta",
+        sexo: "M",
+        edad: 20,
+        altura: 1.7,
+        nacionalidad: "Mexicano",
+        mostrar: function()
+        {
+            console.log( this.nombre + " " + this.apellidoPaterno );
+            console.log( "Edad: " + this.edad );
+        }
+        },
+        { //Javier
+        nombre: "Javier",
+        apellidoPaterno: "Anguiano",
+        apellidoMaterno: "de Lara",
+        sexo: "M",
+        edad: 21,
+        altura: 1.77,
+        nacionalidad: "Mexicano",
+        mostrar: function()
+        {
+            console.log( this.nombre + " " + this.apellidoPaterno );
+            console.log( "Edad: " + this.edad );
+        }
+        },
+        { //Carlos
+        nombre: "Carlos",
+        apellidoPaterno: "Mendoza",
+        apellidoMaterno: "Andrade",
+        sexo: "M",
+        edad: 22,
+        altura: 1.8,
+        nacionalidad: "Mexicano",
+        mostrar: function()
+        {
+            console.log( this.nombre + " " + this.apellidoPaterno );
+            console.log( "Edad: " + this.edad );
+        }
+        },
+        { //Andrés2
+        nombre: "Andrés",
+        apellidoPaterno: "Coronado",
+        apellidoMaterno: "Lázaro",
+        sexo: "M",
+        edad: 22,
+        altura: 1.75,
+        nacionalidad: "Mexicano",
+        mostrar: function()
+        {
+            console.log( this.nombre + " " + this.apellidoPaterno );
+            console.log( "Edad: " + this.edad );
+        }
+        },
+        { //Miriam
+        nombre: "Miriam",
+        apellidoPaterno: "Herrera",
+        apellidoMaterno: "Reyna",
+        sexo: "F",
+        edad: 21,
+        altura: 1.6,
+        nacionalidad: "Mexicana",
+        mostrar: function()
+        {
+            console.log( this.nombre + " " + this.apellidoPaterno );
+            console.log( "Edad: " + this.edad );
+        }
+        }
+    ];
+// Alumnos[0].mostrar();
+// Alumnos[1].mostrar();
+// Alumnos[2].mostrar();
+// Alumnos[3].mostrar();
+// Alumnos[4].mostrar();
+// Alumnos[5].mostrar();
+// Alumnos[6].mostrar();
+// Alumnos[7].mostrar();
+// Alumnos[8].mostrar();
+// Alumnos[9].mostrar();
+// Alumnos[10].mostrar();
+// Alumnos[11].mostrar();
+// Alumnos[12].mostrar();
+
+// alert( Alumnos.length );
+
+// for( var i = 0; i < Alumnos.length; i = i + 1 )
+// {
+//     Alumnos[i].mostrar();
+// }
+
+var numeros = [ 10,20,30,40,50,60,70,80,90 ];
+
+// for( var i = numeros.length - 1; i > -1; i = i - 1)
+// for( var i = 0; i < numeros.length; i = i + 1)
+// {
+//     if( numeros[i] > 40 && numeros[i] % 2 == 0)
+//     {
+//         console.log( numeros[i] );
+//     }
+
+// }
+
+var hombres = [];
+var i = 0;
+while( i < Alumnos.length )
+{
+    if(Alumnos[i].sexo == 'M')
+        hombres.push( Alumnos[i] );
+    else
+        console.log( Alumnos[i] );
+    i = i + 1;   
+}
+
+// for( var i = 0; i < Alumnos.length; i = i + 1)
+// {
+//     if(Alumnos[i].sexo == 'M')
+//         hombres.push( Alumnos[i] );
+//     else
+//         console.log( Alumnos[i] );
+// }
+
+console.log( hombres );
+    //Hash
+    //Hashing
+    //Hashear
+
+     </script>
+</head>
+<body>
+    <h1>Codellege - JavaScript</h1>
+</body>
+</html>
