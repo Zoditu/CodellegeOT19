@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    // tipos de datos COMPLEJOS.
+
+    var arreglo=[10, 20, 30, 40, 50];
+    //`           0   1   2   3   4 
+
+//objetos
+    var objeto={
+        propiedad1: 'valor',
+        propiedad2:' valor',
+        propiedad3: true,
+        propiedad4: 45,
+        propiedad5: function(){}
+    };
+    var Persona= {
+        nombre:"Itzel",
+        apellidoPaterno: "Alonso",
+        apellidoMaterno: "Garcia",
+        "Estado Civil": "Soltera",
+        sexo:"M",
+        edad:22,
+        CURP:'AOGI',
+        altura:1.72,
+        peso:75+' kg',
+    }; 
+    
+    // Persona["Estado Civil"];
+
+
+
+//ARREGLOS CON OBJETOS
+    var Alumnos= [
+        //OBJETOS CON PROPIEDADES
+    {//Itzel
+        nombre: 'Itzel',
+        ApellidoP:' Alonso',
+        ApellidoM:' Garcia',
+        edad:22,
+        estatura: '1.72m',
+        sexo:'M',
+        nacionalidad:'Mexicana',
+        mostrar: function()
+        {
+            console.log(this.nombre + "" + this.ApellidoP);
+            console.log("Edad: " + this.edad);
+        }
+    },
+   
+    {//Liliana
+        nombre: 'Liliana',
+        ApellidoP:' Hernandez',
+        ApellidoM:'Gonzalez',
+        edad:19,
+        estatura: '1.70m',
+        sexo:'M',
+        nacionalidad:'Mexicana',
+        mostrar: function()
+        {
+            console.log(this.nombre + "" + this.ApellidoP);
+            console.log("Edad: " + this.edad);
+        }
+    },
+    {//Aldo
+        nombre: 'Aldo',
+        ApellidoP:' Matias',
+        ApellidoM:' Galindo',
+        edad:23,
+        estatura: '1.77m',
+        sexo:'H',
+        nacionalidad:'Mexicana',
+        mostrar: function()
+        {
+            console.log(this.nombre + "" + this.ApellidoP);
+            console.log("Edad: " + this.edad);
+        }
+    },
+    { //Aron
+        nombre: 'Aron',
+        ApellidoP:' Arredondo',
+        ApellidoM: 'Saraguz',
+        edad: 20,
+        estatura: '1.74m',
+        sexo:'H',
+        nacionalidad:'Mexicana',
+        mostrar: function()
+        {
+            console.log(this.nombre + "" + this.ApellidoP);
+            console.log("Edad: " + this.edad);
+        }
+    },
+    { //karla
+        nombre: 'Karla',
+        ApellidoP:' Gonzalez',
+        ApellidoM:'Hernandez',
+        edad:20,
+        estatura: '1.48m',
+        sexo:'M',
+        nacionalidad:'Mexicana',
+        mostrar: function()
+        {
+            console.log(this.nombre + "" + this.ApellidoP);
+            console.log("Edad: " + this.edad);
+        }
+    },
+
+    { //Natalia
+        nombre: 'Natalia',
+        ApellidoP:' Rodriguez',
+        ApellidoM:'Capitan',
+        edad:22,
+        estatura: '1.56m',
+        sexo:'M',
+        nacionalidad:'Mexicana',
+        mostrar: function()
+        {
+            console.log(this.nombre + "" + this.ApellidoP);
+            console.log("Edad: " + this.edad);
+        }
+    },
+
+    { //Andy
+        nombre: 'Andy',
+        ApellidoP:' Ramos',
+        ApellidoM:' Rodriguez',
+        edad:19,
+        estatura: '1.60m',
+        sexo:'H',
+        nacionalidad:'Colombiana',
+        mostrar: function()
+        {
+            console.log(this.nombre + "" + this.ApellidoP);
+            console.log("Edad: " + this.edad);
+        }
+    },
+
+    { //Richard
+        nombre: 'Richard',
+        ApellidoP:' Teneyuque',
+        ApellidoM:' Puerta',
+        edad:20,
+        estatura: '1.70m',
+        sexo:'H',
+        nacionalidad:'Mexicana',
+        mostrar: function()
+        {
+            console.log(this.nombre + "" + this.ApellidoP);
+            console.log("Edad: " + this.edad);
+        }
+    },
+
+    { //X-aver
+        nombre: 'X-aver',
+        ApellidoP:' Anguiano',
+        ApellidoM:' de Lara',
+        edad:21,
+        estatura: '1.77m',
+        sexo:'H',
+        nacionalidad:'Mexicana',
+        mostrar: function()
+        {
+            console.log(this.nombre + "" + this.ApellidoP);
+            console.log("Edad: " + this.edad);
+        }
+    },
+
+    { //Charles
+        nombre: 'Charles',
+        ApellidoP:' Mendoza',
+        ApellidoM:' Andrade',
+        edad:22,
+        estatura: '1.77m',
+        sexo:'H',
+        nacionalidad:'Mexicana',
+        mostrar: function()
+        {
+            console.log(this.nombre + "" + this.ApellidoP);
+            console.log("Edad: " + this.edad);
+        }
+    },
+
+    { //Andres
+        nombre: 'Andres',
+        ApellidoP:' Coronado',
+        ApellidoM:' Lazaro',
+        edad:22,
+        estatura: '1.75m',
+        sexo:'H',
+        nacionalidad:'Mexicana',
+        mostrar: function()
+        {
+            console.log(this.nombre + "" + this.ApellidoP);
+            console.log("Edad: " + this.edad);
+        }
+    },
+    
+    { //Miriam
+        nombre: 'Miriam',
+        ApellidoP:' Herrera',
+        ApellidoM:' Reina',
+        edad:21,
+        estatura: '1.60m',
+        sexo:'M',
+        nacionalidad:'Mexicana',
+        mostrar: function()
+        {
+            console.log(this.nombre + "" + this.ApellidoP);
+            console.log("Edad: " + this.edad);
+        }
+    },
+    
+    { //Celestino
+        nombre: 'Celestino',
+        ApellidoP:' Gonzalez',
+        ApellidoM:' Marquez',
+        edad:23,
+        estatura: '1.60m',
+        sexo:'H',
+        nacionalidad:'Mexicana',
+        mostrar: function()
+        {
+            console.log(this.nombre + "" + this.ApellidoP);
+            console.log("Edad: " + this.edad);
+        }
+    }
+    
+    ];
+
+    // Alumnos[0].mostrar();
+    // Alumnos[1].mostrar();
+    // Alumnos[2].mostrar();
+    // Alumnos[3].mostrar();
+    // Alumnos[4].mostrar();
+    // Alumnos[5].mostrar();
+    // Alumnos[6].mostrar();
+    // Alumnos[7].mostrar();
+    // Alumnos[8].mostrar();
+    // Alumnos[9].mostrar();
+    // Alumnos[10].mostrar();
+    // Alumnos[11].mostrar();
+//for(var i=0; i < Alumnos.length;i = i + 1 )
+//{
+//    Alumnos[i].mostrar();
+//}
+    // Alumnos[12].mostrar();
+
+
+// alert(Alumnos.length)
+var Numeros=[5,6,10,56,34,6,7,230423,34];
+
+for (var i=Numeros.length-1; i >= 0; i= i-1)
+{
+    if(Numeros[i] > 40 && Numeros[i] % 2 == 0 || Numeros[i] < 10 )
+    {
+        console.log(Numeros[i]);
+    }
+    // else
+    // {
+    //     break; // sirve para evitar procesamiento innecesario.//
+
+    // }
+    
+}
+
+
+var hombres=[];
+
+// for( var i=0; i < Alumnos.length; i= i + 1)
+// {
+//     if(Alumnos[i].sexo == 'H')  // si el sexo de los alumnos es igual a H este de guardara el nombre en el arreglo hombres.
+//     hombres.push(Alumnos[i].nombre);
+//     else
+//         console.log(Alumnos[i].nombre); // su no es hombre, se mostrara en la consola, pero solo el nombre.
+// }
+//      console.log(hombres);
+var i=0;
+while(i< Alumnos.length)
+{
+    if(Alumnos[i].sexo == 'H') 
+
+    hombres.push(Alumnos[i].nombres);
+
+    else
+
+    console.log(Alumnos[i].nombres);
+}
+    console.log(hombres);
+</script>
+<body>
+    
+</body>
+</html>
