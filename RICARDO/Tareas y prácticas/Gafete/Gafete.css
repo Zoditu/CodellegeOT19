@@ -71,10 +71,7 @@ background-color: rgb(4, 8, 0);
     {
         width: 50%;
         height: 70%;
-        background-image: url("FOTOPERFIL.jpg");
-        background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
         display: inline-block;
     }
 
