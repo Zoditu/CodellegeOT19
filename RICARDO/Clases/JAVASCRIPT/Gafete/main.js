@@ -7,7 +7,7 @@ var Alumnos = [
     edad: 23,
     altura: "...",
     nacionalidad: "Mexicano",
-    img:"FOTOPERFIL.jpg",
+    img:"imagenes/imh1.jpg",
     mostrar: function()
     {
         console.log( this.nombre + " " + this.apellidoPaterno );
@@ -22,7 +22,7 @@ var Alumnos = [
     edad: 22,
     altura: 1.72,
     nacionalidad: "Mexicana",
-    img:"FOTOPERFIL.jpg",
+    img:"imagenes/imm1.jpg",
     mostrar: function()
     {
         console.log( this.nombre + " " + this.apellidoPaterno );
@@ -37,7 +37,7 @@ var Alumnos = [
     edad: 19,
     altura: 1.7,
     nacionalidad: "Mexicana",
-    img:"FOTOPERFIL.jpg",
+    img:"imagenes/imm2.jpg",
     mostrar: function()
     {
         console.log( this.nombre + " " + this.apellidoPaterno );
@@ -52,7 +52,7 @@ var Alumnos = [
     edad: 23,
     altura: 1.77,
     nacionalidad: "Mexicano",
-    img:"FOTOPERFIL.jpg",
+    img:"imagenes/imh2.jpg",
     mostrar: function()
     {
         console.log( this.nombre + " " + this.apellidoPaterno );
@@ -67,7 +67,7 @@ var Alumnos = [
     edad: 20,
     altura: 1.74,
     nacionalidad: "Mexicano",
-    img:"FOTOPERFIL.jpg",
+    img:"imagenes/imh3.jpg",
     mostrar: function()
     {
         console.log( this.nombre + " " + this.apellidoPaterno );
@@ -82,7 +82,7 @@ var Alumnos = [
     edad: 20,
     altura: 1.48,
     nacionalidad: "Mexicana",
-    img:"FOTOPERFIL.jpg",
+    img:"imagenes/imm3.jpg",
     mostrar: function()
     {
         console.log( this.nombre + " " + this.apellidoPaterno );
@@ -96,7 +96,7 @@ var Alumnos = [
     sexo: "F",
     edad: 22,
     altura: 1.56,
-    img:"FOTOPERFIL.jpg",
+    img:"imagenes/imm4.jpg",
     mostrar: function()
     {
         console.log( this.nombre + " " + this.apellidoPaterno );
@@ -111,7 +111,7 @@ var Alumnos = [
     edad: 19,
     altura: 1.6,
     nacionalidad: "Mexicano",
-    img:"FOTOPERFIL.jpg",
+    img:"imagenes/imh4.jpg",
     mostrar: function()
     {
         console.log( this.nombre + " " + this.apellidoPaterno );
@@ -126,7 +126,7 @@ var Alumnos = [
     edad: 20,
     altura: 1.7,
     nacionalidad: "Mexicano",
-    img:"FOTOPERFIL.jpg",
+    img:"imagenes/imh5.jpg",
     mostrar: function()
     {
         console.log( this.nombre + " " + this.apellidoPaterno );
@@ -141,7 +141,7 @@ var Alumnos = [
     edad: 21,
     altura: 1.77,
     nacionalidad: "Mexicano",
-    img:"FOTOPERFIL.jpg",
+    img:"imagenes/imh6.jpg",
     mostrar: function()
     {
         console.log( this.nombre + " " + this.apellidoPaterno );
@@ -156,7 +156,7 @@ var Alumnos = [
     edad: 22,
     altura: 1.8,
     nacionalidad: "Mexicano",
-    img:"FOTOPERFIL.jpg",
+    img:"imagenes/imh7.jpg",
     mostrar: function()
     {
         console.log( this.nombre + " " + this.apellidoPaterno );
@@ -171,7 +171,7 @@ var Alumnos = [
     edad: 22,
     altura: 1.75,
     nacionalidad: "Mexicano",
-    img:"FOTOPERFIL.jpg",
+    img:"imagenes/imh8.jpg",
     mostrar: function()
     {
         console.log( this.nombre + " " + this.apellidoPaterno );
@@ -186,7 +186,7 @@ var Alumnos = [
     edad: 21,
     altura: 1.6,
     nacionalidad: "Mexicana",
-    img:"FOTOPERFIL.jpg",
+    img:"imagenes/imm5.jpg",
     mostrar: function()
     {
         console.log( this.nombre + " " + this.apellidoPaterno );
@@ -209,10 +209,8 @@ window.onload = function()
     var main = document.getElementById("main")
     for( var i = 0; i < Alumnos.length; i++ )
     {
-        main.innerHTML += 
-        '<section>'+
-                '<article class="centrado">' +          
-'<div class="Gafete">'+
+        main.innerHTML +=      
+'<div class="Gafete centrado">'+
 
 '<header class="P1">'+
 '<div class="Perf centrado"></div>'+
@@ -228,10 +226,6 @@ window.onload = function()
 '<footer class="P3">' +
 '    <div class="LogoC"></div>'+
 '</footer>'+
-
-'</div>'+
-                '</article>'+
-'<br></br>'+
-        '</section>'
+'</div>'
     }
 }
