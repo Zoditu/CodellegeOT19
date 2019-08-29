@@ -229,10 +229,10 @@ var maestros = [
 // }
 
 window.onload = function () {
-    var main = document.getElementById("main")
+    var students = document.getElementById("students")
     for (var i = 0; i < Alumnos.length; i++) {
         
-        main.innerHTML +=
+        students.innerHTML +=
             '<div class = "Tarjeta" >'+
             '<div class = "Foto" >'+
                ' <img src = "'+ Alumnos[i].img+'"/>'+
@@ -253,10 +253,10 @@ window.onload = function () {
         '</footer> '+
         '</div></div>'
     }
-        var main2 = document.getElementById("main2")
+        var teachers = document.getElementById("teachers")
     for (var i = 0; i < maestros.length; i++) {
         
-        main2.innerHTML +=
+        teachers.innerHTML +=
             '<div class = "Tarjeta" >'+
             '<div class = "Foto" >'+
                ' <img src = "'+ maestros[i].imagen+'"/>'+
