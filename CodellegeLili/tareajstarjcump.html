@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarjetas de cumpleaños JS </title>
+    <script src="JS/tarjcump.js"></script>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0%;
+            padding: 5px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .Clear {
+            clear: both;
+        }
+
+
+        .centrar {
+            text-align: center;
+        }
+
+        .tarjeta {
+
+            width: 30rem;
+            height: 15rem;
+            border: 0.2rem solid dimgray;
+            border-radius: 1rem;
+            display: inline-block;
+
+        }
+
+        .imagen {
+            width: 40%;
+            height: 100%;
+            float: left;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px 0px 0px 5px;
+            
+        }
+
+        .datos {
+            width: 60%;
+            height: 100%;
+            float: left;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            background-color: rgb(202, 91, 110);
+        }
+
+        .derecha {
+            text-align: right;
+        }
+        .datos{
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .datos header h1 {
+            height: 8%;
+            overflow: hidden;
+
+        }
+
+        .datos main {
+            height: 15%;
+            overflow: hidden;
+        }
+
+        .datos footer {
+            height:55%;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tarjetas de cumpleaños</h1>
+    </header>
+    <main>
+        <section class="maestros">
+            <h1>Cumpleaños maestros</h1>
+            <div class="tarjeta" id="main">
+                
+            </div>
+        </section>
+        <section class="alumnos">
+            <h1>Cumpleaños Alumnos</h1>
+            <div class="tarjeta" id="main2">
+                
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

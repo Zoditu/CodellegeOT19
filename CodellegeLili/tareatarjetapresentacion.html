@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarjeta Presentacion</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #tarjeta {
+            border: 1px solid black;
+            width: 70rem;
+            height: 27rem;
+            border-radius: 15px;
+        }
+        .centrar{
+            text-align: center;
+        }
+        .partedeimagen {
+            width: 30%;
+            height: 80%;
+            background-image: url("https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/65214012_2326125470941981_6409653319597293568_n.jpg?_nc_cat=106&_nc_oc=AQnQuxhuLQuRJ094jjpBa2y_S160Z7zJK3vTNzecXg9SAbz0FbGFVoOIw7qA_QbIvMI&_nc_ht=scontent-atl3-1.xx&oh=1b1d5cc75330e8996264980e8cafb330&oe=5DEED36F");
+            background-size: 100% 100%;
+            float: left;
+            border-radius: 15px 0px 0px 0px;
+
+        }
+
+        .partededatos {
+            width: 70%;
+            height: 80%;
+            background-color: pink;
+            float: left;
+            border-radius: 0px 15px 0px 0px;
+        }
+
+        .partederedes {
+            width: 100%;
+            height: 20%;
+            background-color: rgba(255, 56, 212, 0.158);
+            float: left;
+            border-radius: 0px 0px 15px 15px;
+        }
+        .icon{
+            
+            width: 30px;
+            height: 30px;
+            margin: 1rem;
+        }
+        .partededatos header,main,footer{
+            margin: 0.5rem; 
+        } 
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div id="tarjeta">
+            <section class="partedeimagen"></section>
+            <section class="partededatos">
+                <header>
+                    <h1>Liliana Hernandez</h1>
+                </header>
+                <main>
+                    <h3>Edad: 19 años</h3>
+                    <h3>Ciudad: Monterrey, Nuevo Leon</h3>
+                </main>
+                <div class="clear"></div>
+                <footer>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, omnis repudiandae. Ipsam enim ratione consectetur minus quam velit totam ab odit nobis nemo? Dolore maiores similique inventore ducimus facere fugit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam voluptatum repudiandae itaque consequatur hic nesciunt explicabo, corporis repellendus tempore iste culpa consectetur nostrum consequuntur suscipit aut quam maiores animi magni!</p>
+                </footer>
+            </section>
+            <section class="partederedes centrar">
+                <a href="https://www.facebook.com"><img src="imagenes/facebook.png" class="icon"></a>
+                        <a href="https://www.twitter.com"><img src="imagenes/twitter.png" class="icon"></a>
+                        <a href="https://www.instagram"><img src="imagenes/instagram.png" class="icon"></a>
+                        <a href="https://www.linkedin"><img src="imagenes/linkedin.png" class="icon"></a>
+            </section>
+            
+            
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
