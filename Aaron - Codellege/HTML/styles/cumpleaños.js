@@ -12,6 +12,11 @@ var alumnos = [
     {name: "Liliana Hernández", birthday: "16 de Septiembre"}
 ];
 
+var maestros = [
+    {name: "Kevin del Campo"},
+    {}
+];
+
 window.onload = function() {
     var main = document.getElementById("main");
     var section = document;

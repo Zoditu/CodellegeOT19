@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background: rgb(95, 177, 255);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.forky {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.cara {
+    background: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 77% 23% 75% 25% / 77% 22% 78% 23%;
+    transform: rotate(-45deg);
+    top: -135px;
+    left: 147px;
+}
+
+.mascara {
+    width: 300px;
+    height: 60px;
+    background: rgb(95, 177, 255);
+    position: absolute;
+    top: -35px;
+    left: 50px;
+}
+
+.pico1, .pico4{
+    border-radius: 94% 6% 100% 0% / 100% 6% 94% 0%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    transform: rotate(-35deg);
+    background: white;
+    left: 56px;
+    top: 9px;
+}
+
+.pico2, .pico3 {
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: rotate(-45deg);
+    background: white;
+    left: 80px;
+    top: 9px;
+}
+
+.pico4 {
+    left: 185px;
+    transform: rotate(-57deg);
+}
+
+.pico3 {
+    left: 120px;
+}
+
+.ojo1, .ojo2 {
+    border-radius: 50% 50% 49% 51% / 50% 50% 50% 50%;
+    background: white;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50px;
+    top: 80px;
+    box-shadow: 0px 0px 1px 0px black;
+}
+
+.ojo2 {
+    left: 170px;
+    top: 90px;
+    width: 80px;
+    height: 80px;
+}
+
+.pupila1, .pupila2 {
+    border-radius: 50% 50% 49% 51% / 50% 50% 50% 50%;
+    background: black;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 20px;
+    top: 28px;
+    box-shadow: 0px 0px 1px 0px black;
+}
+
+.pupila2 {
+    width: 50px;
+    height: 50px;
+    left: 23px;
+    top: 28px;
+}
+
+.ceja {
+    clip-path: polygon(53% 1%, 86% 13%, 100% 35%, 100% 49%, 75% 24%, 49% 15%, 25% 19%, 0 31%, 0 25%, 21% 8%);
+    background: rgb(255, 30, 0);
+    left: 100px;
+    top: 30px;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    border-radius: 51% 49% 100% 0% / 100% 100% 0% 0%;
+}
+
+

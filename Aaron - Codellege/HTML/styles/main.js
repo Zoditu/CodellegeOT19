@@ -13,6 +13,8 @@ var alumnos = [
 ];
 
 
+
+
 window.onload = function () {
     var main = document.getElementById("body");
     var section = document;
