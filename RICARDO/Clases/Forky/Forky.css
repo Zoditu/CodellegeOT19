@@ -1,0 +1,145 @@
+html,body
+{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background: rgb(95, 177, 255);
+}
+.forky
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+.face
+{
+    width: 300px;
+    height: 300px;
+    background: #f0f0f0;
+    border-radius: 68% 32% 74% 26% / 74% 30% 70% 26%;
+    transform: rotate(-45deg);
+    top: -135px;
+    left: -147px;
+}
+.mascara
+{
+    width: 300px;
+    height: 60px;
+    background:  rgb(95, 177, 255);
+    position: absolute;
+    top: -50px;
+    left: -10px;
+}
+.pico1,
+.pico4
+{
+    width: 193px;
+    height: 189px;
+    background: #f0f0f0;
+    position: absolute;
+    border-radius: 100% 0% 100% 0% / 95% 0% 100% 5%;
+    transform: rotate(-45deg);
+    top: 0px;
+    left: 10px; 
+}
+.pico2,
+.pico3
+{
+    width: 122px;
+    height: 77px;
+    background: #f0f0f0;
+    position: absolute;
+    border-radius: 100% 0% 86% 14% / 98% 0% 100% 2%;
+    transform: rotate(128deg);
+    top: -10px;
+    left: 65px; 
+}
+.pico3
+{
+left: 120px;
+transform: rotate(50deg) rotateY(180deg);
+}
+.pico4
+{
+left: 110px;
+transform: rotate(45deg) rotateY(180deg);
+}
+.ojo1
+{
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 51px;
+    left: 50px;
+    box-shadow: 1px 1px 3px #888787;
+}
+.pupila1
+{
+    width: 70px;
+    height: 70px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 4px;
+    box-shadow: 1px 1px 3px #888787;
+}
+.ojo2
+{
+    width: 75px;
+    height: 75px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    left: 170px;
+    box-shadow: 1px 1px 3px #888787;
+}
+.pupila2
+{
+    width: 35px;
+    height: 35px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    box-shadow: 1px 1px 3px #888787;
+}
+.boca1
+{
+    width: 120px;
+    height: 81px;
+    border: 15px solid #71acc8;
+    border-radius: 42% 17% 70% 44% / 32% 26% 80% 73%;
+    position: absolute;
+    top: 180px;
+    left: 80px;
+    clip-path: polygon(0% 33%, 100% 11%, 99% 100%, 0% 100%);
+}
+.boca2
+{
+    width: 144px;
+    height: 81px;
+    border: 15px solid #71acc8;
+    border-radius: 42% 17% 70% 44% / 32% 26% 80% 73%;
+    position: absolute;
+    top: 130px;
+    left: 60px;
+    clip-path: polygon(0% 83%, 100% 56%, 99% 100%, 0% 100%);
+}
+.ceja
+{
+    width: 150px;
+    height: 81px;
+    border: 21px solid red;
+    border-radius: 42% 17% 70% 44% / 32% 26% 80% 73%;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    clip-path: polygon(0% 83%, 100% 56%, 99% 100%, 0% 100%);
+    transform: rotate(200deg);
+}
