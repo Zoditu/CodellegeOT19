@@ -1,0 +1,43 @@
+HTML
+-Etiquetas
+-Atributos
+-Características y propósitos de las etiquetas
+-Elementos de interacción (Forms, inputs, buttons, selects, etc)
+
+CSS
+-Selectores y reglas
+-Manipular colores y tamaños de elementos
+-Selectores anidados
+-Tipos de display
+-Positions
+  -table
+-Alineaciones con tablas (Table, table-cell, vertical-align)
+-Pseudo-clases y pseudo-elementos
+-Animaciones (Transitions)
+-Bootstrap (CSS)
+  -sistema de rejillas de Bootstap (Row, col, col-XX)
+  -cards
+  -botones
+  -colores
+
+Javascript
+-Tipos de datos nativos
+-Variables y constantes
+-Funciones y parámetros
+-Operadores (Aritméticos, condicionales, lógicos)
+-Concatenación
+-Tipos de datos complejos (Array, Object)
+-Hashing de objetos
+(persona.nombre, persona["nombre"])
+persona["Estado Civil"] = "Soltero";
+var persona = { "Estado Civil": "valor" };
+
+-Iteraciones (for, while)
+-Condicionales (if, else)
+-Variables globales del documento (document, window)
+-Métodos de acceso a elementos de la página a través de JS (document.getElement)
+-Función de carga (window.onload)
+
+-Repasar todo lo anterior
+-JQuery
+-Bootstrap con JS
