@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js"></script>
+    <title>Gafete con JQ</title>
+    <style>
+    html,body
+    {
+width:100%;
+height:100%;
+margin: 0;
+padding: 0;
+    }
+
+    *
+    {
+        box-sizing: border-box;
+    }
+
+    .Gafete
+    {
+        margin: 0.5rem;
+width:20rem;
+height:30rem;
+border:0.1rem solid black;
+display:inline-block;
+border-radius: 2rem;
+background-color: rgb(4, 8, 0);
+    }
+
+    .centrado
+    {
+        text-align:center;
+    }
+
+    .P1
+    {
+        width: 100%;
+        height: 30%;
+        padding-top: 1rem;
+    }
+
+    .P2
+    {
+        width: 100%;
+        height: 50%; 
+    }
+
+    .P3
+    {
+        width: 100%;
+        height: 20%;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .Perf
+    {
+        width:30%;
+        height:15%;
+        border: 0.2rem solid black;
+        display: inline-block;
+        background-color: white;
+        border-radius: 1rem;
+    }
+
+    .LogoS
+    {
+        width:50%;
+        height:60%;
+        display: inline-block;
+        background-image: url("https://c0.piktochart.com/v2/uploads/81ecd723-4957-46d6-993e-ac6d6bdc0226/dea21d89f166482ad22f54093dd7874bea9e2470_original.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .Foto
+    {
+        width: 50%;
+        height: 70%;
+        background-position: center;
+        display: inline-block;
+    }
+
+.Nombre
+{
+width:100%;
+height:15%;
+display:inline-block;
+background-color: greenyellow;
+font-size: 1.4rem;
+font-weight: bold;
+padding-bottom: 0.2rem;
+padding-top: 0.3rem;
+}
+
+.LogoC
+{
+    width: 60%;
+    height: 70%;
+    display: inline-block;
+    background-image: url("https://codellege.com/statics/SVG/codellege-logo-green.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+    </style>
+
+<script>
+var Alumnos = [
+    { //Celestino
+    nombre: "Celestino",
+    apellidoPaterno: "González",
+    apellidoMaterno: "Márquez",
+    sexo: "M",
+    edad: 23,
+    altura: "...",
+    nacionalidad: "Mexicano",
+    img:"imagenes/imh1.jpg",
+    mostrar: function()
+    {
+        console.log( this.nombre + " " + this.apellidoPaterno );
+        console.log( "Edad: " + this.edad );
+    }
+    },
+    { //Itzel
+    nombre: "Itzel",
+    apellidoPaterno: "Alonso",
+    apellidoMaterno: "García",
+    sexo: "F",
+    edad: 22,
+    altura: 1.72,
+    nacionalidad: "Mexicana",
+    img:"imagenes/imm1.jpg",
+    mostrar: function()
+    {
+        console.log( this.nombre + " " + this.apellidoPaterno );
+        console.log( "Edad: " + this.edad );
+    }
+    },
+    { //Lili
+    nombre: "Liliana",
+    apellidoPaterno: "Hernández",
+    apellidoMaterno: "Gonzalez",
+    sexo: "F",
+    edad: 19,
+    altura: 1.7,
+    nacionalidad: "Mexicana",
+    img:"imagenes/imm2.jpg",
+    mostrar: function()
+    {
+        console.log( this.nombre + " " + this.apellidoPaterno );
+        console.log( "Edad: " + this.edad );
+    }
+    },
+    { //Aldo
+    nombre: "Aldo",
+    apellidoPaterno: "Matías",
+    apellidoMaterno: "Galindo",
+    sexo: "M",
+    edad: 23,
+    altura: 1.77,
+    nacionalidad: "Mexicano",
+    img:"imagenes/imh2.jpg",
+    mostrar: function()
+    {
+        console.log( this.nombre + " " + this.apellidoPaterno );
+        console.log( "Edad: " + this.edad );
+    }
+    },
+    { //Aarón
+    nombre: "Aarón",
+    apellidoPaterno: "Arredondo",
+    apellidoMaterno: "Aruguz",
+    sexo: "M",
+    edad: 20,
+    altura: 1.74,
+    nacionalidad: "Mexicano",
+    img:"imagenes/imh3.jpg",
+    mostrar: function()
+    {
+        console.log( this.nombre + " " + this.apellidoPaterno );
+        console.log( "Edad: " + this.edad );
+    }
+    },
+    { //Karla
+    nombre: "Karla",
+    apellidoPaterno: "González",
+    apellidoMaterno: "Hernández",
+    sexo: "F",
+    edad: 20,
+    altura: 1.48,
+    nacionalidad: "Mexicana",
+    img:"imagenes/imm3.jpg",
+    mostrar: function()
+    {
+        console.log( this.nombre + " " + this.apellidoPaterno );
+        console.log( "Edad: " + this.edad );
+    }
+    },
+    { //Natalia
+    nombre: "Natalia",
+    apellidoPaterno: "Rodriguez",
+    apellidoMaterno: "Capitán",
+    sexo: "F",
+    edad: 22,
+    altura: 1.56,
+    img:"imagenes/imm4.jpg",
+    mostrar: function()
+    {
+        console.log( this.nombre + " " + this.apellidoPaterno );
+        console.log( "Edad: " + this.edad );
+    }
+    },
+    { //Andrés Colombia 
+    nombre: "Andrés",
+    apellidoPaterno: "Ramos",
+    apellidoMaterno: "Rodriguez",
+    sexo: "M",
+    edad: 19,
+    altura: 1.6,
+    nacionalidad: "Mexicano",
+    img:"imagenes/imh4.jpg",
+    mostrar: function()
+    {
+        console.log( this.nombre + " " + this.apellidoPaterno );
+        console.log( "Edad: " + this.edad );
+    }
+    },
+    { //Ricardo
+    nombre: "Ricardo",
+    apellidoPaterno: "Teneyuque",
+    apellidoMaterno: "Huerta",
+    sexo: "M",
+    edad: 20,
+    altura: 1.7,
+    nacionalidad: "Mexicano",
+    img:"imagenes/imh5.jpg",
+    mostrar: function()
+    {
+        console.log( this.nombre + " " + this.apellidoPaterno );
+        console.log( "Edad: " + this.edad );
+    }
+    },
+    { //Javier
+    nombre: "Javier",
+    apellidoPaterno: "Anguiano",
+    apellidoMaterno: "de Lara",
+    sexo: "M",
+    edad: 21,
+    altura: 1.77,
+    nacionalidad: "Mexicano",
+    img:"imagenes/imh6.jpg",
+    mostrar: function()
+    {
+        console.log( this.nombre + " " + this.apellidoPaterno );
+        console.log( "Edad: " + this.edad );
+    }
+    },
+    { //Carlos
+    nombre: "Carlos",
+    apellidoPaterno: "Mendoza",
+    apellidoMaterno: "Andrade",
+    sexo: "M",
+    edad: 22,
+    altura: 1.8,
+    nacionalidad: "Mexicano",
+    img:"imagenes/imh7.jpg",
+    mostrar: function()
+    {
+        console.log( this.nombre + " " + this.apellidoPaterno );
+        console.log( "Edad: " + this.edad );
+    }
+    },
+    { //Andrés2
+    nombre: "Andrés",
+    apellidoPaterno: "Coronado",
+    apellidoMaterno: "Lázaro",
+    sexo: "M",
+    edad: 22,
+    altura: 1.75,
+    nacionalidad: "Mexicano",
+    img:"imagenes/imh8.jpg",
+    mostrar: function()
+    {
+        console.log( this.nombre + " " + this.apellidoPaterno );
+        console.log( "Edad: " + this.edad );
+    }
+    },
+    { //Miriam
+    nombre: "Miriam",
+    apellidoPaterno: "Herrera",
+    apellidoMaterno: "Reyna",
+    sexo: "F",
+    edad: 21,
+    altura: 1.6,
+    nacionalidad: "Mexicana",
+    img:"imagenes/imm5.jpg",
+    mostrar: function()
+    {
+        console.log( this.nombre + " " + this.apellidoPaterno );
+        console.log( "Edad: " + this.edad );
+    }
+    }
+];
+
+// window.onload = function()
+// {
+//     var main = document.getElementById("main")
+//     for( var i = 0; i < Alumnos.length; i++ )
+//     {
+//         main.innerHTML += "<h4>" + Alumnos[i].nombre + " " + Alumnos[i].apellidoPaterno + "</h4>"
+//     }
+// }
+
+
+$( function(){
+
+    for( var i = 0; i < Alumnos.length; i++ )
+    {
+    $( "#main" ).append(
+        '<div class="Gafete centrado">'+
+        '<header class="P1">'+
+        '<div class="Perf centrado"></div>'+
+        '<div></div>'+
+        '<div class="LogoS center">'+
+        '</div>' +
+        '</header>' +
+        '<main class="P2">' +
+        '    <img src="'+ Alumnos[i].img+'" class="Foto centrado"/>'+
+        '    <div></div>'+
+        '    <div class="Nombre center">' + Alumnos[i].nombre + " " + Alumnos[i].apellidoPaterno +'</div>'+
+        '</main>'+
+        '<footer class="P3">' +
+        '    <div class="LogoC"></div>'+
+        '</footer>'+
+        '</div>'
+
+    );
+    }
+   
+});
+</script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main class="centrado" id="main">
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
