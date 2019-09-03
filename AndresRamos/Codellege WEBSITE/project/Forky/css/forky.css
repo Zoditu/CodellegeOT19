@@ -1,0 +1,122 @@
+body, html 
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #5fb1ff;
+}
+.forky
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 100%;
+    /* background: black; */
+}
+.head
+{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 57% 43% 83% 17% / 81% 40% 60% 19%;
+    transform: rotate(-45deg);
+    background-color: #f0f0f0;
+}
+.hair
+{
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    background: #5fb1ff; 
+    transform: rotate(45deg);
+    top: -10px;
+    left: 90px;
+}
+.peak
+{
+    position: absolute;
+    background-color: #f0f0f0;
+    height: 70px;
+    width: 70px;
+    
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    top: 50px;
+    left: -12px;
+}
+.face
+{
+    position: absolute;
+    top: 25px;
+    left: -30px;
+    height: 100%;
+    width: 100%;    
+}
+.eyes
+{
+    position: absolute;
+    left: 100px;
+    height: 100%;
+    width: 50%;
+    /* background: peru; */
+
+}
+.eye
+{
+    box-shadow: 1px 1px 3px #000000c4;
+    background: #ffffff;
+    border-radius: 100%;
+}
+.eye-left
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 20px;
+    top: 40px;
+}
+.eye-right
+{
+    position: absolute;
+    /* width: -100px; */
+    left: 20px;
+    top: 110px;
+    width: 50px;
+    height: 50px;
+}
+.rotate22
+{
+    transform: rotate(-22deg);
+}
+.rotate45
+{
+    transform: rotate(-45deg);
+}
+.rotate68
+{
+    transform: rotate(-68deg);
+}
+.t-48
+{
+    top: 48px;
+}
+.w-20
+{
+    width: 20%;
+}
+.w-10
+{
+    width: 10%;
+}
+.h-20
+{
+    height: 20%;
+}
+.h-10
+{
+    height: 10%;
+}

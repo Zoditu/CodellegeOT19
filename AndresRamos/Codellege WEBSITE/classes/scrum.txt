@@ -1,0 +1,29 @@
+Scrum
+
+It's a framework for development. 
+	Scrum uses feedback loops. 
+	Agile better way to develop software. 
+	Every sprint is usually 30 days long. 
+		--> Roles 
+			Product Owner --> ROI Responsible for Return On Investment.
+				Client -> Talks to client.
+				Proxy --> Comunicates witl client when it's not in place. 
+			Scrum Development Team. --> Build and increment product, collaborates as a team. (4 to 9 people)
+			Scrum Master --> Has no authority, it's not a maanager. The scrum master protects the team and it's a facilitator. 
+		--> Artifacts 
+			Product Backlog 		--> Everything we might ever do. 
+				--> Define what they want to see and in what sprint
+			Sprint Backlog  		--> Explains how we are we gonna do it. 
+			Product backlog item	--> Backlog refinement meeting.
+				--> Refinement meeting.
+				--> Sprint review meeting. 
+	collab.net/agile. 
+	
+	
+Daily Scrum Meeting
+	Same time, same day, eacha day. 
+	Como hacer pruebas unitarias. 
+Sprint planning meeting 
+	Product owner and development time. 
+	
+	
