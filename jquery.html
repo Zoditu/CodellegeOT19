@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js"></script>
+    <style>
+        .cuadro
+        {
+            width: 10rem;
+            height: 10rem;
+            display: inline-block;
+            background: red;
+        }
+    </style>
+    <title>Document</title>
+    <script>
+
+        window.addEventListener( "load", function(){
+
+            var title = document.getElementById( "title" );
+            title.innerHTML = "Hola, vengo de JS";
+            title.style.color = "pink";
+
+            /*var cuadros = document.getElementsByClassName( "cuadro" );
+            for( var i = 0; i < cuadros.length; i++ )
+            {
+                cuadros[i].style.border = "1px solid black";
+            }
+            */
+
+            var alerta = document.getElementById( "alerta" );
+            alerta.addEventListener( "click", function(){
+                alert( "Hola! Soy un botón de JS" );
+            });
+        });
+
+        $( function(){
+
+            var title3 = document.getElementById( "title3" );
+            $( title3 ).html( "Hola, vengo de JQuery híbrido" ).css("color", "blue");
+
+            $( "#title2" ).html( "Hola, vengo de JQuery" ).css("color", "orange");
+            //$( ".cuadro" ).css( "border", "1px solid black" );
+            $( ".cuadro" ).css( { border: "1px solid black", background: "green" } );
+
+            $( "#alerta2" ).on( "click", function(){
+                alert( "Ahora yo soy de JQuery" );
+            });
+        });
+        
+        /*
+         * $() -> Recibe 2 tipos de parámetros, texto con selectores o una función
+         * $( function() {} ) -> onload
+         * $( "selector" ) -> Equivalente a getElementByXYZ(...);
+         * $( HTMLElement ) -> Convierte un elemento HTML común a JQueryElement
+         */
+    
+    </script>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <h1 id="title2"></h1>
+    <h1 id="title3"></h1>
+    <div class="cuadro"></div>
+    <div class="cuadro abc"></div>
+    <div class="cuadro"></div>
+    <div></div>
+    <button id="alerta">CLICK!</button>
+    <button id="alerta2">CLICK!</button>
+</body>
+</html>
