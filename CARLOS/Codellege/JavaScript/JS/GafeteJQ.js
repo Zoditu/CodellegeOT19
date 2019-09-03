@@ -260,7 +260,8 @@ var alumnos=[
 //     }
 // }
 $(function(){
-$("#main").html(
+for(var i=0; i<alumnos.length; i++){
+$("#main").append(
 '<article class="gafette">' +
 ' <section class="logosofttek">'+
          '<div class="hueco"></div>' +
@@ -275,5 +276,7 @@ $("#main").html(
      '<section class="logocode">'+
          '<img src="Imagenes/logocodellege.jpeg"/>'+
      '</section>'+
- '</article>')
+ '</article>'
+   
+)} 
 });
