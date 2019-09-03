@@ -41,3 +41,4 @@ var persona = { "Estado Civil": "valor" };
 -Repasar todo lo anterior
 -JQuery
 -Bootstrap con JS
+-Modales
