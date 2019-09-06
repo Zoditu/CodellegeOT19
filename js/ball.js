@@ -28,6 +28,7 @@ $(function(){
         {
             incY = 1;
             //Rebotó arriba, ahora hay que mandarlo para abajo
+            ball.css ( {background: "blue"} );
         } 
         else if( top >= ( max_Y - ball.height() ) )
         {

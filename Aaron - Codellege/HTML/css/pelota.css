@@ -12,7 +12,6 @@ html, body {
 .pelota {
     width: 10rem;
     height: 10rem;
-    border: 0.5rem solid black;
     background: red;
     border-radius: 5rem;
     position: absolute;
