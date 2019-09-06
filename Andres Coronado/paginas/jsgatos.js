@@ -32,6 +32,14 @@ function hacerRuido(animal)
 }
 
 var dogs={
+    raining:true;
+     noise: "woof!";
+     makeNoise:function(){
+         restun hacerRuido(this)
+     }
+}
+
+var cats={
     raining:false;
      noise: "miaw!";
      makeNoise:function(){

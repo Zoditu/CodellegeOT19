@@ -58,7 +58,7 @@ crear un loop con el keyword "while"
   -hacer que un personaje ataque al otro hasta que muera 
 */
 
-while(this.estaVivo==True)
+while(this.estaVivo==true)
 {
    this.atacar(Personaje1) 
    if(this.estaVivo==false) 
