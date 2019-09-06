@@ -1,0 +1,8 @@
+.bolita{
+    /* position: absolute; */
+    width: 5rem;
+    height: 5rem;
+    background: skyblue;
+    border-radius: 100%;
+    border: 0px;
+}
