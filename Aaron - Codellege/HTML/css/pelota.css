@@ -10,9 +10,17 @@ html, body {
 }
 
 .pelota {
-    width: 10rem;
-    height: 10rem;
+    width: 5rem;
+    height: 5rem;
     background: red;
-    border-radius: 5rem;
+    border-radius: 2.5rem;
+    position: absolute;
+}
+
+.bar {
+    width: 10rem;
+    height: 2rem;
+    background: dimgrey;
+    border-radius: 1rem;
     position: absolute;
 }

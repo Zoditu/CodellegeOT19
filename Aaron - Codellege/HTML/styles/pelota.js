@@ -9,11 +9,10 @@ $(function() {
 
     var top = 150;
     var left = 220;
-
+    
     var incY = 1;
     var incX = 1;
     ball.css( { top: top, left: left } );
-
 
     setInterval(function(){
 
@@ -46,3 +45,4 @@ $(function() {
         
     }, 1)
 })
+
