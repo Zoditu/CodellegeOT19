@@ -55,8 +55,9 @@ color: skyblue;
     filter: blur(5px);
 }
 .login-container{
-   
  position: relative;
+ height: 100%;
+ width: 100%;
 }
 .botonlogin{
     border-radius: 1rem 1rem 1rem 1rem;
