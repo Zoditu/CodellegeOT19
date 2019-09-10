@@ -6,18 +6,23 @@ var minY = 0;
 
 $(function() {
     var ball = $("#ball");
+    var bar = $("#bar");
 
     var top = 150;
     var left = 220;
     
     var incY = 1;
     var incX = 1;
+
+    var barH = ball.height();
+    var barW = ball.width();
+
     ball.css( { top: top, left: left } );
 
     setInterval(function(){
 
         maxX = window.innerWidth;
-        maxY = window.innerHeight;
+        maxY = window.innerHeight - barH;
 
         if (top <= minY) {
             incY = 1;
@@ -28,6 +33,9 @@ $(function() {
             ball.css ({background: "yellow"})
 
         }
+        // else if (top == barH) {
+        //     incY = -1;
+        // }
 
         if (left <= minX) {
             incX = 1;
@@ -39,10 +47,28 @@ $(function() {
             ball.css ({background: "pink"})
 
         }
+        // else if (left == barW) {
+        //     incX = -1;
+        // }
 
-        ball.css("top", top+= (1 * incY));
-        ball.css("left", left+= (1 * incX));
+        ball.css("top", top+= (0.5 * incY));
+        ball.css("left", left+= (0.5 * incX));
         
     }, 1)
 })
 
+
+    var bar = $("#bar");
+
+    $(document).keydown(function(e) {
+        switch (e.which) {
+        //LEFT ARROW
+        case 37:
+                $("#bar").css('left', $("#bar").offset().left -30);
+                break;
+        //RIGT ARROW
+        case 39:
+                $("#bar").css('left', $("#bar").offset().left +30);
+            break;
+        }
+    })
