@@ -1,0 +1,78 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgb(79, 226, 123);
+}
+
+.centrado {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+main{
+    text-align: center;
+}
+.Tarjeta {
+    width: 25rem;
+    height: 15rem;
+    border: 2px solid black;
+    border-radius: 0.5em;
+    margin: 0.5rem;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+
+.imagen {
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.Perfil {
+    float: left;
+    width: 60%;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 0.3rem;
+}
+
+/** aqui unjamos dos selecectores haciendo que solo afecte el elemente h4 que este en la clase perfil modifcacndo sus margentes o el espacio entre titulos **/
+.Perfil h4,
+.Perfil h5 {
+    color: black;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.Perfil header {
+    height: 25%;
+    overflow: auto;
+}
+
+.Perfil main {
+    height: 10%;
+    overflow: hidden;
+}
+
+.Perfil footer {
+    height: 65%;
+    overflow: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.derecha {
+    text-align: right;
+}
