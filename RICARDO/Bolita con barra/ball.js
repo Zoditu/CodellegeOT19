@@ -3,16 +3,23 @@ var min_Y = 0;
 var max_X = window.innerWidth;
 var max_Y = window.innerHeight;
 
+
+var colores = ["red", "blue", "black", "purple", "pink", "orange", "gray", "yellow", "green", "brown"];
+
 $(function(){
 
     var ball = $( "#ball" );
+    var barrita = $( "#barrita" );
     var ball_container = $( '.ball-container' );
 
     var top = 150;
     var left = 220;
-    
+    var bottom = 0;
+    var left2 = 0;
+
     var incX = 1;
     var incY = 1;
+    var incX2 = 1;
 
     var rightPressed = false;
     var leftPressed = false;
@@ -20,8 +27,8 @@ $(function(){
     var abajo = false;
 
     ball.css( { top: top, left: left } );
+    barrita.css( { bottom: bottom, left: left2 } );
     //console.log( ball_container.width() );
-
     setInterval( function(){
 
         //max_X = ball_container.width();
@@ -35,29 +42,59 @@ $(function(){
             //Rebotó arriba, ahora hay que mandarlo para abajo
             ball.css('background', 'black');
         } 
-        else if( top >= ( max_Y - ball.height() ) || abajo==true )
+        else if( top >= (( max_Y - ball.height() )-barrita.height()) && ( (left >= left2) && (left <= (left2 + barrita.width()) ) ))
         {
             incY = -1;
             ball.css('background', 'orange');
             //Rebotó abajo, ahora hay que mandarlo para arriba
         }
+        else if( top > (max_Y + ball.height()))
+        {
+            top = 150;
+            left = 220;
+        }
 
-        if( left <= min_X || leftPressed==true)
+
+        if( left <= min_X )
         {
             incX = 1;
             ball.css('background', 'red');
             //Rebotó en la izquierda, ahora mandarlo a la derecha
         }
-        else if( left >= ( max_X - ball.width() ) || rightPressed==true)
+        else if( left >= ( max_X - ball.width() ))
         {
             incX = -1;
             ball.css('background', 'gray');
             //rebotó en la derecha, hay que mandarlo a la izquierda
         }
 
-        ball.css( 'top', top += ( 2 * incY ) );
-        ball.css( 'left', left+= ( 2 * incX ) );
-    }, 1);
+        if(rightPressed==true)
+        {
+            incX2 = 1;      
+            barrita.css( 'left', left2 += ( 10 * incX2 ) );
+            if( left2 >= ( max_X - barrita.width() ))
+            {
+            incX2 = -1; 
+            barrita.css( 'left', left2 += ( 10 * incX2 ) );
+            }
+        }
+        else if(leftPressed==true)
+        {
+            incX2 = -1;    
+            barrita.css( 'left', left2 += ( 10 * incX2 ) );
+            if( left2 <= min_X )
+            { 
+            incX2 = 1; 
+            barrita.css( 'left', left2 += ( 10 * incX2 ) );
+            }
+        }
+        
+        ball.css( 'top', top += ( 2.5 * incY ) );
+        ball.css( 'left', left+= ( 2.5 * incX ) );
+
+        
+    }, 0.1);
+
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
 
