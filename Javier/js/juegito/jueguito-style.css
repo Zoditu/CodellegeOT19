@@ -1,0 +1,66 @@
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body{
+    background: #696969;
+}
+
+.ball
+{   
+    width: 5vw;
+    height: 5vw;
+    border-radius: 5rem;
+    background: #D8E89B;
+    position: absolute;
+
+}
+
+.barrita{
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 15vw;
+    height: 2vw;
+    background: #FFD8AB;
+    border-radius: 2rem; 
+}
+
+.ball-container
+{
+    position: relative;
+    width: 50vw;
+    height: 60vh;
+    background: lime;
+}
+
+.input{
+    margin: auto; 
+    height: 25rem;
+    width: 25rem;
+    /* background: darkolivegreen; */
+    padding-top: 13%;
+}
+
+.center{
+    text-align: center;
+}
+
+.m-top{
+    margin-top:10%;
+}
+
+.input-name{
+    margin: auto; 
+    height: 20rem;
+    width: 25rem;
+    background: skyblue;
+    border-radius: 3rem;
+    padding: 10%;
+}
+
