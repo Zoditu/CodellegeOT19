@@ -29,7 +29,7 @@ $(function(){
     ball.css( { top: top, left: left } );
     barrita.css( { bottom: bottom, left: left2 } );
     //console.log( ball_container.width() );
-    setInterval( function(){
+    var movpel = setInterval( function(){
 
         //max_X = ball_container.width();
         //max_Y = ball_container.height();
@@ -50,8 +50,8 @@ $(function(){
         }
         else if( top > (max_Y + ball.height()))
         {
-            top = 150;
-            left = 220;
+            clearInterval(movpel);
+            alert("perdiste");
         }
 
 
@@ -89,8 +89,8 @@ $(function(){
             }
         }
         
-        ball.css( 'top', top += ( 2.5 * incY ) );
-        ball.css( 'left', left+= ( 2.5 * incX ) );
+        ball.css( 'top', top += ( 2 * incY ) );
+        ball.css( 'left', left+= ( 2 * incX ) );
 
         
     }, 0.1);
