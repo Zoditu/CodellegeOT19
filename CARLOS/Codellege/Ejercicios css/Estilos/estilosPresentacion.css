@@ -1,0 +1,130 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+main{
+    text-align: center;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.tarjeta1{
+    width: 30rem;
+    height: 20rem;
+    border: 1px solid black;
+    display: inline-block;
+    background-image: url("../Imagenes/AbstractFondo.jpg");
+    background-size: 100% 100%;
+    padding: 1rem;
+    
+}
+.transparente_contener{
+    background: rgba(150, 136, 136, 0.274);
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem ;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px gold;
+}
+.tarjeta2{
+    margin-top: 1rem;
+    width: 30rem;
+    height: 20rem;
+    border: 1px solid black;
+    display: inline-block; 
+    background-image: url("../Imagenes/AbstractFondo.jpg");
+    background-size: 100% 100%;
+    position: relative;
+}
+.nombre{
+    font-family:"Titillium web";
+    color:whitesmoke;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 1rem;
+}
+.nombre h1, .nombre h4, .name_front h1, .name_front h4{
+    margin: 0;
+}
+.mapa{
+    font-family:"Titillium web";
+    color: whitesmoke;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+ p{
+    margin: 0;
+}
+.correo{
+    font-family:"Titillium web";
+    color: whitesmoke;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+.telefono{
+    font-family:"Titillium web";
+    color: whitesmoke;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 10rem;
+}
+.name_front{
+    width: 114%;
+    height: 35%;
+    background: rgba(150, 136, 136, 0.274);
+    position: absolute;
+    left: -2rem;
+    top: 30%;
+    box-shadow: 3px 3px 3px 3px gold;
+}
+.name_front h1,.name_front h4{
+    font-family:"Titillium web";
+    color:whitesmoke;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 1rem;
+}
+.fondo{
+    width: 100%;
+    height: 100%;
+    background-image: url("../Imagenes/Fconblur.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    filter: blur(30px);
+}
+
+.transparente_contener:hover .icon_direccion{
+    color: red;
+}
+.transparente_contener:hover .i2{
+    color: blue;
+}
+.transparente_contener:hover .i3{
+    color: black;
+}
+.transparente_contener:hover .nombre h1::first-letter{
+    font-size: 2rem;
+    color: goldenrod;
+}
+.transparente_contener:hover .nombre{
+    color: aquamarine;
+}
+.clear{
+    clear: both;
+}

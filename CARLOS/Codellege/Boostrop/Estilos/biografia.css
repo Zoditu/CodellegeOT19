@@ -1,0 +1,110 @@
+/*  
+nav{
+    background: black;
+}
+
+.introduccion{
+    padding-left: 3rem;
+}
+.introduccion p::first-letter{
+    font-size: 2rem;
+    font-style: italic;
+    color: red;
+}
+
+.card{
+    display: inline-block;
+}
+.clear{
+    clear: both;
+}
+*/
+
+body > header{
+    background: cadetblue;
+    height: 4rem;
+}
+.yo img{
+height: 4rem;
+}
+
+ .menu ul li{
+     text-decoration-style: none;
+     display: inline-block;
+
+ }
+ .menu ul li ::after{
+     content: "\00a0\00a0|\00a0\00a0";
+ }
+
+.clear{
+    clear: both;
+}
+.intr{
+    font-family: "Playfair";
+    font-size: 1rem;
+}
+
+.intr h1{
+    margin: 0;
+    text-align: center;
+}
+ .logro{ 
+    height: 20rem;
+    width: 20rem;
+    border: 1px solid black;
+}
+
+.logros{
+    text-align: center;
+}
+.bio{
+    max-width: 100%;
+}
+.bio img{
+    max-width: 10rem;
+}
+
+.max-height{
+    max-height: 8rem;
+    overflow: auto;
+    margin-right: -20px;
+}
+.bio{
+    padding: 0;
+}
+
+.redes{
+    text-align: center;
+    height: 3rem;
+}
+.redes img{
+    height: 100%;
+}
+.hobbies img{
+    height: 20rem;
+    width: 100%;
+}
+.hobbie1{
+    height: 25rem;
+    border-bottom: 1px solid black;
+}
+.hobbie2{
+     border-bottom: 1px solid black;
+}
+.gradeSH{
+    height: 100%;
+    border-bottom: 1px solid black;
+}
+.escolaridad img{
+height: 5rem;
+width: 5rem;
+}
+.dir{
+    position: relative;
+}
+.dir p{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
