@@ -1,0 +1,117 @@
+html,body{
+    margin:0;
+    padding: 0;
+    width: 100vw;
+    height: 100vw;
+    background: rgb(95,177,255);
+}
+*{
+    box-sizing: border-box;
+}
+.forky{
+    position: absolute;
+    TOP: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+
+.cara{
+    width: 300px;
+    height: 300px;
+    background: white;
+    border-radius: 70% 30% 80% 20% / 76% 26% 74% 24% ;
+    transform: rotate(-45deg);
+    top: -135px;
+    left: -147px;
+}
+
+.rostro{
+    width: 300px;
+    height: 60px;
+    background: rgb(95,177,255);
+    position: absolute;
+    top: -50px;
+    left: -30px;
+
+}
+.pico1,.pico4{
+    width: 50px;
+    height: 30px;
+    background: white;
+    clip-path: polygon(46% 17%, 0% 100%, 100% 100%);
+    transform: rotate(0deg);
+    position: absolute;
+    top: -20px;
+    left: 78px;
+}
+.pico2,.pico3{
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%  ; 
+    transform: rotate(-60deg);
+    position: absolute;
+    top: -20px;
+    left: 110px;
+}
+.pico3{
+    position: absolute;
+    top: -20px;
+    left: 140px;
+}
+.pico4{
+    position: absolute;
+    top: -20px;
+    left: 170px;
+}
+
+.ojo1, .ojo2{
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+    top: -225px;
+    right: -50px;
+    box-shadow: 1px 1px 1px ;
+    display: inline-block;
+}
+
+.pupila1, .pupila2{
+width: 50px;
+height: 50px;
+background: black;
+border-radius: 50%;
+position: absolute;
+top:3px;
+right: 30px;
+bottom: -50px;
+}
+
+.ojo2{
+    width: 85px;
+    height: 85px;
+    
+}
+
+.boca1{
+    width: 120px;
+    height: 81px;
+    border: 15px solid #71acc8;
+    border-radius: 42% 17% 70% 44% / 32% 26% 80% 73%;
+    position: absolute;
+    top:  225px;
+    left: 80px;
+    /* clip-path: polygon(43% 75%, 67% 75%, 85% 61%, 100% 49%, 74% 91%, 37% 91%, 19% 76%, 0 46%); */
+}
+
+.ceja{
+    width: 150px;
+    border: 35px solid red;
+    clip-path: polygon(43% 75%, 67% 75%, 85% 61%, 100% 49%, 74% 91%, 37% 91%, 19% 76%, 0 46%);
+    transform: rotate(180deg);
+    position: absolute;
+    top: 30px;
+    left: 75px;
+
+}
