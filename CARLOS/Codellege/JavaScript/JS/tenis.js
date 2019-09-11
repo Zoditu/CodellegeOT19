@@ -3,7 +3,7 @@ var maxX= window.innerWidth,
     maxY= window.innerHeight,
     minX= 0,
     minY=0;
-    
+    var colores=["red","yellow","blue","black","orange","red","brown","skyblue","white","green"];
 $(function()
 {
     var barra = $("#barra");
@@ -28,7 +28,7 @@ $(function()
                 maxY= window.innerHeight;
                 var topBarra = parseInt( barra.css('top').replace('px', '') );
                 var parteBajaPelota = top + pelota.height();
-
+            pelota.css("background",colores[Random(0,colores.length)]);
                 if(top<=minY){
                 VelocidadY=1;
                 }else if(top>=(maxY- pelota.height())){
@@ -41,6 +41,7 @@ $(function()
                     VelocidadX=1;
                 }else if( parteBajaPelota >= topBarra && parteBajaPelota <= topBarra + barra.height() ) //150px ->150
                 {
+                    
                     //Están al mismo nivel...
                     if( ( left + pelota.width() ) >= bleft && left <= ( bleft + barra.width() ) )
                     {
@@ -98,3 +99,7 @@ $(function()
         //         MovIzquerda= false;
         //     }
         // }
+function Random(min,max){
+    var Random= Math.random()*(max-min)+min;
+    return Math.floor(Random);
+}
