@@ -9,7 +9,6 @@ var leftPressed = false;
 $(function(){
 
     var ball = $( "#ball" );
-    var bar = $( "#barrita" );
     var ball_container = $( '.ball-container' );
 
     var top = 150;
@@ -37,12 +36,10 @@ $(function(){
         {
             incY = -1;
         }
+
         if( (left <= min_X ))
         {
             incX = 1;
-        }
-        else if(MediaStreamAudioDestinationNode){
-            incY = 1;
         }
         else if( left >= ( max_X - ball.width() ) )
         {
@@ -144,5 +141,3 @@ $(function(){
         }
     }
 });
-
-//function del juego by Mozilla
