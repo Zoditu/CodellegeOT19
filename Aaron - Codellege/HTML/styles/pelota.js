@@ -22,7 +22,7 @@ $(function() {
     setInterval(function(){
 
         maxX = window.innerWidth;
-        maxY = window.innerHeight - barH;
+        maxY = window.innerHeight;
 
         if (top <= minY) {
             incY = 1;
@@ -51,10 +51,15 @@ $(function() {
         //     incX = -1;
         // }
 
-        ball.css("top", top+= (0.5 * incY));
-        ball.css("left", left+= (0.5 * incX));
+        ball.css("top", top+= (2 * incY));
+        ball.css("left", left+= (2 * incX));
         
     }, 1)
+
+    if (ball.top() && ball.left() <= bar.left() && bar.top()) {
+        incY = 1;
+    }
+
 })
 
 
