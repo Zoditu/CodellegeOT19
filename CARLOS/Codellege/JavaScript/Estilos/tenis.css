@@ -39,9 +39,23 @@ text-align: center;
     height: 1rem;
     border: 1px solid black;
     border-radius: 5rem;
-    background: blue;
+    background: white;
     display: inline-block;
     position: absolute;
-    top: 90%;
+    top: 70%;
    
+}
+
+#topPelota, #abajoPelota
+{
+    border: 3px solid lime;
+    position: absolute;
+    width: 100vw;
+}
+
+#topBarra, #abajoBarra
+{
+    border: 3px solid yellow;
+    position: absolute;
+    width: 100vw;
 }
