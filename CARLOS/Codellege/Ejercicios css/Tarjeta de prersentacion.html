@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+    html,body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+         background: beige; 
+    }
+    *{
+        box-sizing: border-box;
+    }
+    .Tarjeta{
+        width: 35rem;
+        height: 25rem;
+        border: 0.3rem solid black;
+        /* background: rgba(255, 0, 0, 0.774); */
+        display:inline-block;
+        margin-left: 25%;
+
+    }
+    .Foto{
+        width: 50%;
+        height: 85%;
+        float: left;
+        background: gray;
+    }
+    .centrado{
+        text-align: center;
+
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 2000rem 2000rem 2000rem 2000rem;
+    }
+    .Perfil{
+        width: 50%;
+        height: 85%;
+        float: left;
+        background: bisque;
+    }
+    .Perfil header{
+        height: 30%;
+        overflow: hidden;
+        margin: 0;
+        padding-top: 0.1rem;
+        /* text-align: center; */
+    }
+
+    .Perfil main{
+        height: 25%;
+        overflow: hidden;
+        text-align: left;
+        margin-top: -3rem;  
+    }
+    .Perfil footer{
+        height: 55%;
+        overflow: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: -3rem;
+    }
+    .redes *{
+        width: 30%;
+        height: 30%;
+        display: inline-block;
+        margin: auto; 
+        text-align: center;
+    }
+ .redes{
+     background: skyblue;
+ }
+.clear{
+    clear: both;
+}
+   
+     </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="centrado">Tarjeta de presentacion</h1>
+    </header>
+    <hr>
+    <br>
+    <main>
+        <article class="Tarjeta" >
+            <section class="Foto">
+                <img src="Imagenes/Yo.jpeg" alt="Mi foto"/>
+            </section>
+            <section class="Perfil">
+                <header ><h1 class="centrado">Carlos Mendoza Andrade </h1>
+                </header>
+                <main>
+                    <b>Edad:</b> 22 Años
+                    <br>
+                    <b>Ciudad:</b> Guadalupe,NL
+                    <h5 class="centrado">Mi descripcion</h5>
+                </main>
+                <footer>
+                     <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum saepe vel sequi consectetur iure. Ratione quis laborum libero. Quas vel repellat aliquam beatae unde laborum, debitis modi illo numquam deserunt.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque animi tempora ratione illo ullam nesciunt voluptatum quas perferendis optio? Deleniti nobis nulla accusamus error laudantium rem aliquam aliquid ut deserunt</p>
+                </footer>
+            </section>
+            <div class="clear"></div>
+            <section class="redes">
+                <a href="https://www.facebook.com/" target="_blank"><img src="Imagenes/facebook.svg">Carlos Mendoza</a>
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="Imagenes/instagram.svg">@charlesmendozaa</a>
+                
+            </section>
+            <div class="clear"></div>
+        </article>
+    </main>
+    <footer>
+    </footer>
+
+    
+    
+</body>
+</html>
