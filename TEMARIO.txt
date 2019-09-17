@@ -39,6 +39,12 @@ var persona = { "Estado Civil": "valor" };
 -Función de carga (window.onload)
 
 -Repasar todo lo anterior
+
 -JQuery
+  *Selectores $("#id")...
+  *Función onload $(function(){}); //window.onload
+  *Modificar el HTML y css //$(selector).css( { prop: 'valor'} );
+   //$(selector).css('prop', 'valor');
 -Bootstrap con JS
+
 -Modales
