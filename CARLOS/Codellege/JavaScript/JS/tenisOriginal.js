@@ -13,6 +13,10 @@ $(function()
     var VelocidadX=1, VelocidadY=1, incX=1;
     var bleft=0;   
     var top =0, left=0;
+    var Pbajapelota=top+ pelota.height();
+    var ParteAltaBarra= (bleft+ barra.width());
+    var Topbarra= parseInt( barra.css("top".replace("px","")));//variable para tomar el valor del top de la barra
+
     barra.css({left: bleft});
     bplay.on("click",function(){
         menu.css("display","none");
@@ -22,13 +26,22 @@ $(function()
                 if(top<=minY){
                 VelocidadY=1;
                 }else if(top>=(maxY- pelota.height())){
-                    VelocidadY=-1;
+                    VelocidadY = -1;
+                     if(Pbajapelota >= Topbarra){
+                    //Estan al mismo nivel 
+                    if(bleft >= Pbajapelota && Pbajapelota <=ParteAltaBarra){
+                        VelocidadY = -1;
+                    }
+                } 
                 };
                 if(left<=minX){
+                
                     VelocidadX=1;
-                }else if(left>=(maxX - pelota.width())){
+                }else 
+                if(left>=(maxX - pelota.width())){
                     VelocidadX=-1;
                 }
+              
                 
              
                 pelota.css("top", top+=(4* VelocidadY));

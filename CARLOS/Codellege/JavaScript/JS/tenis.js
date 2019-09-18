@@ -41,7 +41,7 @@ $(function()
                     VelocidadX=1;
                 }else if( parteBajaPelota >= topBarra && parteBajaPelota <= topBarra + barra.height() ) //150px ->150
                 {
-                    
+
                     //Están al mismo nivel...
                     if( ( left + pelota.width() ) >= bleft && left <= ( bleft + barra.width() ) )
                     {
