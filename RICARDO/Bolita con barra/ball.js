@@ -7,6 +7,7 @@ var max_Y = window.innerHeight;
 var colores = ["red", "blue", "black", "purple", "pink", "orange", "gray", "yellow", "green", "brown"];
 
 $(function(){
+    var indice = 0;
 
     var ball = $( "#ball" );
     var barrita = $( "#barrita" );
@@ -30,7 +31,11 @@ $(function(){
     barrita.css( { bottom: bottom, left: left2 } );
     //console.log( ball_container.width() );
     var movpel = setInterval( function(){
-
+        if ( indice == colores.length )
+        {
+            indice = 0;
+        }
+        ball.css("background", colores[indice++] );
         //max_X = ball_container.width();
         //max_Y = ball_container.height();
         max_X = window.innerWidth;
