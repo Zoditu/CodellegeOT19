@@ -1,143 +1,80 @@
-var min_X = 0;
-var min_Y = 0;
-var max_X = window.innerWidth;
-var max_Y = window.innerHeight;
-var rightPressed = false;
-var leftPressed = false;
+var barra = $("#barra");
+var menu = $("#menu");
+var bplay = $("#Bplay");
+var pelota = $("#Pelota");
 
-//function sobre la bolita
-$(function(){
+var _topBarra = $('#topBarra');
+var _abajoBarra = $('#abajoBarra');
+var _topPelota = $('#topPelota');
+var _abajoPelota = $('#abajoPelota');
 
-    var ball = $( "#ball" );
-    var ball_container = $( '.ball-container' );
-
-    var top = 150;
-    var left = 220;
-    
-    var incX = 1;
-    var incY = 1;
-
-    var rightPressed = false;
-    var leftPressed = false;
-    var upPressed = false;
-    var downPressed = false;
-
-    ball.css( { top: top, left: left } );
-
-     var timer = setInterval( function(){
-        max_X = window.innerWidth;
-        max_Y = window.innerHeight;
-
-        if( (top <= min_Y))
-        {
-            incY = 1;
-        } 
-        else if( ( top >= ( max_Y - ball.height() ) ) )
-        {
-            incY = -1;
-        }
-
-        if( (left <= min_X ))
-        {
-            incX = 1;
-        }
-        else if( left >= ( max_X - ball.width() ) )
-        {
-            incX = -1;
-        }
-            ball.css( 'top', top += ( 2 * incY ) );
-            ball.css( 'left', left+= ( 2 * incX ) );
-    }, 5);
-
-
-document.addEventListener("keydown", keyDownHandler, false);
-document.addEventListener("keyup", keyUpHandler, false);
-
-function keyDownHandler(e) {
-    if(e.keyCode == 39) {
-        rightPressed = true;
-    }
-    else if(e.keyCode == 37) {
-        leftPressed = true;
-    }
-    else if(e.keyCode == 38){
-        upPressed = true;
-    } 
-    else if(e.keyCode == 40){
-        downPressed = true;
-    }
-}
-
-function keyUpHandler(e) {
-        if(e.keyCode == 39) {
-            rightPressed = false;
-        }
-        else if(e.keyCode == 37) {
-            leftPressed = false;
-        }
-        else if(e.keyCode == 38){
-            upPressed = false;
-    } 
-    else if(e.keyCode == 40){
-        downPressed = false;
-    }
-}
-
+var VelocidadX = 1,
+    VelocidadY = 1,
+    incX = 1;
+var bleft = 0;
+var top = 0,
+    left = 0;
+barra.css({
+    left: bleft
 });
+bplay.on("click", function () {
+menu.css("display", "none");
 
-//function sobre la barra
-$(function(){
+var movPelota = setInterval(function () {
+    maxX = window.innerWidth;
+    maxY = window.innerHeight;
+    var topBarra = parseInt(barra.css('top').replace('px', ''));
+    var parteBajaPelota = top + pelota.height();
 
-        var bar = $( "#barrita" );
-        var left = 0;        
-        var incX = 1;
-        var rightPressed = false;
-        var leftPressed = false;
-        // bar.css( { top: top, left: left } );
-
-        setInterval( function(){
-            max_X = window.innerWidth;
-            max_Y = window.innerHeight;
-            if( (left <= min_X ) || rightPressed == true)
-            {
-                incX = 1;
-            }
-            else if( left >= ( max_X - bar.width() ) || leftPressed == true )
-            {
-                incX = -1;
-            }
-            bar.css( 'left', left+= ( 2 * incX ) );
-        }, 1);
-
-
-    document.addEventListener("keydown", keyDownHandler, false);
-    document.addEventListener("keyup", keyUpHandler, false);
-    function keyDownHandler(e) {
-        if(e.keyCode == 39 || e.keyCode == 68 ) {
-            rightPressed = true;
+    if (top <= minY) {
+        VelocidadY = 1;
+    } else if (top >= (maxY - pelota.height())) {
+        //Rebotó abajo
+        clearInterval(movPelota);
+        alert('PERDISTEEEEEEE');
+        //VelocidadY=-1;
+    };
+    if (left <= minX) {
+        VelocidadX = 1;
+    } else if (parteBajaPelota >= topBarra && parteBajaPelota <= topBarra + barra.height()) //150px ->150
+    {
+        //Están al mismo nivel...
+        if ((left + pelota.width()) >= bleft && left <= (bleft + barra.width())) {
+            VelocidadY = -1;
         }
-        else if(e.keyCode == 37 || e.keyCode == 65) {
-            leftPressed = true;
-        }
-        else if(e.keyCode == 38){
-            upPressed = true;
-        } 
-        else if(e.keyCode == 40){
-            downPressed = true;
-        }
+    } else if (left >= (maxX - pelota.width())) {
+        //Rebotó derecha...
+
+        VelocidadX = -1;
     }
-    function keyUpHandler(e) {
-        if(e.keyCode == 39 || e.keyCode == 68) {
-            rightPressed = false;
-        }
-        else if(e.keyCode == 37 || e.keyCode == 65) {
-            leftPressed = false;
-        }
-        else if(e.keyCode == 38){
-            upPressed = false;
-        } 
-        else if(e.keyCode == 40){
-            downPressed = false;
-        }
-    }
-});
+
+    // Rebote en barra
+
+    pelota.css("top", top += (4 * VelocidadY));
+    pelota.css("left", left += (4 * VelocidadX));
+
+    _topPelota.css("top", top);
+    _abajoPelota.css("top", top + pelota.height());
+
+    _topBarra.css("top", topBarra);
+    _abajoBarra.css("top", topBarra + barra.height());
+
+}, 25); //fin del interval
+// funcion keydown 
+$(document).keydown(function (event) {
+    var key = event.keyCode;
+    if (key == 39 && bleft <= (maxX - barra.width())) {
+        incX = 1;
+        barra.css("left", bleft += 30);
+    } else if (key == 37 && bleft != minX) {
+        incX = -1;
+        barra.css("left", bleft -= 30);
+    };
+    if (barra.bleft >= pelota.top) {
+        VelocidadY = -1;
+    } else {
+
+    };
+}); //fin del evento keydown
+
+}); //fin del evento click
