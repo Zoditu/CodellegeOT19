@@ -5,6 +5,9 @@ var x = canvas.width/2;
 var y = canvas.height -30;
 var ballRadius = 10;
 
+var Win = false;
+var Loose = false;
+
 
 //pelota
 var dx = 2;
@@ -35,6 +38,21 @@ for( c=0; c < brickColumnCount; c++ ){
         bricks[c][r] = {x:0, y:0, status:1};
     }
 }
+
+/*Swal.fire('RESULTADO!?').then( function( result ){
+    if( result.value )
+    {
+        alert( 'Se cerró del botón OK' );
+    }
+    else if( result.dismiss )
+    {
+        if( result.dismiss === 'esc' )
+            alert( 'Presionaste la teclas ESC' );
+        else if( result.dismiss === 'backdrop' )
+            alert( 'Picaste fuera del mensaje' );
+    }
+});
+*/
 
 
 // ctx.beginPath();
@@ -80,6 +98,7 @@ function mouseMoveHandler(e){
 
 function drawBall(){
     ctx.beginPath();
+    //Pelotita
     ctx.arc(x, y, ballRadius, 0, Math.PI*2, false);
     ctx.fillStyle = "#E8D692";
     ctx.fill();
@@ -88,6 +107,7 @@ function drawBall(){
 
 function drawPaddle(){
     ctx.beginPath();
+    //Barrita de abajo
     ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
     ctx.fillStyle = "#ADFFC5";
     ctx.fill();
@@ -113,6 +133,36 @@ function drawBricks(){
 }
 
 function collitionDetection(){
+    //if( score == brickRowCount*brickColumnCount ){
+    if( score++ == 0 ){
+        Win = true;
+        Swal.fire({
+            title: 'Este es el título',
+            html: 'Name: <input id="swal">',
+            type: 'info',
+            showCancelButton: true,
+            confirmButtonText: 'Yay! De nuevo',
+            cancelButtonText: 'Ya no seguirrrrr, papaya de celayaaaa'
+        }).then( function( result ){
+            if( result.value )
+            {
+                //Continuar con el juego
+                var swal = $('#swal2-content');
+
+                Win = false;
+                Loose = false;
+                window.requestAnimationFrame( draw );
+            }
+            else if( result.dismiss === 'cancel' )
+            {
+                //Ya no seguir con el juego
+                Win = true;
+            }
+
+            console.log( result );
+        });
+    }
+
     for( c=0; c<brickColumnCount; c++ ){
         for( r=0; r<brickRowCount; r++ ){
             var b = bricks [c][r];
@@ -121,9 +171,7 @@ function collitionDetection(){
                     dy = -dy;
                     b.status = 0;
                     score++;
-                    // console.log(" collition ")
-                    if( score == brickRowCount*brickColumnCount ){
-                        Swal.fire('you win, CRACK!')                    }
+                    // console.log(" collition ")                    
                 }
             } 
         }
@@ -143,6 +191,11 @@ function drawLives(){
 }
 
 function draw(){
+    if( Win || Loose )
+    {
+        return;
+    }
+
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawBall();
     drawPaddle();
@@ -182,9 +235,11 @@ function draw(){
     //Movimiento pelota
     x += dx;
     y += dy;
+    window.requestAnimationFrame( draw );
 }
 
-setInterval(draw, 1);
+//setInterval(draw, 10);
+window.requestAnimationFrame( draw );
 
 
 /**
