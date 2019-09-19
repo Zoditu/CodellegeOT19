@@ -1,0 +1,85 @@
+.list ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.row{
+    margin: 0;
+}
+.list ul li{
+    display: inline-block;
+    cursor: pointer;
+}
+.list ul  a li::before
+{
+    content: "\00a0\00a0|\00a0\00a0";
+}
+
+.list ul li:first-child::before
+{
+    content: "";
+}
+.search{
+    position: absolute;
+    right: 30%;
+}
+.navbar
+{
+    background: rgba(83, 218, 59, 0.39);
+}
+#carouselExampleControls img{
+    height: 25rem;
+    width: 35rem;
+}
+
+#carouselExampleControls{
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid black;
+}
+h2{
+    margin: 0;
+    padding: 0;
+}
+.Ofertas, .tendencias{
+    width: 80%;
+    
+    margin-bottom: 3rem; 
+    
+}
+
+.Tarjeta{
+    display: inline-block;
+    width: 12rem;
+    height: 15rem;
+    margin-top: 2rem;
+    border: 1px solid black;
+    border-radius: .25rem;
+}
+
+.Ofertas img, .tendencias img{
+height: 84%;
+}
+.Ofertas button, .tendencias button{
+    width: 100%;
+}
+.allcontenedor{
+    position: relative;
+}
+.MapaSitio{
+    width: 20%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: .25rem;
+    background: rgba(83, 218, 59, 0.39);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.MapaSitio ul li, .Informacion ul li {
+    text-decoration-style: none;
+    list-style-type: none;
+}
+.Informacion h2{
+    padding-left: 40px;
+}
