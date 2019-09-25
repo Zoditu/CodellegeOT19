@@ -1,0 +1,36 @@
+pregunta 28 
+¿Cómo se hace en CSS para que el símbolo de los elementos de una lista sea un cuadrado?
+Pregunta 30:
+¿Cómo se hace en CSS para que cada palabra en un texto comience con una letra en mayúsculas?
+Pregunta 33:
+En CSS, ¿cómo se posiciona un elemento en la capa superior de visualización?
+
+Pregunta 38:
+En CSS, ¿qué propiedad se emplea para cambiar el cursor o puntero del ratón?
+Pregunta 42:
+En CSS, ¿qué propiedad se emplea para definir el orden de visualización cuando varios elementos se superponen?
+
+ Pregunta 47:
+En CSS3, ¿qué significa el esquema de color HSL?
+Pregunta 48:
+En CSS, ¿qué propiedad se emplea para insertar contenido generado?
+Pregunta 52:
+¿Qué propiedad de CSS se emplea para definir el espacio entre palabras?
+Pregunta 65:
+En CSS, ¿qué regla selecciona el primer elemento (item) de una lista?
+Pregunta 74:
+En CSS, ¿qué pseudo clase se emplea para definir una propiedad cuando un elemento recibe el foco?
+
+Pregunta 6
+En CSS3, ¿qué elementos selecciona la pseudoclase :empty?
+
+Tu respuesta: Los elementos que no tienen asociada una regla CSS
+Pregunta 11
+En CSS, ¿qué significa el número marcado con (b) en la siguiente regla? {box-shadow: (a)10px (b)10px (c)5px (d)#FFF;}
+
+Tu respuesta: El desplazamiento horizontal
+
+Pregunta 14
+En CSS, ¿cómo se interpreta la siguiente regla? {margin: 10px 5px 15px;}
+
+Tu respuesta: margen superior 10px, margen derecho 5px, margen inferior 15px
