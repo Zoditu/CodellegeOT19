@@ -1,0 +1,8 @@
+html,body{
+    height: 100%;
+}
+
+
+.visible{
+    border: 2px solid black;
+}
