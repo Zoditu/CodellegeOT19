@@ -1,0 +1,54 @@
+@media only screen and (min-width: 960px) {
+    .carrusel {
+        height: 500px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .multiple-Carrusel-item{
+        text-align: center;
+        margin: auto;
+        margin-top: 2rem;
+        /* padding: 10rem; */
+        padding-top: 0;
+    }
+
+    .carousel-item.active{
+        display: inline-flex;
+    }
+
+    main{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .section-Carrusel{
+        height: 100%  !important;
+        width: 100%;
+    }
+    
+    .section-Carrusel-items{
+        height: 100%  !important;
+        width: 100%;  
+    }
+
+    .section-mapa{
+        height: 100%  !important;
+        width: 100%;
+    }
+    
+    .h-50{
+        height: 50%;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+    .phone-Carrusel{
+        text-align: center;
+        /* box-shadow: inset 0 0 0px 0px black; */
+        margin-top: 1rem;
+        padding: 2rem;
+    }
+ }
+    
