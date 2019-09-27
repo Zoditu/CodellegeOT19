@@ -1,0 +1,173 @@
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+.gafete
+{
+    border: 1px solid black;
+    border-radius: 2rem;
+    background: black;
+
+    margin-right: 3rem;
+    margin-top: 3rem;
+
+    width: 20rem;
+    height: 30rem;
+    display: inline-block;
+    vertical-align: top;
+
+    text-align: center;
+    transition: background 1s, height 1s, width 1s;
+}
+
+.gafete:hover
+{
+    background: rgb(173, 75, 75);
+    width: 30rem;
+    height: 40rem;
+    cursor: pointer;
+
+    transition: background 1s, height 1s, width 1s;
+}
+
+.gafete:last-child
+{
+    margin-right: 0;
+}
+
+.inline-block-fix
+{
+    letter-spacing: -0.31em;
+    text-align: center;
+}
+.inline-block-fix *
+{
+    letter-spacing: normal;
+}
+
+.header-gafete
+{
+    height: 25%;
+}
+
+.main-gafete
+{
+    height: 60%;
+}
+
+.footer-gafete
+{
+    height: 15%;
+}
+
+.arillo
+{
+    border-radius: 3rem;
+    background: white;
+
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+}
+
+.contenedor-arillo
+{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 25%;
+}
+
+.header-gafete .logo
+{
+    height: 75%;
+}
+
+.header-gafete .logo img
+{
+    width: 60%;
+    height: 100%;
+}
+
+.contenedor-foto
+{
+    height: 85%;
+    padding-top: 10%;
+}
+
+.contenedor-foto img
+{
+    width: 50%;
+    height: 100%;
+}
+
+.nombre
+{
+    height: 15%;
+    background: rgb(141, 214, 31);
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.footer-gafete .logo
+{
+    height: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.footer-gafete .logo img
+{
+    width: 75%;
+    height: 100%;
+}
+
+a:visited
+{
+    color: deeppink;
+    text-decoration: line-through;
+}
+
+a:link
+{
+    color: #989898;
+    text-decoration: none;
+    cursor: help;
+}
+
+.table
+{
+    display: table;
+}
+
+.table-cell
+{
+    display: table-cell;
+}
+
+.align-middle
+{
+    vertical-align: middle;
+}
+
+.h100
+{
+    height: 100%;
+}
+
+.w100
+{
+    width: 100%;
+}
