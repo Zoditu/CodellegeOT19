@@ -1,0 +1,49 @@
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+.relative
+{
+    position: relative;
+}
+.pages
+{
+    width:7rem;
+    height:1.5rem;
+    background-color: rgba(255, 255, 0, 0.63);
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-weight: bold;
+}
+.idioma
+{
+    width:2rem;
+    height:1.5rem;
+    background-color: rgba(255, 192, 203, 0.719);
+    position: absolute;
+    top: 2.5rem;
+    right: 7rem;
+    font-weight: bold;
+}
+.año
+{
+    width:6rem;
+    height:1.5rem;
+    background-color: rgba(127, 255, 212, 0.726);
+    position: absolute;
+    top: 2.5rem;
+    right: 0.5rem;
+    font-weight: bold;
+}
+.himg
+{
+    height: 20rem;
+}
+.hcard
+{
+    height: 32rem;
+}
