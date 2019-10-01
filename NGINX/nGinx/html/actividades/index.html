@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<style>
+    .inline{
+        display: inline-block;
+    }
+
+    .box{
+        border: 2px solid blue;
+    }
+
+    .prueba{
+        background: red;
+    }
+
+
+</style>
+
+<script>
+
+    function Operacion( type ){
+        var PrimerCampo = document.getElementsByTagName( 'input' )[0].value;
+        var SegundoCampo = document.getElementsByTagName( 'input' )[1].value;
+        var Respuesta = document.getElementById( 'Respuesta' );
+
+        PrimerCampo = parseInt( PrimerCampo );
+        SegundoCampo = parseInt( SegundoCampo );
+
+        var Resultado = type === 's' ? PrimerCampo + SegundoCampo :
+                        type === 'r' ? PrimerCampo - SegundoCampo :
+                        type === 'm' ? PrimerCampo * SegundoCampo :
+                        PrimerCampo / SegundoCampo;
+        Respuesta.innerHTML = Resultado;
+    }
+
+</script>
+<body>
+
+    <input class="inline box" type="number">
+
+    <div class="inline">,</div>
+
+    <input class="inline box" type="number">
+
+    <div class="inline">=</div>
+
+    <div id="Respuesta" class="inline"></div>
+
+    <!--Botones--><br><br>
+    <button onClick="Operacion('s')">+</button>
+
+    <button onClick="Operacion('r')">-</button>
+
+    <button onClick="Operacion('m')">*</button>
+
+    <button onClick="Operacion('d')">/</button>
+
+    
+    
+</body>
+</html>

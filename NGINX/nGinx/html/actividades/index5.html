@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var texto = "Kevin Martin del Campo";
+        var control = 0;
+
+        function MoveText( val )
+        {
+            var h3 = document.getElementById( 'text' );
+            if( val < 0 && control > 0 || val > 0 && control < texto.length ) //restar 1
+            {
+                h3.innerHTML = "";
+                control += val;
+                for( var i = 0; i < control; i++ )
+                    h3.innerHTML += texto[i];
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="MoveText( 1 )">&gt;</button>
+    <button onclick="MoveText( -1 )">&lt;</button>
+    <h3 id="text"></h3>
+</body>
+</html>
