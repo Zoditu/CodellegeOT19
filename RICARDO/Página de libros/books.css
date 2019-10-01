@@ -1,0 +1,45 @@
+html, body
+{
+margin:0;
+padding: 0;
+width:100%;
+height: 100%;
+background-color:khaki !important;
+}
+*
+{
+    box-sizing: border-box;
+}
+.tamcar
+{
+    width: 50rem;
+}
+.h
+{
+    height: 30rem;
+}
+.cat
+{
+    width: 100%;
+    background-color: darkgray;
+    height: 100%;
+    display: flex;
+}
+.hcar
+{
+    height: 30rem;
+}
+.b1
+{
+    height: 3rem;
+    background-color: green;
+    font-weight: bold;
+}
+.b2
+{
+    background-color: gold; 
+}
+a.link:hover
+{
+    text-decoration: none;
+}
