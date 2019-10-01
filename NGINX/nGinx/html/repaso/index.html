@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html, body
+        {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        *{ box-sizing: border-box; }
+        #left, #right
+        {
+            float: left;
+            height: 100vh;
+            width: 50vw;
+            padding: 1rem;
+        }
+
+        #left
+        {
+            border-right: 3px solid black;
+        }
+
+        .cuadro
+        {
+            float: left;
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            background: gray;
+            margin-right: 1rem;
+
+            font-size: 2rem;
+            color: white;
+        }
+
+        .selected
+        {
+            background: green;
+        }
+
+        .bRight
+        {
+            position: absolute;
+            top: 50%;
+            left: calc( 50% - 30px );
+            z-index: 999;
+            width: 60px;
+            height: 20px;
+        }
+
+        .bLeft
+        {
+            position: absolute;
+            top: calc( 50% + 30px );
+            left: calc( 50% - 30px );
+            z-index: 999;
+            width: 60px;
+            height: 20px;
+        }
+    </style>
+    <script>
+        var SELECTED;
+
+        function MoveCuadro( direction )
+        {
+            var container = direction === 'l' ? 
+                            document.getElementById( 'left' ) : document.getElementById( 'right' );
+            
+            var parent = SELECTED.parentElement;
+
+            if( container.getAttribute( 'id' ) === parent.getAttribute( 'id' ) )
+                return;
+
+            container.appendChild( SELECTED );
+            parent.removeChild( SELECTED );
+        }
+
+        window.onload = function()
+        {
+            var cuadros = document.getElementsByClassName( 'cuadro' );
+            for( var i = 0; i < cuadros.length; i++ )
+            {
+                cuadros[i].addEventListener( 'click', function()
+                {
+                    var _cuadros = document.getElementsByClassName( 'cuadro' );
+                    for( var i = 0; i < _cuadros.length; i++ )
+                    {
+                        var _cuadro = _cuadros[i];
+                        _cuadro.className = "cuadro";
+                    }
+
+                    var cuadro = this;
+                    SELECTED = this;
+                    cuadro.className = "cuadro selected";
+                });
+            }
+        };
+    </script>
+</head>
+<body>
+    <section id="left">
+        <div class="cuadro">A</div>
+        <div class="cuadro">B</div>
+        <div class="cuadro">C</div>
+    </section>
+
+    <section id="right">
+        <div class="cuadro">D</div>
+        <div class="cuadro">E</div>
+    </section>
+
+    <button onclick="MoveCuadro( 'r' )" class="bRight">&gt;&gt;</button>
+    <button onclick="MoveCuadro( 'l' )" class="bLeft">&lt;&lt;</button>
+</body>
+</html>

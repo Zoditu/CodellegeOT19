@@ -1,0 +1,77 @@
+{
+    "alumnos":
+    [
+        {
+            "nombre": "Daniel",
+            "apellidoPaterno": "De León",
+            "apellidoMaterno": "García",
+            "edad": 21,
+            "sexo": "M",
+            "imagen": "img/fotos/nombre.jpg"
+        },
+        {
+            "nombre": "Víctor",
+            "apellidoPaterno": "De León",
+            "apellidoMaterno": "García",
+            "edad": 20,
+            "sexo": "M",
+            "imagen": "img/fotos/nombre.jpg"
+        },
+        {
+            "nombre": "Melissa",
+            "apellidoPaterno": "De León",
+            "apellidoMaterno": "García",
+            "edad": 21,
+            "sexo": "F",
+            "imagen": "img/fotos/nombre.jpg"
+        },
+        {
+            "nombre": "Aleida",
+            "apellidoPaterno": "De León",
+            "apellidoMaterno": "García",
+            "edad": 22,
+            "sexo": "F",
+            "imagen": "img/fotos/nombre.jpg"
+        },
+        {
+            "nombre": "Briseidy",
+            "apellidoPaterno": "De León",
+            "apellidoMaterno": "García",
+            "edad": 18,
+            "sexo": "F",
+            "imagen": "img/fotos/nombre.jpg"
+        },
+        {
+            "nombre": "Eduardo",
+            "apellidoPaterno": "De León",
+            "apellidoMaterno": "García",
+            "edad": 23,
+            "sexo": "M",
+            "imagen": "img/fotos/nombre.jpg"
+        },
+        {
+            "nombre": "Daniel",
+            "apellidoPaterno": "Martínez",
+            "apellidoMaterno": "García",
+            "edad": 28,
+            "sexo": "M",
+            "imagen": "img/fotos/nombre.jpg"
+        },
+        {
+            "nombre": "Alejandra",
+            "apellidoPaterno": "De León",
+            "apellidoMaterno": "García",
+            "edad": 19,
+            "sexo": "F",
+            "imagen": "img/fotos/nombre.jpg"
+        },
+        {
+            "nombre": "Alex",
+            "apellidoPaterno": "Lozano",
+            "apellidoMaterno": "García",
+            "edad": 32,
+            "sexo": "M",
+            "imagen": "img/fotos/nombre.jpg"
+        }
+    ]
+}

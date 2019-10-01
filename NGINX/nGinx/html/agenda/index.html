@@ -1,0 +1,198 @@
+<html lang="en"><head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Agenda</title>
+   <link rel="stylesheet" href="style/bootstrap.css">
+   <link rel="stylesheet" href="style/style.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   <link rel="stylesheet" href="style/tempusdominus-bootstrap.css">
+
+   <script src="js/jquery.js"></script>
+   <script src="js/bootstrap.js"></script>
+   <script src="js/swal2.js"></script>
+   <script src="js/moment.js"></script>
+   <script src="js/tempusdominus-bootstrap.js"></script>
+   <script>
+        function Agendar()
+        {
+          var calendar;
+          var details = 
+          {
+            date: new Date().toDateString(),
+            time: new Date().toTimeString()
+          };
+
+          Swal.mixin({
+            confirmButtonText: 'Next &rarr;',
+            allowOutsideClick: false,
+            allowEscapeKey: false,
+            showCancelButton: true,
+            showCloseButton: true,
+            progressSteps: ['1', '2']
+          }).queue(
+          [
+            {
+              title: 'Date &amp; Time',
+              html: '<div id="calendar" class="d-inline-block"></div>'
+            },
+            {
+              title: 'Info and attendees',
+              html: '' + 
+              '<form id="eventInfo">' +
+                '<input class="form-control" type="text" placeholder="Event name...">' +
+                '<textarea class="form-control" placeholder="Event description..."></textarea>' +
+                '<input class="form-control" type="text" placeholder="Event attendees...">' +
+              '</form>'
+            }
+          ]).then((result) => {
+            if (result.value) 
+            {
+              var info = $('#eventInfo *');
+              details.name = info[0].value;
+              details.description = info[1].value;
+              details.attendees = info[2].value;
+
+              //Miércoles 1 de Mayo del 2019
+              if( !agenda[ details.date ] )
+              {
+                agenda[ details.date ] = 
+                [
+                  {
+                    time: details.time,
+                    name: details.name,
+                    description: details.description,
+                    attendees: details.attendees
+                  }
+                ];
+              }
+              else
+              {
+                agenda[ details.date ].push
+                (
+                  {
+                    time: details.time,
+                    name: details.name,
+                    description: details.description,
+                    attendees: details.attendees
+                  }
+                );
+              }
+
+              if( details.date === selectedDay.toDateString() )
+                RenderizarDia( details.date );
+            }
+          });
+
+          setTimeout( function()
+          {
+            calendar = $('#calendar').datetimepicker({
+                inline: true,
+                sideBySide: true
+            });
+
+            $('#calendar').on("change.datetimepicker", function (e) 
+            {                
+                var date = new Date( e.date._d );
+                details.date = date.toDateString();
+                details.time = date.toTimeString();
+            });
+
+          }, 250);
+
+        }
+
+        function GetTime( date, time )
+        {
+          var fecha = new Date( date + ' ' + time );
+          return ( fecha.getHours() < 10 ? '0' + fecha.getHours() : fecha.getHours() )  + ":" + 
+                 ( fecha.getMinutes() < 10 ? '0' + fecha.getMinutes() : fecha.getMinutes() )
+        }
+
+        function RenderizarDia( dia )
+        {
+          var hoja = $( '#container2' ); 
+          hoja.html('');
+
+          hoja.append( '<h1>' + dia + '</h1>' );
+          $.each( agenda[ dia ], function( index, evento )
+          {
+            hoja.append
+            (
+              '<a href="#" class="list-group-item list-group-item-action">' +
+                '<div class="d-flex w-100 justify-content-between">' +
+                  '<h5 class="mb-1">' + evento.name + '</h5>' +
+                  '<small>' + GetTime( dia, evento.time ) + '</small>' +
+                '</div>' +
+                '<p class="mb-1">' + evento.description + '</p>' +
+                '<small>' + evento.attendees + '</small>' +
+              '</a>'
+            );
+          });
+        }
+   </script>
+   <script>
+    var hoy = new Date();
+    var miFecha = new Date( 2019, 4, 1, 0, 0, 0, 0 );
+    var selectedDay = hoy; //El día seleccionado de la agenda
+    var agenda = {};
+
+    agenda[ miFecha.toDateString() ] = 
+    [
+      {
+        time: miFecha.toTimeString(),
+        name: "Bañar al gato",
+        description: "akfjaskfj kfjask fjsdkl fjdklfjsd kfjsdkl fjsdk fjsdklsd fkljd fksjfkls jdlkf porque apesta :c",
+        attendees: "Campitos, La Furry"
+      },
+      {
+        time: miFecha.toTimeString(),
+        name: "Clases Codellege",
+        description: "akfjaskfj kfjask fjsdkl fjdklfjsd kfjsdkl fjsdk fjsdklsd fkljd fksjfkls jdlkf",
+        attendees: "Kevin, Patrizzio"
+      }
+    ];
+
+    $(function(){
+      RenderizarDia( hoy.toDateString() );
+    });
+
+   </script>
+
+</head>
+<body>
+      <section class="container">
+         <!--Header-->
+         <header>
+            <section class="name">
+            <div>Eduardo's Agenda</div>
+            </section>
+            <button type="button" class="btn btn-success btnL" onclick="selectedDay.setDate( selectedDay.getDate() - 1); RenderizarDia( selectedDay.toDateString() );" >&lt;-</button>
+            <button type="button" class="btn btn-success btnN" onclick="selectedDay.setDate( selectedDay.getDate() + 1); RenderizarDia( selectedDay.toDateString() );" >-&gt;</button>
+         </header>
+         <!--MAIN-->
+          <main>
+            <section id="container2" class="container2">
+              <h1>Martes, 23 Abril</h1>
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">List group item heading</h5>
+                    <small>3 days ago</small>
+                  </div>
+                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                  <small>Donec id elit non mi porta.</small>
+                </a>
+              </div>
+            </section>
+          </main>
+
+          <!--FOOTER-->
+         <footer>
+               <button type="button" class="btn btn-info btn1" onclick="Agendar();">+</button>
+         </footer>
+           
+      </section>
+   
+
+</body></html>
