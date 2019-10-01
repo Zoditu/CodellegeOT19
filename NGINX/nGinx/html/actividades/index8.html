@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+    <script>
+        function msg()
+        {
+            $('#texto').html
+            (
+                '<p>Hola</p>'
+            ).css('font-size','5rem').click(function(){
+                alert("HOLI soy jquery");
+            });
+        }
+
+        $(function(){
+            alert("yo me ejecuté hasta que carga la página");
+        });
+
+        var nombres = ["campos","daniel","meli","ale"];
+        $.each(nombres,function(i,elem){
+            alert(elem);
+        })
+    </script>
+</head>
+<body>
+    <div id="texto">
+
+    </div>
+
+    <button id="mensaje" onclick="msg();">CLICK</button>
+    
+</body>
+</html>

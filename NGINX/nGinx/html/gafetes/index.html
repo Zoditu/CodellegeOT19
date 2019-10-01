@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var param = '?name=Daniel&age=21';
+
+        window.onload = function()
+        {
+            var container = document.getElementById( 'containerGafetes' );
+            var consola = document.getElementById( 'consola' );
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function()
+            {
+                consola.innerHTML += "Estado actual: " + ajax.readyState + "<br>";
+                if( ajax.readyState == 4 )
+                {
+                    if( ajax.status == 200 )
+                    {
+                        //Generar gafetes
+                        container.innerHTML = "";
+                        var alumnos = JSON.parse( ajax.responseText );
+                        alumnos = alumnos.result;
+                        console.log( "Total: " + alumnos );
+
+                        var numGafetes = 0;
+                        var maxGafetesPorSeccion = 2;
+                        var htmlGafetes = "";
+
+                        var i = 0;
+                        var generarGafetes = setInterval(function(){
+                            if( i >= alumnos.length )
+                            {
+                                htmlGafetes += "</div>";
+                                container.innerHTML += htmlGafetes;
+                                clearInterval( generarGafetes );
+                            }
+ 
+                            var alumno = alumnos[i];
+                            if( numGafetes == 0 )
+                            {
+                                htmlGafetes = "<div>";
+                            }
+                            if( numGafetes++ < maxGafetesPorSeccion )
+                            {
+                                htmlGafetes += '' +
+                                '<div class="gafete">' +
+                                    '<header class="header-gafete">' +
+                                        '<div class="contenedor-arillo">' +
+                                            '<div class="arillo"></div>' +
+                                        '</div>' +
+                                        '<div class="logo">' +
+                                            '<img src="img/softtek.png" />' +
+                                        '</div>' +
+                                    '</header>' +
+
+                                    '<main class="main-gafete">' +
+                                        '<div class="contenedor-foto">' +
+                                            '<img src="' + alumno.imagen + '">' +
+                                        '</div>' +
+                                        '<div class="nombre">' +
+                                            '<div class="table h100 w100">' +
+                                                '<div class="table-cell align-middle">' +
+                                                alumno.nombre + ' ' + alumno.apellidoPaterno +
+                                                '</div>' +
+                                            '</div>' +
+                                        '</div>' +
+                                    '</main>' +
+
+                                    '<footer class="footer-gafete">' +
+                                        '<div class="logo">' +
+                                            '<img src="img/codellege.png" />' +
+                                        '</div>' +
+                                    '</footer>' +
+                                '</div>';
+                            }
+                            else 
+                            {
+                                htmlGafetes += "</div>";
+                                numGafetes = 0;
+                                container.innerHTML += htmlGafetes;
+                                htmlGafetes = "";
+                                i-=1;
+                            }
+                            i++;
+
+                        }, 100); 
+                    }
+                    else 
+                    {
+                        //mostrar un error
+                    }
+                }
+                else
+                {
+                    //consola.innerHTML += "Response:<br>" + ajax.responseText + "<br>EOL<br>";
+                    //loading
+                    container.innerHTML = "<h1>Loading data...</h1>";
+                }
+            }
+            ajax.open( 'GET', 'http://localhost:666/codellege/alumnos' + param, true );
+            ajax.send();
+        }
+    </script>
+    <title>Gafetes Codellege 2019</title>
+</head>
+<body>
+    <a href="#">
+        <h1>Gafetes Codellege</h1>
+    </a>
+    <div id="consola"></div>
+    <section id="containerGafetes" class="inline-block-fix"></section>
+</body>
+</html>

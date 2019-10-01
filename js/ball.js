@@ -27,7 +27,6 @@ $(function(){
         if( top <= min_Y )
         {
             incY = 1;
-            ball.css('background' , 'blue');
             //Rebotó arriba, ahora hay que mandarlo para abajo
         } 
         else if( top >= ( max_Y - ball.height() ) )
