@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .cuadro
+    {
+        width: 10rem;
+        height: 10rem;
+        border: solid black 1px;
+        
+        
+    }
+    .texto
+    {
+        text-align: center;
+        position: absolute;
+        top:50%;
+        left:50%;
+    }
+    main
+    {
+      float: right;  
+      
+    }
+    .rojo
+    {
+        background-color: tomato;
+    }
+    .azul
+    {
+        background-color: skyblue;
+    }
+    .verde
+    {
+        background-color: seagreen;
+    }
+    .morado
+    {
+        background-color: purple;
+    }
+    .gris
+    {
+        background-color: grey;
+    }
+    
+    </style>
+    <script>
+    function cambioColor(color)
+    {
+        document.getElementById('nombre').style.color= color;
+        
+    }
+    
+    </script>
+</head>
+<body>
+    <header>
+        <div class="texto">
+            <h1 id="nombre"> uwu </h1>
+        </div>
+    </header>
+    <main>
+        <div class="cuadro rojo" onclick="cambioColor('red');"></div>
+        <div class="cuadro azul" onclick="cambioColor('blue');"></div>
+        <div class="cuadro verde" onclick="cambioColor('green');"></div>
+        <div class="cuadro morado" onclick="cambioColor('purple');"></div>
+        <div class="cuadro gris" onclick="cambioColor('grey');"></div>
+    </main>
+
+</body>
+</html>
