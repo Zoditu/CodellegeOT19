@@ -1,0 +1,51 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    /* overflow: hidden; */
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.relative{
+    position: relative;
+}
+
+.numbPages{
+    position: absolute;
+    font-weight: bold;
+    /* background: #FF9A52;
+    border: 2px solid black; */
+    padding: 1%;
+    top: 2%;
+    left: 65%;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.lanBook{
+    top: 9%;
+    left:60%;
+    position: absolute;
+}
+
+.yearBook{
+    top: 9%;
+    left: 75%;
+    position: absolute;
+}
+
+.marginBottom{
+    margin-bottom: 2%;
+}
+/* .paddin3{
+    padding: 3%;
+} */
