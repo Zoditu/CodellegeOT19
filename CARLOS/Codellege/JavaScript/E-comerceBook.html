@@ -14,36 +14,33 @@
 <body>
   <!-- menu de navegacion -->
   <header class="sticky-top">
-    <nav class="navbar  navbar-light row ">
-      <a class="navbar-brand" href="#">
+    <nav class="navbar  navbar-light row navbar-expand-lg">
+      <a class="navbar-brand col-1" href="#">
         <img src="Imagenes/Logobook.png" width="50" height="50" class="d-inline-block align-top" alt="">
       </a>
-      <section class=" d-inline-block h-100">
-        <div class="row h-100">
-          <div class="col align-self-center">
+      <section class=" titulo d-inline-block h-100 col-2 ">
             Libreria Oh'Charles
-          </div>
-        </div>
       </section>
-      <section class="col align-self-center list ">
+      <section class="col-4 align-self-center list collapse navbar-collapse" id="navbarSupportedContent ">
         <ul>
           <a href=""><li>Home</li></a>
-          <a href=""><li>Catalogo</li></a>
+          <li><a href="Catalogo.html #name">Catalogo</a></li></a>
           <a href=""><li>Contact</li></a>
           <a href=""><li>Login/Iniciar Sesion </li></a>
         </ul>
       </section>
-      <section class="search d-inline-block">
-        <div class="row ">
-          <div class="col">
+      <section class=" d-inline-block col">
+          
             <form class="form-inline">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
-          </div>
-        </div>
+          
       </section>
-
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
   </header>
   <main class="container">
     <article>

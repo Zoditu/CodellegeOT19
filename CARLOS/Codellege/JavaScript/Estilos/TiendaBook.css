@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 .row{
     margin: 0;
 }
@@ -29,7 +30,7 @@
 }
 #carouselExampleControls img{
     height: 25rem;
-    width: 35rem;
+    
 }
 
 #carouselExampleControls{
