@@ -1,0 +1,30 @@
+.list ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    margin: 0;
+}
+.list ul li{
+    display: inline-block;
+    cursor: pointer;
+}
+.list ul  a li::before
+{
+    content: "\00a0\00a0|\00a0\00a0";
+}
+
+.list ul li:first-child::before
+{
+    content: "";
+}
+.search{
+    position: absolute;
+    right: 30%;
+}
+.navbar
+{
+    background: rgba(83, 218, 59, 0.39);
+}

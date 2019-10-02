@@ -1,0 +1,12 @@
+h1{
+    margin: 0;
+}
+.libro{
+    position: relative;
+}
+
+.Blink{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

@@ -1,0 +1,125 @@
+.list ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    margin: 0;
+}
+.list ul li{
+    display: inline-block;
+    cursor: pointer;
+}
+.list ul  a li::before
+{
+    content: "\00a0\00a0|\00a0\00a0";
+}
+
+.list ul li:first-child::before
+{
+    content: "";
+}
+.search{
+    position: absolute;
+    right: 30%;
+}
+.navbar
+{
+    background: rgba(83, 218, 59, 0.39);
+}
+#carouselExampleControls img{
+    height: 25rem;
+    
+}
+
+#carouselExampleControls{
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid black;
+}
+h2{
+    margin: 0;
+    padding: 0;
+}
+.Ofertas, .tendencias{
+    width: 80%;
+    margin-bottom: 3rem; 
+    margin-right: auto !important;
+}
+
+.Tarjeta{
+    display: inline-block;
+    width: 12rem;
+    height: 15rem;
+    margin-top: 2rem;
+    border: 1px solid black;
+    border-radius: .25rem;
+}
+
+.Ofertas img, .tendencias img{
+height: 84%;
+}
+.Ofertas button, .tendencias button{
+    width: 100%;
+}
+.allcontenedor{
+    position: relative;
+}
+.MapaSitio{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.MapaSitio h5{
+    text-align: center;
+}
+
+ .MapaSitio ul li, .Informacion ul li {
+    text-decoration-style: none;
+    list-style-type: none;
+    color: black;
+    
+} 
+.Informacion h2{
+    padding-left: 40px;
+}
+
+/* Css del catalogo */
+.Catalogo{
+    width: 15rem;
+    height: 25rem;
+    border: 1px solid black;
+    border-radius: .25rem;
+    margin: 0;
+    
+}
+.Catalogo img{
+    height: 70%;
+}
+
+.libros
+{
+    position: relative;
+}
+.info{
+    width:5rem;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.piedelibro
+{
+    height: 13%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#Tarjeta h4,#Tarjeta h5
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}

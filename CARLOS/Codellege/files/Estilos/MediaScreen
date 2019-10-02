@@ -1,0 +1,10 @@
+@media screen and (min-width: 720px)
+{
+
+}
+
+/* landscape es cuando es el ancho es mayor que la altura
+*  Portrait es cuando la altura es mayor del ancho 
+   780px a 1024 px son tables 
+   471 a 7
+*/
