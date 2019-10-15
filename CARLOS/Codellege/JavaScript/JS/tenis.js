@@ -3,9 +3,14 @@ var maxX= window.innerWidth,
     maxY= window.innerHeight,
     minX= 0,
     minY=0;
+
+var colores = [ 'red', '#4D4D4D', 'blue', 'green', 'red', 'orange', 'pink', 'magenta', 'gray', 'forestgreen', 'lime', 'yellow'];
     
 $(function()
 {
+    var indice = 0;
+
+    var vel = 4;
     var barra = $("#barra");
     var menu= $("#menu");
     var bplay = $("#Bplay");
@@ -24,6 +29,8 @@ $(function()
         menu.css("display","none");
             
             var movPelota = setInterval(function(){
+                pelota.css( "background", colores[Random( 0, colores.length )] );
+
                 maxX= window.innerWidth;
                 maxY= window.innerHeight;
                 var topBarra = parseInt( barra.css('top').replace('px', '') );
@@ -44,6 +51,7 @@ $(function()
                     //Están al mismo nivel...
                     if( ( left + pelota.width() ) >= bleft && left <= ( bleft + barra.width() ) )
                     {
+                        vel += 1;
                         VelocidadY = -1;
                     }
                 }
@@ -55,8 +63,8 @@ $(function()
                     
                 // Rebote en barra
              
-                pelota.css("top", top+=(4* VelocidadY));
-                pelota.css("left",left+=(4* VelocidadX));
+                pelota.css("top", top+=(vel* VelocidadY));
+                pelota.css("left",left+=(vel* VelocidadX));
 
                 _topPelota.css( "top", top );
                 _abajoPelota.css( "top", top + pelota.height() );
@@ -103,3 +111,8 @@ $(function()
         //         MovIzquerda= false;
         //     }
         // }
+function Random(min, max) 
+{
+    var random = Math.random() * (max - min) + min;
+    return Math.floor( random );
+}

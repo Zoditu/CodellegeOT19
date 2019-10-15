@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ya valí kk</title>
+    <style>
+        .bolitas
+        {
+            width: 10rem;
+            height: 10rem;
+            float: right;
+            border-radius: 10rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-bottom: 2rem;
+            background: red;
+        }
+        .buttonbb
+        {
+            width: 2rem;
+            height: 2rem;
+            margin-left: 1rem;
+        }
+    </style>
+    <script>
+        function crearCirculos ()
+        {
+            var _circulos = parseInt(document.getElementById('num1').value);
+            document.getElementById('circulos').innerHTML = ' ';
+            for( var i = 0; i < _circulos; i++ )
+            {
+                document.getElementById('circulos').innerHTML += '<div class="bolitas"></div>';
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="num1">
+    <button class="buttonbb" onclick="crearCirculos()"></button>
+    <section id="circulos" ></section>
+</body>
+</html>

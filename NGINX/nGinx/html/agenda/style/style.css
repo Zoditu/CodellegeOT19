@@ -1,0 +1,74 @@
+@font-face {
+   font-family: 'Material Icons';
+   font-style: normal;
+   font-weight: 400;
+   src: url(MaterialDesign/MaterialIcons-Regular.eot); /* For IE6-8 */
+   src: local('Material Icons'),
+     local('MaterialIcons-Regular'),
+     url(MaterialDesign/MaterialIcons-Regular.woff2) format('woff2'),
+     url(MaterialDesign/MaterialIcons-Regular.woff) format('woff'),
+     url(MaterialDesign/MaterialIcons-Regular.ttf) format('truetype');
+ }
+html, body{
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+}
+.container
+{
+   border: 2px solid black;
+   width: 60rem;
+   height: 40rem;
+   margin-top: 1rem;
+}
+.container2
+{
+   text-align: center;
+   
+}
+header
+{
+   height: 5rem;
+}
+footer
+{
+   height: 5rem;
+}
+main
+{
+   height: 30rem;
+   overflow: auto;
+   border: 1.5px solid black;
+   border-radius: 0.5rem;
+}
+.name
+{
+   background: red;
+   font-size: 2rem;
+   color: black;
+   text-align: center;
+}
+
+.btn1
+{
+   float: right;
+   width: 4rem;
+   margin-top: 1rem;
+   border-radius: 100rem;
+   background: rgb(50, 165, 180);
+}
+.signo
+{
+   font-size: 3rem;
+   text-align: center;
+}
+.btnN
+{
+   float: right;
+   margin: .4rem;
+}
+.btnL
+{
+   float: left;
+   margin: .4rem;
+}
