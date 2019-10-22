@@ -1,0 +1,125 @@
+.comic {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 2rem;
+}
+
+.flower {
+    font-family: 'Salsa', cursive;
+    font-size: 10px;
+}
+
+.sale {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 4rem;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.tarjeta {
+    height: 35rem;
+    width: 15rem;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    float: left;
+}
+
+.portada {
+    height: 75%;
+    width: 100%;
+    position: relative;
+}
+
+.bibliografia {
+    height: 25%;
+    width: 100%;
+    padding-right:1rem; 
+    padding-left:1rem; 
+}
+
+.bottom{
+    margin-bottom: 1rem;
+    margin-right: 0rem;
+}
+.datos {
+    height: 3rem;
+    width: 6rem;
+    z-index: 1;
+    position: absolute;
+    right: 0rem;
+    background-color: blueviolet;
+}
+
+.pages {
+    height: 50%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    background-color: rgba(126, 252, 0, 0.534);
+}
+
+.idioma {
+    height: 50%;
+    width: 50%;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    background-color: rgba(236, 9, 9, 0.774);
+    float: left;
+
+}
+
+.year {
+    height: 50%;
+    width: 50%;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    background-color: rgba(0, 140, 255, 0.568);
+    float: left;
+
+}
+
+.titulo
+{
+    height: 40%;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    padding-bottom: .2rem;
+    
+
+}
+
+.author{
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    padding-top: .4rem;
+    font-size: 3rem;
+    overflow: hidden;
+
+}
+
+.info{
+
+    height: 30%;
+    width: 100%;
+    text-align: right;
+    font-size:1rem;
+    padding-top: .5rem;
+    
+
+}
+
+.clear 
+{
+    clear: both;
+}

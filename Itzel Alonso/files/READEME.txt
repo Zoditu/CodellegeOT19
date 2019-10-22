@@ -1,0 +1,40 @@
+Notas del proyecto //Para mentener limpio los archivos
+
+===Library.js
+
+    // Los obejtos tinen atributos y valores
+    // Los atributos son carcterisitcas que describen al objeto
+    // Las propiedades son caracteisticas accesibles del objeto (getter, setter)
+    // Las propiedad me permiten leer/modificar los atributos del objeto
+
+    //Un constructor es una funcion publica que se ejecuta a la hora inicializar un objeto 
+    //Inicializar esta relacionado con instanciar un objeto
+    // Instancia: Es un refencia es memoria de un objeto
+        //Ej.> var AJAX = new XMLHttpRequest();
+    /**
+     * XMLHttpRequest -> Es un objeto
+     * AJAX -> Es una instancia
+     * new XMLHttpRequest() es la inicializacion de un objeto
+     */
+
+     /*
+     //Para crear propiedades, necesito alguno o mabos de los accesores(get,set)
+     get Query(){
+         //this.query = '/algo/'
+         //var result = this.query.replace('/algo/', '');
+         //return result;
+
+         return this.query;
+     }
+
+     set Query( value ){
+        this.query = value;
+     }*/
+ 
+    //Una interfaz es una deficion para implementaciones
+    //No tiene atributs, ni modificadores, ni propiedades
+    //Son solo metodos que se sobreescriben
+    //No se implementan, lo hace la clase que lo vaya a implementar
+
+===LibraryService.js
+    
