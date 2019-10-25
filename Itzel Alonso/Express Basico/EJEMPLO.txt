@@ -1,0 +1,68 @@
+// descargar el express en la carpeta donde lo vas a trabajar
+//$npm init
+//$npm i --save express
+ 
+
+//como se inicializa expres JS?
+
+const express = require ('express');
+const app = express();
+
+
+//como se a;aden los archivos estaticos. archivos que no interactuan con express directamente, imagenes, videos , css etc.
+
+app.use(express.static('public'))
+
+//como se a;ade una ruta tipo/metodo GET
+app.get('/saludar/:nombre', function (req,res){
+    res.json ( {message: "Hola" + req.params.nombre});
+
+});
+
+//como se levanta un servidor de expressJS
+
+app.listen(3000, () => {
+    console.log ('Server UP');
+});
+// ESTE ES OTRO EJEMPLO!!!!!!!!--------------------------------------------------------------------------
+
+//PRIMERO debes de importar la libreria
+const mongoose = require ('mongoose');
+
+//SEGUNDO debes de conectarte a una base de datos
+const mongoOptions = {
+    userNewUrlParser: true
+}
+mongoose.connect('mongodb://localhost:27017/test',mongoOptions);
+
+//TERCERO debes definir un schema y crear un modelo
+//schema =  datos que se van a guardar en la DB
+// modelo= es el schema + funciones para interactuar con la DB
+
+const schema = {name: String};
+const Cat = mongoose.model('Cat',schema);
+
+//CUATRO si quieres creas un nuevo documento.
+
+const kitty = new Cat ({ name: 'chuchu' });
+kitty.save ()
+    .then( () => console.log ('meow') );
+
+//QUINTO si quieres leer VARIOS documentos.
+const query = {
+    name:'chuchu'
+}
+Cat.find( query )
+    .exec()
+    .then(function(documentos){
+        //maneja la respuestas
+
+    })
+    .catch(function(error){
+        //maneja el error
+    })
+
+//SEXTO si quieres leer UN SOLO documento 
+Cat.findOne( query )
+    .exec()
+    // ........
