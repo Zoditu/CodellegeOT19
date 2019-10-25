@@ -1,0 +1,253 @@
+<!-- 
+
+    * this.varibale para acceder a esa variable al objeto mas cercano
+    * sin el "this" accede a la variable dentro del mismo alcance
+
+ -->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script>
+    var nombre = [ "Andrew", "Tino", "Itzel", "Lili", "Aldo", "Karla", "Nat" ];
+
+    for(var i = 0; i<nombre.length; i++){
+        //console.log(nombre[i]);
+    }
+
+    //$.each(nombre, function(index, value){
+      //  alert(index + ": " + value);
+    //});
+
+    var Alumnos = [
+    { //Celestino
+        nombre: "Celestino",
+        apellidoPaterno: "Gonzalez",
+        apellidoMaterno: "Marquez",
+        sexo: "masculino",
+        edad: "23",
+        altura: "...",
+        nacionalidad: "MEXICANO",
+        fecha_nac: "desconocida",
+        mostrar: function () {
+            console.log(this.nombre + " " + this.apellidoPaterno);
+            console.log("Edad:" + this.edad)
+        },
+        src_pic: "../../img/heroes/play-button.svg"
+    },
+    { //Itzel
+        nombre: "Itzel",
+        apellidoPaterno: "Alonso",
+        apellidoMaterno: "Garcia",
+        sexo: "femenino",
+        edad: "22",
+        altura: "1.72",
+        nacionalidad: "mexicana",
+        fecha_nac: "7 Febrero 1997",
+        mostrar: function () {
+            console.log(this.nombre + " " + this.apellidoPaterno);
+            console.log("Edad:" + this.edad)
+        },
+        src_pic: "../../img/heroes/maternity.svg"
+    },
+    { //Liliana
+        nombre: "Liliana",
+        apellidoPaterno: "Hernandez",
+        apellidoMaterno: "Gonzalez",
+        sexo: "femenino",
+        edad: "19",
+        altura: "1.70",
+        nacionalidad: "MEXICANA",
+        fecha_nac: "16 Septiembre 1999",
+        mostrar: function () {
+            console.log(this.nombre + " " + this.apellidoPaterno);
+            console.log("Edad:" + this.edad)
+        },
+        src_pic: "../../img/heroes/taekwondo.svg"
+    },
+    { //Aldo
+        nombre: "Aldo",
+        apellidoPaterno: "Matias",
+        apellidoMaterno: "Galindo",
+        sexo: "masculino",
+        edad: "23",
+        altura: "1.77",
+        nacionalidad: "MEXICANO",
+        fecha_nac: "19 Octubre 1995",
+        mostrar: function () {
+            console.log(this.nombre + " " + this.apellidoPaterno);
+            console.log("Edad:" + this.edad)
+        },
+        src_pic: "../../img/heroes/crab.svg"
+    },
+    { //Aaron
+        nombre: "Aaron",
+        apellidoPaterno: "Arredondo",
+        apellidoMaterno: "Araguz",
+        sexo: "masculino",
+        edad: "20",
+        altura: "1.74",
+        nacionalidad: "MEXICANO",
+        fecha_nac: "23 Enero 1999",
+        mostrar: function () {
+            console.log(this.nombre + " " + this.apellidoPaterno);
+            console.log("Edad:" + this.edad)
+        },
+        src_pic: "../../img/heroes/tennis.svg"
+    },
+    { //Karla
+        nombre: "Karla",
+        apellidoPaterno: "Gonzalez",
+        apellidoMaterno: "Hernandez",
+        sexo: "femenino",
+        edad: "20",
+        altura: "1.68",
+        nacionalidad: "MEXICANA",
+        fecha_nac: "3 noviembre 1998",
+        mostrar: function () {
+            console.log(this.nombre + " " + this.apellidoPaterno);
+            console.log("Edad:" + this.edad)
+        },
+        src_pic: "../../img/heroes/watermelon.svg"
+    },
+    { //Natalia
+        nombre: "Natalia",
+        apellidoPaterno: "Rodriguez",
+        apellidoMaterno: "Capitan",
+        sexo: "femenino",
+        edad: "22",
+        altura: "1.56",
+        nacionalidad: "MEXICANA",
+        fecha_nac: "7 junio 1996",
+        mostrar: function () {
+            console.log(this.nombre + " " + this.apellidoPaterno);
+            console.log("Edad:" + this.edad)
+        },
+        src_pic: "../../img/heroes/vincent-van-gogh.svg"
+    },
+    { //Andres
+        nombre: "Andres",
+        apellidoPaterno: "Ramos",
+        apellidoMaterno: "Rodriguez",
+        sexo: "masculino",
+        edad: "19",
+        altura: "1.60",
+        nacionalidad: "COLOMBIANO",
+        fecha_nac: "desconocida",
+        mostrar: function () {
+            console.log(this.nombre + " " + this.apellidoPaterno);
+            console.log("Edad:" + this.edad)
+        },
+        src_pic: "../../img/heroes/colombia.svg"
+    },
+    { //Ricardo
+        nombre: "Ricardo",
+        apellidoPaterno: "Teneyuque",
+        apellidoMaterno: "Marquez",
+        sexo: "masculino",
+        edad: "20",
+        altura: "1.70",
+        nacionalidad: "MEXICANO",
+        fecha_nac: "17 Octubre 1998",
+        mostrar: function () {
+            console.log(this.nombre + " " + this.apellidoPaterno);
+            console.log("Edad:" + this.edad)
+        },
+        src_pic: "../../img/heroes/lion.svg"
+    },
+    { //Sho
+        nombre: "Javier",
+        apellidoPaterno: "Anguiano",
+        apellidoMaterno: "de Lara",
+        sexo: "masculino",
+        edad: "21",
+        altura: "1.78",
+        nacionalidad: "MEXICANO",
+        fecha_nac: "22 mayo 1998",
+        mostrar: function () {
+            console.log(this.nombre + " " + this.apellidoPaterno);
+            console.log("Edad:" + this.edad)
+        },
+        src_pic: "../../img/heroes/spiderman.svg"
+    },
+    { //Charles
+        nombre: "Carlos",
+        apellidoPaterno: "Mendoza",
+        apellidoMaterno: "Andrade",
+        sexo: "masculino",
+        edad: "22",
+        altura: "1.78",
+        nacionalidad: "MEXICANO",
+        fecha_nac: "25 abril 1997",
+        mostrar: function () {
+            console.log(this.nombre + " " + this.apellidoPaterno);
+            console.log("Edad:" + this.edad)
+        },
+        src_pic: "../../img/gaffete/sho.png"
+    },
+    { //Andrew
+        nombre: "Andres",
+        apellidoPaterno: "Coronado",
+        apellidoMaterno: "Lazaro",
+        sexo: "masculino",
+        edad: "2",
+        altura: "...",
+        nacionalidad: "MEXICANO",
+        fecha_nac: "18 Noviembre 1999",
+        mostrar: function () {
+            console.log(this.nombre + " " + this.apellidoPaterno);
+            console.log("Edad:" + this.edad)
+        },
+        src_pic: "../../img/heroes/saitama-japan-flag-symbol.svg"
+    },
+    { //Miriam
+        nombre: "Miriam",
+        apellidoPaterno: "Herrera",
+        apellidoMaterno: "Reyna",
+        sexo: "femeninos",
+        edad: "21",
+        altura: "1.60",
+        nacionalidad: "MEXICANA",
+        fecha_nac: "",
+        mostrar: function () {
+            console.log(this.nombre + " " + this.apellidoPaterno);
+            console.log("Edad:" + this.edad)
+        },
+        src_pic: "../../img/heroes/baloon.svg"
+    },
+];
+    var CPY = [];
+    var hombre = [];
+    var mujeres = [];
+
+    //each para poder agregar los alumnos a cada array de hombres y mujeres
+    $.each(Alumnos, function(index, alumno){
+        CPY.push( alumno );
+        if(alumno.sexo == 'masculino'){
+            hombre.push( alumno );     
+        } else {
+            mujeres.push( alumno ); 
+        }
+    });
+
+    //function que solo manda imprimir el array hombre
+    $(function imprimirHombres(){
+        console.log('Hombres');
+        console.log(
+            $.each(hombre, function(index, alumno){
+                console.log(hombre[index]);
+            })
+        );
+    })
+    //function que solo manda imprimir el array mujer
+    $( function imprimirMujeres(){
+        console.log('Mujeres');
+        console.log(
+            $.each(mujeres, function(index, alumno){
+                console.log(mujeres[index]);
+            })
+        );
+    })
+
+    imprimirHombres();
+    imprimirMujeres();
+
+</script>

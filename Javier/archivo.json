@@ -1,0 +1,110 @@
+{
+    "softtek": {
+        "departamentos": {
+            "AMS": {
+                "enfoque": "Soporte de software"
+            },
+            "desarrollo": {
+                "enfoque": "implementacion"
+            },
+            "QA": {
+                "enfoque": "calidad de software"
+            },
+            "SAP": {
+                "enfoque": "consultoria de gestion empreserial"
+            },
+            "IT": {
+                "enfoque": "soporte tecnico"
+            },
+            "security": {
+                "enfoque": "seguridad y redes"
+            },
+            "RH": {
+                "enfoque": "administracion de personal"
+            }
+        },
+        "sedes": {
+            "sede": [{
+                    "pais": "Mexico",
+                    "ciudad": "Monterrey",
+                    "isHQ": "true"
+                },
+                {
+                    "-pais": "Mexico",
+                    "-ciudad": "Aguscalientes",
+                    "-isHQ": "false"
+                },
+                {
+                    "pais": "Mexico",
+                    "ciudad": "CDMX",
+                    "isHQ": "false"
+                },
+                {
+                    "pais": "Mexico",
+                    "ciudad": "Torreon",
+                    "isHQ": "false"
+                },
+                {
+                    "pais": "Mexico",
+                    "ciudad": "GDL",
+                    "isHQ": "false"
+                },
+                {
+                    "pais": "Mexico",
+                    "ciudad": "Merida",
+                    "isHQ": "false"
+                },
+                {
+                    "pais": "Mexico",
+                    "ciudad": "Ensenada",
+                    "isHQ": "false"
+                },
+                {
+                    "pais": "Colombia",
+                    "ciudad": "Bogota",
+                    "isHQ": "false"
+                },
+                {
+                    "pais": "Argetina",
+                    "ciudad": "Buenos Aires",
+                    "isHQ": "false"
+                },
+                {
+                    "pais": "Costa Rica",
+                    "ciudad": "Heredia",
+                    "isHQ": "false"
+                },
+                {
+                    "pais": "Espana",
+                    "ciudad": "Madrid",
+                    "isHQ": "false"
+                },
+                {
+                    "pais": "Espana",
+                    "ciudad": "La Coruna",
+                    "isHQ": "false"
+                },
+                {
+                    "pais": "China",
+                    "ciudad": "Wux",
+                    "isHQ": "false"
+                },
+                {
+                    "pais": "Brazil",
+                    "ciudad": "Rio de Janeiro",
+                    "isHQ": "false"
+                },
+                {
+                    "pais": "Brazil",
+                    "ciudad": "Sao Paulo",
+                    "isHQ": "false"
+                },
+                {
+                    "pais": "Canada",
+                    "ciudad": "Toronto",
+                    "isHQ": "false"
+                }
+            ]
+        }
+    }
+}
